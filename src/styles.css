@@ -296,7 +296,7 @@ nav button.active {
   text-align: left;
 }
 
-.deck-preview span {
+.deck-preview > section > button > span {
   color: #a8c8ca;
   display: -webkit-box;
   line-clamp: 2;
@@ -392,6 +392,106 @@ nav button.active {
   border-radius: 8px;
   padding: 0.9rem;
   white-space: pre-wrap;
+}
+
+.card-rules-text {
+  color: #d8eeee;
+  line-height: 1.65;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.card-rules-text.compact {
+  color: #a8c8ca;
+  display: -webkit-box;
+  line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
+
+.game-symbol {
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  display: inline-flex;
+  font-size: 0.76em;
+  font-weight: 800;
+  gap: 0.12rem;
+  height: 1.45em;
+  justify-content: center;
+  line-height: 1;
+  margin: 0 0.1rem;
+  min-width: 1.45em;
+  padding: 0 0.22em;
+  position: relative;
+  top: -0.08em;
+  vertical-align: middle;
+}
+
+.game-symbol svg {
+  flex: 0 0 auto;
+}
+
+.game-symbol.energy {
+  background: #f1b75f;
+  border-color: #ffe2a0;
+  color: #1f1404;
+}
+
+.game-symbol.might {
+  background: #d5473a;
+  border-color: #ff958a;
+  color: #fff7f4;
+}
+
+.game-symbol.exhaust {
+  background: #29464c;
+  border-color: #79a9b1;
+  color: #e6fbff;
+}
+
+.game-symbol.rune {
+  color: #081014;
+}
+
+.rune-fury {
+  background: #ff5c3d;
+  border-color: #ffb29f;
+}
+
+.rune-calm {
+  background: #7fcfff;
+  border-color: #d2f0ff;
+}
+
+.rune-mind {
+  background: #a78bfa;
+  border-color: #ddd0ff;
+}
+
+.rune-body {
+  background: #70d17b;
+  border-color: #c4f3c8;
+}
+
+.rune-chaos {
+  background: #f076c9;
+  border-color: #ffc7ed;
+}
+
+.rune-order {
+  background: #f4df79;
+  border-color: #fff3b0;
+}
+
+.rune-rainbow {
+  background: conic-gradient(from 45deg, #ff5c3d, #f4df79, #70d17b, #7fcfff, #a78bfa, #f076c9, #ff5c3d);
+  border-color: #ffffff;
+}
+
+.game-symbol.unknown {
+  background: #203339;
+  color: #d8eeee;
 }
 
 .empty {

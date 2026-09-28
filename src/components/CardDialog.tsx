@@ -1,7 +1,8 @@
 import React from 'react';
 import { X } from 'lucide-react';
 import type { RiftboundCard, TranslationEntry } from '../types';
-import { formatCardText, safeImageUrl, TYPE_NAMES } from '../lib/cards';
+import { safeImageUrl, TYPE_NAMES } from '../lib/cards';
+import { CardRulesText } from './CardRulesText';
 
 interface CardDialogProps {
   card: RiftboundCard;
@@ -34,11 +35,11 @@ export function CardDialog({ card, translation, isCustom, onClose, onSave, onRem
           <div className="rules">
             <section>
               <h3>Portugues</h3>
-              <p>{translation ? formatCardText(translation.text) : 'Esta carta ainda nao tem traducao.'}</p>
+              <CardRulesText text={translation?.text} fallback="Esta carta ainda nao tem traducao." />
             </section>
             <section>
               <h3>Original</h3>
-              <p>{formatCardText(card.text?.plain)}</p>
+              <CardRulesText text={card.text?.plain} fallback="Esta carta nao possui texto de regras." />
             </section>
           </div>
           <form onSubmit={(event) => {

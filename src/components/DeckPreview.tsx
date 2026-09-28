@@ -1,6 +1,7 @@
 import type { TranslateCard } from '../appTypes';
 import type { DeckRow, DeckSection, RiftboundCard } from '../types';
 import { SECTION_LABELS } from '../lib/deckParser';
+import { CardRulesText } from './CardRulesText';
 
 interface DeckPreviewProps {
   rows: DeckRow[];
@@ -24,7 +25,7 @@ export function DeckPreview({ rows, translate, onOpen }: DeckPreviewProps) {
               return (
                 <button key={`${section}-${row.card.riftbound_id}`} onClick={() => onOpen(row.card)}>
                   <strong>{row.quantity}x {translation?.name || row.card.name}</strong>
-                  <span>{translation?.text || 'Traducao pendente'}</span>
+                  <CardRulesText text={translation?.text} fallback="Traducao pendente" compact />
                 </button>
               );
             })}
