@@ -8,6 +8,7 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "sync:cards": "node scripts/sync-riftcodex.mjs",
+    "translations:names": "node scripts/sync-translation-names.mjs",
     "translations:worklist": "node scripts/create-pending-translation-worklist.mjs",
     "translations:import": "node scripts/import-translation-worklist.mjs"
   },
