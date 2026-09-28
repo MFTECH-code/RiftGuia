@@ -1,0 +1,1436 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-25T20:06:47.311Z",
+  "source": "translation-worklist.pt-BR.json",
+  "total": 204,
+  "translations": {
+    "opp-007b-298": {
+      "name": "Fury Rune",
+      "text": "[SEM TEXTO]",
+      "source": "[NO TEXT]",
+      "updatedAt": "2026-09-25T18:13:06.531Z",
+      "provider": "openai"
+    },
+    "ven-r01": {
+      "name": "Fury Rune",
+      "text": "[SEM TEXTO]",
+      "source": "[NO TEXT]",
+      "updatedAt": "2026-09-25T18:13:57.040Z",
+      "provider": "openai"
+    },
+    "opp-001-219": {
+      "name": "Arena Kingpin",
+      "text": "Eu entro pronto.:rb_exhaust:: Dê a uma unidade +3 :rb_might: neste turno.",
+      "source": "I enter ready.:rb_exhaust:: Give a unit +3 :rb_might: this turn.",
+      "updatedAt": "2026-09-25T18:13:06.532Z",
+      "provider": "openai"
+    },
+    "opp-001-298": {
+      "name": "Blazing Scorcher",
+      "text": "[Acelerar] (Você pode pagar :rb_energy_1::rb_rune_fury: como custo adicional para que eu entre pronto.)",
+      "source": "[Accelerate] (You may pay :rb_energy_1::rb_rune_fury: as an additional cost to have me enter ready.)",
+      "updatedAt": "2026-09-25T18:13:06.532Z",
+      "provider": "openai"
+    },
+    "unl-001-219": {
+      "name": "Arena Kingpin",
+      "text": "Eu entro pronto.:rb_exhaust:: Dê a uma unidade +3 :rb_might: neste turno.",
+      "source": "I enter ready.:rb_exhaust:: Give a unit +3 :rb_might: this turn.",
+      "updatedAt": "2026-09-25T18:13:06.532Z",
+      "provider": "openai"
+    },
+    "ogs-001-024": {
+      "name": "Annie - Fiery",
+      "text": "Seus feitiços e habilidades causam 1 Dano Bônus. (Cada instância de dano que o feitiço causa é aumentada em 1.)",
+      "source": "Your spells and abilities deal 1 Bonus Damage. (Each instance of damage the spell deals is increased by 1.)",
+      "updatedAt": "2026-09-25T18:13:06.532Z",
+      "provider": "openai"
+    },
+    "opp-001-024": {
+      "name": "Annie - Fiery",
+      "text": "Seus feitiços e habilidades causam 1 Dano Bônus. (Cada instância de dano que o feitiço causa é aumentada em 1.)",
+      "source": "Your spells and abilities deal 1 Bonus Damage. (Each instance of damage the spell deals is increased by 1.)",
+      "updatedAt": "2026-09-25T18:13:06.532Z",
+      "provider": "openai"
+    },
+    "ven-001-166": {
+      "name": "Baccai Sandspinner",
+      "text": "[Fortalecer] :rb_energy_5:. Esta habilidade custa :rb_energy_3: a menos se você controlar 4 ou menos runas. (Pague o custo: Fortalecer-me. Use apenas se não estiver Fortalecido.)[Fortalecido][>] Eu tenho [Desviar] e [Assalto 2]. (Os oponentes devem pagar :rb_rune_rainbow: para me escolher com um feitiço ou habilidade. +2 :rb_might: enquanto eu for um atacante.)",
+      "source": "[Empower] :rb_energy_5:. This ability costs :rb_energy_3: less if you control 4 or fewer runes. (Pay the cost: Empower me. Use only if not Empowered.)[Empowered][&gt;] I have [Deflect] and [Assault 2]. (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability. +2 :rb_might: while I'm an attacker.)",
+      "updatedAt": "2026-09-25T18:13:57.040Z",
+      "provider": "openai"
+    },
+    "ogn-001-298": {
+      "name": "Incinerador Flamejante",
+      "text": "[Accelerate] (Você pode pagar :rb_energy_1::rb_rune_fury: como um custo adicional para fazer com que eu entre pronto.)",
+      "source": "[Accelerate] (You may pay :rb_energy_1::rb_rune_fury: as an additional cost to have me enter ready.)",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "sfd-001-221": {
+      "name": "Against the Odds",
+      "text": "[Reação] (Jogue a qualquer momento, mesmo antes de feitiços e habilidades resolverem.) Conceda a uma unidade amiga em um campo de batalha +2 :rb_might: neste turno para cada unidade inimiga lá.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)Give a friendly unit at a battlefield +2 :rb_might: this turn for each enemy unit there.",
+      "updatedAt": "2026-09-25T18:13:57.040Z",
+      "provider": "openai"
+    },
+    "ven-sp1-006": {
+      "name": "Kai'Sa, Survivor",
+      "text": "[Acelerar] Quando eu conquistar, compre 1 carta.",
+      "source": "[Accelerate]When I conquer, draw 1.",
+      "updatedAt": "2026-09-25T18:13:57.040Z",
+      "provider": "openai"
+    },
+    "ven-sp2-006": {
+      "name": "Sona, Harmonious",
+      "text": "No final do seu turno, se eu estiver em um campo de batalha, deixe até 4 runas amigas Prontas.",
+      "source": "At the end of your turn, if I'm at a battlefield, ready up to 4 friendly runes.",
+      "updatedAt": "2026-09-25T18:14:33.535Z",
+      "provider": "openai"
+    },
+    "opp-042b-298": {
+      "name": "Calm Rune",
+      "text": "[SEM TEXTO]",
+      "source": "[NO TEXT]",
+      "updatedAt": "2026-09-25T18:13:57.040Z",
+      "provider": "openai"
+    },
+    "ogs-002-024": {
+      "name": "Firestorm",
+      "text": "Cause 3 de dano a todas as unidades inimigas em um campo de batalha.",
+      "source": "Deal 3 to all enemy units at a battlefield.",
+      "updatedAt": "2026-09-25T18:14:33.535Z",
+      "provider": "openai"
+    },
+    "sfd-002-221": {
+      "name": "Armed Assailant",
+      "text": "[Accelerate] (Você pode pagar :rb_energy_1::rb_rune_fury: como um custo adicional para eu entrar Pronto.)[Weaponmaster] (Quando você me joga, você pode [Equip] um de seus Equipamentos em mim por :rb_rune_rainbow: a menos, mesmo que já esteja anexado.)",
+      "source": "[Accelerate] (You may pay :rb_energy_1::rb_rune_fury: as an additional cost to have me enter ready.)[Weaponmaster] (When you play me, you may [Equip] one of your Equipment to me for :rb_rune_rainbow: less, even if it's already attached.)",
+      "updatedAt": "2026-09-25T18:14:33.535Z",
+      "provider": "openai"
+    },
+    "ogn-002-298": {
+      "name": "Bucaneiro Audacioso",
+      "text": "Ao me jogar, você pode descartar 1 como um custo adicional. Se fizer isso, reduza meu custo em :rb_energy_2:.",
+      "source": "As you play me, you may discard 1 as an additional cost. If you do, reduce my cost by :rb_energy_2:.",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ven-r02": {
+      "name": "Calm Rune",
+      "text": "[NO TEXT]",
+      "source": "[NO TEXT]",
+      "updatedAt": "2026-09-25T18:15:10.710Z",
+      "provider": "openai"
+    },
+    "ven-002-166": {
+      "name": "Blade Twirler",
+      "text": "A primeira vez que eu me mover a cada turno, escolha um jogador. Eles [Queimar 1]. (Eles colocam a carta do topo do Baralho Principal deles no lixo.)",
+      "source": "The first time I move each turn, choose a player. They [Burn 1]. (They put the top card of their Main Deck into their trash.)",
+      "updatedAt": "2026-09-25T18:15:10.710Z",
+      "provider": "openai"
+    },
+    "unl-002-219": {
+      "name": "Inferna",
+      "text": "[Ambush] (Você pode me jogar como uma [Reaction] para um campo de batalha onde você tem unidades.)[Assault 2] (+2 :rb_might: enquanto eu for um atacante.)",
+      "source": "[Ambush] (You may play me as a [Reaction] to a battlefield where you have units.)[Assault 2] (+2 :rb_might: while I'm an attacker.)",
+      "updatedAt": "2026-09-25T18:14:33.535Z",
+      "provider": "openai"
+    },
+    "ven-sp3-006": {
+      "name": "Ahri, Inquisitive",
+      "text": "Quando eu atacar ou defender, dê a uma unidade inimiga aqui -2 :rb_might: neste turno, até um mínimo de 1 :rb_might:.",
+      "source": "When I attack or defend, give an enemy unit here -2 :rb_might: this turn, to a minimum of 1 :rb_might:.",
+      "updatedAt": "2026-09-25T18:15:10.710Z",
+      "provider": "openai"
+    },
+    "sfd-t03": {
+      "name": "Gold // Buff",
+      "text": "Mate isto, :rb_exhaust:: [Reaction] — [Add] :rb_rune_rainbow:. (Habilidades que adicionam recursos não podem ser reagidas.)",
+      "source": "Kill this, :rb_exhaust:: [Reaction] — [Add] :rb_rune_rainbow:. (Abilities that add resources can't be reacted to.)",
+      "updatedAt": "2026-09-25T18:15:10.710Z",
+      "provider": "openai"
+    },
+    "sfd-003-221": {
+      "name": "Blood Rush",
+      "text": "[Action] (Jogue no seu turno ou em showdowns.)[Repeat] :rb_energy_1: (Você pode pagar o custo adicional para repetir o efeito deste feitiço.)Dê a uma unidade [Assault 2]. (+2 :rb_might: enquanto ela for atacante.)",
+      "source": "[Action] (Play on your turn or in showdowns.)[Repeat] :rb_energy_1: (You may pay the additional cost to repeat this spell's effect.)Give a unit [Assault 2]. (+2 :rb_might: while it's an attacker.)",
+      "updatedAt": "2026-09-25T18:15:10.710Z",
+      "provider": "openai"
+    },
+    "opp-089b-298": {
+      "name": "Mind Rune",
+      "text": "[NO TEXT]",
+      "source": "[NO TEXT]",
+      "updatedAt": "2026-09-25T18:15:10.710Z",
+      "provider": "openai"
+    },
+    "ven-003-166": {
+      "name": "Brittle Steel",
+      "text": "Mate um equipamento.[Fluxo] :rb_energy_4::rb_rune_fury: (Você pode jogar isto do seu lixo pelo seu custo de Fluxo. Então baní-lo.)",
+      "source": "Kill a gear.[Flow] :rb_energy_4::rb_rune_fury: (You may play this from your trash for its Flow cost. Then banish it.)",
+      "updatedAt": "2026-09-25T18:15:10.710Z",
+      "provider": "openai"
+    },
+    "jdg-059-221": {
+      "name": "Svellsongur",
+      "text": "[Equip] :rb_energy_1::rb_rune_calm: (:rb_energy_1::rb_rune_calm:: Anexe isto a uma unidade que você controla.)Enquanto isto estiver anexado a uma unidade, copie o texto daquela unidade para o texto de efeito deste Equipamento enquanto ele estiver anexado a ela.",
+      "source": "[Equip] :rb_energy_1::rb_rune_calm: (:rb_energy_1::rb_rune_calm:: Attach this to a unit you control.)As this is attached to a unit, copy that unit's text to this Equipment's effect text for as long as this is attached to it.",
+      "updatedAt": "2026-09-25T20:06:47.309Z",
+      "provider": "external-worklist"
+    },
+    "jdg-087-219": {
+      "name": "Sentinela Azul",
+      "text": "[Shield 2] (+2 :rb_might: enquanto eu for um defensor.)Seus efeitos de dominação por dominar aqui são acionados uma vez adicional.Quando eu dominar, [Add] :rb_rune_rainbow: no início da sua próxima Main Phase. (Habilidades que adicionam recursos não podem receber reações.)",
+      "source": "[Shield 2] (+2 :rb_might: while I'm a defender.)Your hold effects for holding here trigger an additional time.When I hold, [Add] :rb_rune_rainbow: at the start of your next Main Phase. (Abilities that add resources can't be reacted to.)",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "jdg-111-298": {
+      "name": "Heimerdinger - Inventor",
+      "text": "Eu tenho todas as habilidades :rb_exhaust: de todas as lendas, unidades e equipamentos aliados.",
+      "source": "I have all :rb_exhaust: abilities of all friendly legends, units, and gear.",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-003-298": {
+      "name": "Impostor Quimiotech",
+      "text": "[Assault 2] (+2 :rb_might: enquanto eu for um atacante.)Quando você me jogar, descarte 1.",
+      "source": "[Assault 2] (+2 :rb_might: while I'm an attacker.)When you play me, discard 1.",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-004-298": {
+      "name": "Golpe Dividido",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Conceda [Assault 3] a uma unidade neste turno. (+3 :rb_might: enquanto ela for uma atacante.)",
+      "source": "[Action] (Play on your turn or in showdowns.)Give a unit [Assault 3] this turn. (+3 :rb_might: while it's an attacker.)",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-005-298": {
+      "name": "Desintegrar",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Cuse 3 de dano a uma unidade em um campo de batalha. Se isto a matar, compre 1.",
+      "source": "[Action] (Play on your turn or in showdowns.)Deal 3 to a unit at a battlefield. If this kills it, draw 1.",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-006-298": {
+      "name": "Mastigadores Flamejantes",
+      "text": "Quando você me descartar, você pode pagar :rb_rune_fury: para me jogar.",
+      "source": "When you discard me, you may pay :rb_rune_fury: to play me.",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-008-298": {
+      "name": "Animem-se!",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Descarte 1. Cause o custo de Energia dela como dano a uma unidade em um campo de batalha. (Ignore o custo de Poder dela.)",
+      "source": "[Action] (Play on your turn or in showdowns.)Discard 1. Deal its Energy cost as damage to a unit at a battlefield. (Ignore its Power cost.)",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-009-298": {
+      "name": "Raio Hextech",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Cause 3 de dano a uma unidade em um campo de batalha.",
+      "source": "[Action] (Play on your turn or in showdowns.)Deal 3 to a unit at a battlefield.",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-010-298": {
+      "name": "Retaguarda da Legião",
+      "text": "[Accelerate] (Você pode pagar :rb_energy_1::rb_rune_fury: como um custo adicional para fazer com que eu entre pronto.)",
+      "source": "[Accelerate] (You may pay :rb_energy_1::rb_rune_fury: as an additional cost to have me enter ready.)",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-011-298": {
+      "name": "Wurm de Magma",
+      "text": "Outras unidades aliadas entram prontas.",
+      "source": "Other friendly units enter ready.",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-012-298": {
+      "name": "Esperança de Noxus",
+      "text": "[Legion] — Eu custo :rb_energy_2: a menos. (Obtenha o efeito se você jogou outra carta neste turno.)",
+      "source": "[Legion] — I cost :rb_energy_2: less. (Get the effect if you've played another card this turn.)",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-013-298": {
+      "name": "Poro Birrento",
+      "text": "[Deflect] (Os oponentes devem pagar :rb_rune_rainbow: para me escolher com uma magia ou habilidade.)",
+      "source": "[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-014-298": {
+      "name": "FendE-céus",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)O custo de Energia desta magia é reduzido pelo maior Might entre as unidades que você controla. Cause 5 a uma unidade em um campo de batalha.",
+      "source": "[Action] (Play on your turn or in showdowns.)This spell's Energy cost is reduced by the highest Might among units you control.Deal 5 to a unit at a battlefield.",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-015-298": {
+      "name": "Capitão Farron",
+      "text": "Outras unidades aliadas aqui possuem [Assault]. (+1 :rb_might: enquanto forem atacantes.)",
+      "source": "Other friendly units here have [Assault]. (+1 :rb_might: while they're attackers.)",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-016-298": {
+      "name": "Dupla Perigosa",
+      "text": "[Legion] — Quando você me jogar, conceda +2 :rb_might: a uma unidade neste turno. (Obtenha o efeito se você jogou outra carta neste turno.)",
+      "source": "[Legion] — When you play me, give a unit +2 :rb_might: this turn. (Get the effect if you've played another card this turn.)",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-017-298": {
+      "name": "Balista de Ferro",
+      "text": "Isto entra esgotado.:rb_exhaust:: Cause 2 de dano a uma unidade em um campo de batalha.",
+      "source": "This enters exhausted.:rb_exhaust:: Deal 2 to a unit at a battlefield.",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-018-298": {
+      "name": "Sabotador de Noxus",
+      "text": "As cartas [Hidden] dos seus oponentes não podem ser reveladas aqui.",
+      "source": "Your opponents' [Hidden] cards can't be revealed here.",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-019-298": {
+      "name": "Alma Irada",
+      "text": "Se você descartou uma carta neste turno, eu tenho [Assault] e [Ganking]. (+1 :rb_might: enquanto eu for um atacante. Posso me mover de campo de batalha para campo de batalha.)",
+      "source": "If you've discarded a card this turn, I have [Assault] and [Ganking]. (+1 :rb_might: while I'm an attacker. I can move from battlefield to battlefield.)",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-020-298": {
+      "name": "Campeão do ferro-velho",
+      "text": "[Legion] — Quando você me jogar, descarte 2, depois compre 2. (Obtenha o efeito se você jogou outra carta neste turno.)",
+      "source": "[Legion] — When you play me, discard 2, then draw 2. (Get the effect if you've played another card this turn.)",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-021-298": {
+      "name": "Disco Solar",
+      "text": ":rb_exhaust:: [Legion] — A próxima unidade que você jogar neste turno entra pronta. (Obtenha o efeito se você jogou outra carta neste turno.)",
+      "source": ":rb_exhaust:: [Legion] — The next unit you play this turn enters ready. (Get the effect if you've played another card this turn.)",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-022-298": {
+      "name": "Raio Termo",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Mate todos os equipamentos.",
+      "source": "[Action] (Play on your turn or in showdowns.)Kill all gear.",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-023-298": {
+      "name": "Arsenal não licenciado",
+      "text": "Descarte 1, :rb_exhaust:: Escolha uma unidade aliada. Na próxima vez que ela morrer neste turno, você poderá pagar :rb_rune_fury: para recuperá-la esgotada. (Envie-a para a base. Isto não é um movimento.)",
+      "source": "Discard 1, :rb_exhaust:: Choose a friendly unit. The next time it dies this turn, you may pay :rb_rune_fury: to recall it exhausted instead. (Send it to base. This isn't a move.)",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-024-298": {
+      "name": "Buscador do Vazio",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Cause 4 de dano a uma unidade em um campo de batalha. Compre 1.",
+      "source": "[Action] (Play on your turn or in showdowns.)Deal 4 to a unit at a battlefield. Draw 1.",
+      "updatedAt": "2026-09-25T20:06:47.310Z",
+      "provider": "external-worklist"
+    },
+    "ogn-025-298": {
+      "name": "Fúria Cega",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Cada oponente revela a carta do topo do seu Main Deck. Escolha uma e bana-a, depois jogue-a, ignorando seu custo. Em seguida, recicle o restante.",
+      "source": "[Action] (Play on your turn or in showdowns.)Each opponent reveals the top card of their Main Deck. Choose one and banish it, then play it, ignoring its cost. Then recycle the rest.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-026-298": {
+      "name": "Brynhir Canção do Trovão",
+      "text": "Quando você me jogar, os oponentes não podem jogar cartas neste turno.",
+      "source": "When you play me, opponents can't play cards this turn.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-027-298": {
+      "name": "Darius - Trifariano",
+      "text": "Quando você jogar sua segunda carta em um turno, conceda-me +2 :rb_might: neste turno e deixe-me pronto.",
+      "source": "When you play your second card in a turn, give me +2 :rb_might: this turn and ready me.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-027a-298": {
+      "name": "Darius - Trifariano (Arte Alternativa)",
+      "text": "Quando você jogar sua segunda carta em um turno, conceda-me +2 :rb_might: neste turno e deixe-me pronto.",
+      "source": "When you play your second card in a turn, give me +2 :rb_might: this turn and ready me.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-028-298": {
+      "name": "Draven - Exibicionista",
+      "text": "Meu Might é aumentado pelos seus pontos.",
+      "source": "My Might is increased by your points.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-029-298": {
+      "name": "Estrela Cadente",
+      "text": "Cause 3 de dano a uma unidade. Cause 3 de dano a uma unidade.",
+      "source": "Deal 3 to a unit.Deal 3 to a unit.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-030-298": {
+      "name": "Jinx - Demolidora",
+      "text": "[Accelerate] (Você pode pagar :rb_energy_1::rb_rune_fury: como um custo adicional para fazer com que eu entre pronto.)[Assault 2] (+2 :rb_might: enquanto eu for um atacante.)Quando você me jogar, descarte 2.",
+      "source": "[Accelerate] (You may pay :rb_energy_1::rb_rune_fury: as an additional cost to have me enter ready.)[Assault 2] (+2 :rb_might: while I'm an attacker.)When you play me, discard 2.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-030a-298": {
+      "name": "Jinx - Demolidora (Arte Alternativa)",
+      "text": "[Accelerate] (Você pode pagar :rb_energy_1::rb_rune_fury: como um custo adicional para fazer com que eu entre pronto.)[Assault 2] (+2 :rb_might: enquanto eu for um atacante.)Quando você me jogar, descarte 2.",
+      "source": "[Accelerate] (You may pay :rb_energy_1::rb_rune_fury: as an additional cost to have me enter ready.)[Assault 2] (+2 :rb_might: while I'm an attacker.)When you play me, discard 2.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-031-298": {
+      "name": "Incendiário Irritado",
+      "text": "Quando você me jogar, a próxima magia que você jogar neste turno custa :rb_energy_5: a menos.",
+      "source": "When you play me, the next spell you play this turn costs :rb_energy_5: less.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-032-298": {
+      "name": "Tomo Nascido do Corvo",
+      "text": ":rb_exhaust:: A próxima magia que você jogar neste turno causa 1 Dano Bônus. (Cada instância de dano que a magia causa é aumentada em 1.)",
+      "source": ":rb_exhaust:: The next spell you play this turn deals 1 Bonus Damage. (Each instance of damage the spell deals is increased by 1.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-033-298": {
+      "name": "Extorsão",
+      "text": "[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Escolha uma unidade inimiga. Cause 6 de dano a ela, a menos que o controlador dela faça você comprar 2.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)Choose an enemy unit. Deal 6 to it unless its controller has you draw 2.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-034-298": {
+      "name": "Tryndamere - Bárbaro",
+      "text": "Quando eu conquistar após um ataque, se você atribuiu 5 ou mais de dano excedente a unidades inimigas, você pontua 1 ponto.",
+      "source": "When I conquer after an attack, if you assigned 5 or more excess damage to enemy units, you score 1 point.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-035-298": {
+      "name": "Vayne - Caçadora",
+      "text": "[Assault 3] (+3 :rb_might: enquanto eu for um atacante.)Se um oponente controlar um campo de batalha, eu entro pronta.Quando eu conquistar, você pode pagar :rb_energy_1: para retornar-me para a mão do meu dono.",
+      "source": "[Assault 3] (+3 :rb_might: while I'm an attacker.)If an opponent controls a battlefield, I enter ready.When I conquer, you may pay :rb_energy_1: to return me to my owner's hand.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-036-298": {
+      "name": "Vi - Destrutiva",
+      "text": "[Ganking] (Posso me mover de campo de batalha para campo de batalha.)Recicle 1 do seu lixo: Conceda-me +1 :rb_might: neste turno.",
+      "source": "[Ganking] (I can move from battlefield to battlefield.)Recycle 1 from your trash: Give me +1 :rb_might: this turn.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-037-298": {
+      "name": "Fênix Imortal",
+      "text": "[Assault 2] (+2 :rb_might: enquanto eu for um atacante.)Quando você matar uma unidade com uma magia, você pode pagar :rb_energy_1::rb_rune_fury: para me jogar do seu lixo.",
+      "source": "[Assault 2] (+2 :rb_might: while I'm an attacker.)When you kill a unit with a spell, you may pay :rb_energy_1::rb_rune_fury: to play me from your trash.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-038-298": {
+      "name": "Kadregrin, o Infernal",
+      "text": "Quando você me jogar, compre 1 para cada uma de suas unidades [Mighty]. (Uma unidade é Poderosa enquanto tiver 5+ :rb_might:.)",
+      "source": "When you play me, draw 1 for each of your [Mighty] units. (A unit is Mighty while it has 5+ :rb_might:.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-039-298": {
+      "name": "Kai'Sa - Sobrevivente",
+      "text": "[Accelerate] (Você pode pagar :rb_energy_1::rb_rune_fury: como um custo adicional para fazer com que eu entre pronto.)Quando eu conquistar, compre 1.",
+      "source": "[Accelerate] (You may pay :rb_energy_1::rb_rune_fury: as an additional cost to have me enter ready.)When I conquer, draw 1.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-039a-298": {
+      "name": "Kai'Sa - Sobrevivente (Arte Alternativa)",
+      "text": "[Accelerate] (Você pode pagar :rb_energy_1::rb_rune_fury: como um custo adicional para fazer com que eu entre pronto.)Quando eu conquistar, compre 1.",
+      "source": "[Accelerate] (You may pay :rb_energy_1::rb_rune_fury: as an additional cost to have me enter ready.)When I conquer, draw 1.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-040-298": {
+      "name": "Selo da Raiva",
+      "text": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_fury:. (Habilidades que adicionam recursos não podem receber reações.)",
+      "source": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_fury:. (Abilities that add resources can't be reacted to.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-041-298": {
+      "name": "Volibear - Furioso",
+      "text": "[Deflect 2] (Os oponentes devem pagar :rb_rune_rainbow::rb_rune_rainbow: para me escolher com uma magia ou habilidade.)Quando eu atacar, cause 5 de dano dividido entre qualquer número de unidades inimigas aqui.",
+      "source": "[Deflect 2] (Opponents must pay :rb_rune_rainbow::rb_rune_rainbow: to choose me with a spell or ability.)When I attack, deal 5 damage split among any number of enemy units here.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-041a-298": {
+      "name": "Volibear - Furioso (Arte Alternativa)",
+      "text": "[Deflect 2] (Os oponentes devem pagar :rb_rune_rainbow::rb_rune_rainbow: para me escolher com uma magia ou habilidade.)Quando eu atacar, cause 5 de dano dividido entre qualquer número de unidades inimigas aqui.",
+      "source": "[Deflect 2] (Opponents must pay :rb_rune_rainbow::rb_rune_rainbow: to choose me with a spell or ability.)When I attack, deal 5 damage split among any number of enemy units here.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-043-298": {
+      "name": "Charme",
+      "text": "Mova uma unidade inimiga.",
+      "source": "Move an enemy unit.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-044-298": {
+      "name": "Guardião Mecânico",
+      "text": "Ao me jogar, você pode pagar :rb_rune_calm: como um custo adicional. Se fizer isso, compre 1.",
+      "source": "As you play me, you may pay :rb_rune_calm: as an additional cost. If you do, draw 1.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-045-298": {
+      "name": "Desafiar",
+      "text": "[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Anule uma magia que custe no máximo :rb_energy_4: e no máximo :rb_rune_rainbow:.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)Counter a spell that costs no more than :rb_energy_4: and no more than :rb_rune_rainbow:.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-046-298": {
+      "name": "En Garde",
+      "text": "[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Conceda +1 :rb_might: a uma unidade aliada neste turno, e depois um adicional de +1 :rb_might: neste turno se ela for a única unidade que você controla lá.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)Give a friendly unit +1 :rb_might: this turn, then an additional +1 :rb_might: this turn if it is the only unit you control there.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-047-298": {
+      "name": "Encontre Seu Centro",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Se a pontuação de um oponente estiver a até 3 pontos da Pontuação de Vitória, isto custa :rb_energy_2: a menos. Compre 1 e canalize 1 runa esgotada.",
+      "source": "[Action] (Play on your turn or in showdowns.)If an opponent's score is within 3 points of the Victory Score, this costs :rb_energy_2: less.Draw 1 and channel 1 rune exhausted.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-048-298": {
+      "name": "Meditação",
+      "text": "[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Como um custo adicional para jogar isto, você pode esgotar uma unidade aliada. Se fizer isso, compre 2. Caso contrário, compre 1.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)As an additional cost to play this, you may exhaust a friendly unit. If you do, draw 2. Otherwise, draw 1.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-050-298": {
+      "name": "Prisão de Runas",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Atordoe uma unidade. (Ela não causa dano de combate neste turno.)",
+      "source": "[Action] (Play on your turn or in showdowns.)Stun a unit. (It doesn't deal combat damage this turn.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-051-298": {
+      "name": "Portador de Escudo Solari",
+      "text": "Quando você me jogar, atordoe uma unidade. (Ela não causa dano de combate neste turno.)",
+      "source": "When you play me, stun a unit. (It doesn't deal combat damage this turn.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-052-298": {
+      "name": "Poro Valente",
+      "text": "[Shield] (+1 :rb_might: enquanto eu for um defensor.)",
+      "source": "[Shield] (+1 :rb_might: while I'm a defender.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-053-298": {
+      "name": "Ficar Unidos",
+      "text": "[Hidden] (Esconda agora por :rb_rune_rainbow: para reagir mais tarde por :rb_energy_0:.)[Action] (Jogue no seu turno ou em confrontos.)Aprimore uma unidade aliada. Aprimoramentos concedem um adicional de +1 :rb_might: para unidades aliadas neste turno. (Para aprimorar uma unidade, dê a ela um bônus de +1 :rb_might: se ela já não tiver um.)",
+      "source": "[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.)[Action] (Play on your turn or in showdowns.)Buff a friendly unit. Buffs give an additional +1 :rb_might: to friendly units this turn. (To buff a unit, give it a +1 :rb_might: buff if it doesn't already have one.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-054-298": {
+      "name": "Guardião Iluminado pelo Sol",
+      "text": "[Shield] (+1 :rb_might: enquanto eu for um defensor.)[Tank] (O dano de combate deve ser atribuído a mim primeiro.)",
+      "source": "[Shield] (+1 :rb_might: while I'm a defender.)[Tank] (I must be assigned combat damage first.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-055-298": {
+      "name": "Portador da Água",
+      "text": "Enquanto eu estiver atacando ou defendendo sozinho, eu tenho +2 :rb_might:.",
+      "source": "While I'm attacking or defending alone, I have +2 :rb_might:.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-056-298": {
+      "name": "Adaptatron",
+      "text": "Quando eu conquistar, você pode matar um equipamento. Se fizer isso, aprimore-me. (Se eu não tiver um aprimoramento, recebo um bônus de +1 :rb_might:.)",
+      "source": "When I conquer, you may kill a gear. If you do, buff me. (If I don't have a buff, I get a +1 :rb_might: buff.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-057-298": {
+      "name": "Bloquear",
+      "text": "[Hidden] (Esconda agora por :rb_rune_rainbow: para reagir mais tarde por :rb_energy_0:.)[Action] (Jogue no seu turno ou em confrontos.)Conceda [Shield 3] e [Tank] a uma unidade neste turno. (+3 :rb_might: enquanto ela for uma defensora. O dano de combate deve ser atribuído a ela primeiro.)",
+      "source": "[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.)[Action] (Play on your turn or in showdowns.)Give a unit [Shield 3] and [Tank] this turn. (+3 :rb_might: while it's a defender. It must be assigned combat damage first.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-058-298": {
+      "name": "Disciplina",
+      "text": "[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Conceda +2 :rb_might: a uma unidade neste turno. Compre 1.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)Give a unit +2 :rb_might: this turn. Draw 1.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-059-298": {
+      "name": "Arauto do Eclipse",
+      "text": "Quando você atordoar uma unidade inimiga, deixe-me pronto e conceda-me +1 :rb_might: neste turno.",
+      "source": "When you stun an enemy unit, ready me and give me +1 :rb_might: this turn.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-060-298": {
+      "name": "Máscara da Previsão",
+      "text": "Quando uma unidade aliada atacar ou defender sozinha, conceda a ela +1 :rb_might: neste turno.",
+      "source": "When a friendly unit attacks or defends alone, give it +1 :rb_might: this turn.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-061-298": {
+      "name": "Pastor de Poros",
+      "text": "Quando você me jogar, se você controlar um Poro, aprimore-me e compre 1. (Se eu não tiver um aprimoramento, recebo um bônus de +1 :rb_might:.)",
+      "source": "When you play me, if you control a Poro, buff me and draw 1. (If I don't have a buff, I get a +1 :rb_might: buff.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-062-298": {
+      "name": "Reforçar",
+      "text": "Olhe as 5 cartas do topo do seu Main Deck. Você pode banir uma unidade dentre elas e depois jogá-la, reduzindo seu custo em :rb_energy_5:. Recicle as cartas restantes.",
+      "source": "Look at the top 5 cards of your Main Deck. You may banish a unit from among them, then play it, reducing its cost by :rb_energy_5:. Recycle the remaining cards.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-063-298": {
+      "name": "Refúgio do Espírito",
+      "text": "Quando você jogar isto, aprimore uma unidade aliada. (Se ela não tiver um aprimoramento, ela recebe um bônus de +1 :rb_might:.) Unidades aliadas aprimoradas possuem [Deflect] caso já não o possuíssem. (Os oponentes devem pagar :rb_rune_rainbow: para escolher essas unidades com uma magia ou habilidade.)",
+      "source": "When you play this, buff a friendly unit. (If it doesn't have a buff, it gets a +1 :rb_might: buff.)Friendly buffed units have [Deflect] if they didn't already. (Opponents must pay :rb_rune_rainbow: to choose those units with a spell or ability.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-064-298": {
+      "name": "Muro de Vento",
+      "text": "[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Anule uma magia.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)Counter a spell.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-065-298": {
+      "name": "Ancião Sábio",
+      "text": "Enquanto eu estiver aprimorado, eu tenho um adicional de +1 :rb_might:.",
+      "source": "While I'm buffed, I have an additional +1 :rb_might:.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-066-298": {
+      "name": "Ahri - Sedutora",
+      "text": "Quando eu dominar, você pontua 1 ponto.",
+      "source": "When I hold, you score 1 point.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-066a-298": {
+      "name": "Ahri - Sedutora (Arte Alternativa)",
+      "text": "Quando eu dominar, você pontua 1 ponto.",
+      "source": "When I hold, you score 1 point.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-067-298": {
+      "name": "Blitzcrank - Impassível",
+      "text": "[Tank] (O dano de combate deve ser atribuído a mim primeiro.)Quando você me jogar em um campo de batalha, você pode mover uma unidade inimiga para cá. Quando eu dominar, retorne-me para a mão do meu dono.",
+      "source": "[Tank] (I must be assigned combat damage first.)When you play me to a battlefield, you may move an enemy unit to here.When I hold, return me to my owner's hand.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-068-298": {
+      "name": "Caitlyn - Patrulheira",
+      "text": "O dano de combate deve ser atribuído a mim por último.:rb_exhaust:: Cause um dano igual ao meu Might a uma unidade em um campo de batalha. Use esta habilidade apenas enquanto eu estiver em um campo de batalha.",
+      "source": "I must be assigned combat damage last.:rb_exhaust:: Deal damage equal to my Might to a unit at a battlefield. Use this ability only while I'm at a battlefield.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-069-298": {
+      "name": "Última Batalha",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Dobre o Might de uma unidade aliada neste turno. Conceda [Temporary] a ela. (Mate-a no início da Beginning Phase do controlador dela, antes da pontuação.)",
+      "source": "[Action] (Play on your turn or in showdowns.)Double a friendly unit's Might this turn. Give it [Temporary]. (Kill it at the start of its controller's Beginning Phase, before scoring.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-070-298": {
+      "name": "Guardião Caçador de Magos",
+      "text": "Enquanto eu estiver em um campo de batalha, os oponentes só podem jogar unidades em sua base. Enquanto eu estiver em um campo de batalha, magias e habilidades não podem deixar unidades e equipamentos inimigos prontos.",
+      "source": "While I'm at a battlefield, opponents can only play units to their base.While I'm at a battlefield, spells and abilities can't ready enemy units and gear.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-071-298": {
+      "name": "Lembrancinhas de Festa",
+      "text": "Cada outro jogador escolhe Cartas ou Runas. Para cada jogador que escolher Cartas, você e esse jogador compram 1 cada. Para cada jogador que escolher Runas, você e esse jogador canalizam 1 runa esgotada cada.",
+      "source": "Each other player chooses Cards or Runes. For each player that chooses Cards, you and that player each draw 1. For each player that chooses Runes, you and that player each channel 1 rune exhausted.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-072-298": {
+      "name": "Santuário Solari",
+      "text": "Quando você matar uma unidade inimiga atordoada, você pode esgotar isto para comprar 1.",
+      "source": "When you kill a stunned enemy unit, you may exhaust this to draw 1.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-073-298": {
+      "name": "Sona - Harmoniosa",
+      "text": "Enquanto eu estiver em um campo de batalha, deixe 4 runas aliadas prontas no final do seu turno.",
+      "source": "While I'm at a battlefield, ready 4 friendly runes at the end of your turn.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-074-298": {
+      "name": "Taric - Protetor",
+      "text": "[Shield] (+1 :rb_might: enquanto eu for um defensor.)[Tank] (O dano de combate deve ser atribuído a mim primeiro.)Outras unidades aliadas aqui possuem [Shield].",
+      "source": "[Shield] (+1 :rb_might: while I'm a defender.)[Tank] (I must be assigned combat damage first.)Other friendly units here have [Shield].",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-075-298": {
+      "name": "Povo-Fada Saboroso",
+      "text": "[Accelerate] (Você pode pagar :rb_energy_1::rb_rune_calm: como um custo adicional para fazer com que eu entre pronto.)[Deathknell] — Canalize 2 runas esgotadas e compre 1. (Quando eu morrer, obtenha o efeito.)",
+      "source": "[Accelerate] (You may pay :rb_energy_1::rb_rune_calm: as an additional cost to have me enter ready.)[Deathknell] — Channel 2 runes exhausted and draw 1. (When I die, get the effect.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-076-298": {
+      "name": "Yasuo - Arrependido",
+      "text": "Quando eu atacar, cause um dano igual ao meu Might a uma unidade inimiga aqui.",
+      "source": "When I attack, deal damage equal to my Might to an enemy unit here.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-076a-298": {
+      "name": "Yasuo - Arrependido (Arte Alternativa)",
+      "text": "Quando eu atacar, cause um dano igual ao meu Might a uma unidade inimiga aqui.",
+      "source": "When I attack, deal damage equal to my Might to an enemy unit here.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-077-298": {
+      "name": "Ampulheta de Zhonya",
+      "text": "[Hidden] (Esconda agora por :rb_rune_rainbow: para reagir mais tarde por :rb_energy_0:.)Na próxima vez que uma unidade aliada morreria, mate isto em vez disso. Recupere aquela unidade esgotada. (Envie-a para a base. Isto não é um movimento.)",
+      "source": "[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.)The next time a friendly unit would die, kill this instead. Recall that unit exhausted. (Send it to base. This isn't a move.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-078-298": {
+      "name": "Lee Sin - Ascético",
+      "text": "[Shield] (+1 :rb_might: enquanto eu for um defensor.):rb_exhaust:: Aprimore-me. (Eu recebo um bônus de +1 :rb_might:.) Posso ter qualquer quantidade de aprimoramentos.",
+      "source": "[Shield] (+1 :rb_might: while I'm a defender.):rb_exhaust:: Buff me. (I get a +1 :rb_might: buff.)I can have any number of buffs.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-078a-298": {
+      "name": "Lee Sin - Ascético (Arte Alternativa)",
+      "text": "[Shield] (+1 :rb_might: enquanto eu for um defensor.):rb_exhaust:: Aprimore-me. (Eu recebo um bônus de +1 :rb_might:.) Posso ter qualquer quantidade de aprimoramentos.",
+      "source": "[Shield] (+1 :rb_might: while I'm a defender.):rb_exhaust:: Buff me. (I get a +1 :rb_might: buff.)I can have any number of buffs.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-079-298": {
+      "name": "Leona - Zelota",
+      "text": "Se a pontuação de um oponente estiver a até 3 pontos da Pontuação de Vitória, eu entro pronta. Unidades inimigas atordoadas aqui têm -8 :rb_might:, até um mínimo de 1 :rb_might:.",
+      "source": "If an opponent's score is within 3 points of the Victory Score, I enter ready.Stunned enemy units here have -8 :rb_might:, to a minimum of 1 :rb_might:.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-079a-298": {
+      "name": "Leona - Zelota (Arte Alternativa)",
+      "text": "Se a pontuação de um oponente estiver a até 3 pontos da Pontuação de Vitória, eu entro pronta. Unidades inimigas atordoadas aqui têm -8 :rb_might:, até um mínimo de 1 :rb_might:.",
+      "source": "If an opponent's score is within 3 points of the Victory Score, I enter ready.Stunned enemy units here have -8 :rb_might:, to a minimum of 1 :rb_might:.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-080-298": {
+      "name": "Inversão Mística",
+      "text": "[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Assuma o controle de uma magia. Você pode fazer novas escolhas para ela.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)Gain control of a spell. You may make new choices for it.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-081-298": {
+      "name": "Selo do Foco",
+      "text": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_calm:. (Habilidades que adicionam recursos não podem receber reações.)",
+      "source": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_calm:. (Abilities that add resources can't be reacted to.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-082-298": {
+      "name": "Protetor da Chama Branca",
+      "text": "Quando você me jogar, conceda +8 :rb_might: a uma unidade neste turno.",
+      "source": "When you play me, give a unit +8 :rb_might: this turn.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-083-298": {
+      "name": "Consultar o Passado",
+      "text": "[Hidden] (Esconda agora por :rb_rune_rainbow: para reagir mais tarde por :rb_energy_0:.)[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Compre 2.",
+      "source": "[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.)[Reaction] (Play any time, even before spells and abilities resolve.)Draw 2.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-084-298": {
+      "name": "Aprendiz Desejoso",
+      "text": "Enquanto eu estiver em um campo de batalha, os custos de Energia para as magias que você joga são reduzidos em :rb_energy_1:, até um mínimo de :rb_energy_1:.",
+      "source": "While I'm at a battlefield, the Energy costs for spells you play is reduced by :rb_energy_1:, to a minimum of :rb_energy_1:.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-085-298": {
+      "name": "Cometa Cadente",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Cause 6 a uma unidade em um campo de batalha.",
+      "source": "[Action] (Play on your turn or in showdowns.)Deal 6 to a unit at a battlefield.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-086-298": {
+      "name": "Colosso Jewelado",
+      "text": "[Vision] (Quando você me jogar, olhe a carta do topo do seu Main Deck. Você pode reciclá-la.)[Shield] (+1 :rb_might: enquanto eu for um defensor.)",
+      "source": "[Vision] (When you play me, look at the top card of your Main Deck. You may recycle it.)[Shield] (+1 :rb_might: while I'm a defender.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-087-298": {
+      "name": "Yordle Palestrante",
+      "text": "[Tank] (O dano de combate deve ser atribuído a mim primeiro.)Quando você me jogar, compre 1.",
+      "source": "[Tank] (I must be assigned combat damage first.)When you play me, draw 1.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-090-298": {
+      "name": "Orbe do Arrependimento",
+      "text": ":rb_exhaust:: Conceda -1 :rb_might: a uma unidade neste turno, até um mínimo de 1 :rb_might:.",
+      "source": ":rb_exhaust:: Give a unit -1 :rb_might: this turn, to a minimum of 1 :rb_might:.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-091-298": {
+      "name": "Equipe de Apoio",
+      "text": "Quando você jogar um equipamento, deixe-me pronto.",
+      "source": "When you play a gear, ready me.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-092-298": {
+      "name": "Rex das Marés",
+      "text": "Quando você me jogar, cause 6 a uma unidade inimiga em um campo de batalha.",
+      "source": "When you play me, deal 6 to an enemy unit at a battlefield.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-093-298": {
+      "name": "Cortina de Fumaça",
+      "text": "[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Conceda -4 :rb_might: a uma unidade neste turno, até um mínimo de 1 :rb_might:.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)Give a unit -4 :rb_might: this turn, to a minimum of 1 :rb_might:.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-094-298": {
+      "name": "Chamado de Fada",
+      "text": "[Hidden] (Esconda agora por :rb_rune_rainbow: para reagir mais tarde por :rb_energy_0:.)[Action] (Jogue no seu turno ou em confrontos.)Jogue uma ficha de unidade Fada pronta de 3 :rb_might: com [Temporary]. (Mate-a no início da Beginning Phase do controlador dela, antes da pontuação.)",
+      "source": "[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.)[Action] (Play on your turn or in showdowns.)Play a ready 3 :rb_might: Sprite unit token with [Temporary]. (Kill it at the start of its controller's Beginning Phase, before scoring.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-095-298": {
+      "name": "Estupefazer",
+      "text": "[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Conceda -1 :rb_might: a uma unidade neste turno, até um mínimo de 1 :rb_might:. Compre 1.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)Give a unit -1 :rb_might: this turn, to a minimum of 1 :rb_might:. Draw 1.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-096-298": {
+      "name": "Sentinela Vigilante",
+      "text": "[Deathknell] — Compre 1. (Quando eu morrer, obtenha o efeito.)",
+      "source": "[Deathknell] — Draw 1. (When I die, get the effect.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-097-298": {
+      "name": "Fada do Fruto-explosivo",
+      "text": "[Hidden] (Esconda agora por :rb_rune_rainbow: para reagir mais tarde por :rb_energy_0:.)Quando você me jogar, conceda -2 :rb_might: a uma unidade neste turno, até um mínimo de 1 :rb_might:.",
+      "source": "[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.)When you play me, give a unit -2 :rb_might: this turn, to a minimum of 1 :rb_might:.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-098-298": {
+      "name": "Conduto de Energia",
+      "text": ":rb_exhaust:: [Reaction] — [Add] :rb_energy_1:. (Habilidades que adicionam recursos não podem receber reações.)",
+      "source": ":rb_exhaust:: [Reaction] — [Add] :rb_energy_1:. (Abilities that add resources can't be reacted to.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-099-298": {
+      "name": "Catador de Lixo",
+      "text": "Recicle 3 do seu lixo, :rb_energy_1:, :rb_exhaust:: Compre 1.",
+      "source": "Recycle 3 from your trash, :rb_energy_1:, :rb_exhaust:: Draw 1.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-100-298": {
+      "name": "Vidente de Gemas",
+      "text": "[Vision] (Quando você me jogar, olhe a carta do topo do seu Main Deck. Você pode reciclá-la.)Outras unidades aliadas possuem [Vision].",
+      "source": "[Vision] (When you play me, look at the top card of your Main Deck. You may recycle it.)Other friendly units have [Vision].",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-101-298": {
+      "name": "Bolsa de Cogumelos",
+      "text": "No início da sua Beginning Phase, se você controlar uma carta virada para baixo em um campo de batalha, compre 1.",
+      "source": "At the start of your Beginning Phase, if you control a facedown card at a battlefield, draw 1.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-102-298": {
+      "name": "Resgate pelo Portal",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Bana uma unidade aliada e depois jogue-a na base, ignorando seu custo.",
+      "source": "[Action] (Play on your turn or in showdowns.)Banish a friendly unit, then play it to base, ignoring its cost.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-103-298": {
+      "name": "Estudante de Florescênervo",
+      "text": "Quando você jogar uma magia, conceda-me +1 :rb_might: neste turno.",
+      "source": "When you play a spell, give me +1 :rb_might: this turn.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-104-298": {
+      "name": "Retirada",
+      "text": "[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Retorne uma unidade aliada para a mão de seu dono. O dono dela canaliza 1 runa esgotada.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)Return a friendly unit to its owner's hand. Its owner channels 1 rune exhausted.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-105-298": {
+      "name": "Singularidade",
+      "text": "Cause 6 de dano a cada uma de até duas unidades.",
+      "source": "Deal 6 to each of up to two units.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-106-298": {
+      "name": "Mãe das Fadas",
+      "text": "Quando você me jogar, jogue uma ficha de unidade Fada pronta de 3 :rb_might: com [Temporary] aqui. (Mate-a no início da Beginning Phase do controlador dela, antes da pontuação.)",
+      "source": "When you play me, play a ready 3 :rb_might: Sprite unit token with [Temporary] here. (Kill it at the start of its controller's Beginning Phase, before scoring.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-107-298": {
+      "name": "Ava Realizadora",
+      "text": "Quando eu atacar, você pode pagar :rb_rune_mind: para jogar uma carta com [Hidden] da sua mão aqui, ignorando seu custo.",
+      "source": "When I attack, you may pay :rb_rune_mind: to play a card with [Hidden] from your hand here, ignoring its cost.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-108-298": {
+      "name": "Mutação Convergente",
+      "text": "[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Escolha uma unidade aliada. Neste turno, aumente o Might dela para o Might de outra unidade aliada.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)Choose a friendly unit. This turn, increase its Might to the Might of another friendly unit.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-109-298": {
+      "name": "Dr. Mundo - Especialista",
+      "text": "Meu Might é aumentado pelo número de cartas no seu lixo. No início da sua Beginning Phase, recicle 3 do seu lixo.",
+      "source": "My Might is increased by the number of cards in your trash.At the start of your Beginning Phase, recycle 3 from your trash.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-110-298": {
+      "name": "Ekko - Recorrente",
+      "text": "[Accelerate] (Você pode pagar :rb_energy_1::rb_rune_mind: como um custo adicional para fazer com que eu entre pronto.)[Deathknell] — Recicle-me para deixar suas runas prontas. (Quando eu morrer, obtenha o efeito.)",
+      "source": "[Accelerate] (You may pay :rb_energy_1::rb_rune_mind: as an additional cost to have me enter ready.)[Deathknell] — Recycle me to ready your runes. (When I die, get the effect.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-111-298": {
+      "name": "Heimerdinger - Inventor",
+      "text": "Eu tenho todas as habilidades :rb_exhaust: de todas as lendas, unidades e equipamentos aliados.",
+      "source": "I have all :rb_exhaust: abilities of all friendly legends, units, and gear.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-112-298": {
+      "name": "Kai'Sa - Evolutiva",
+      "text": "[Ganking] (Posso me mover de campo de batalha para campo de batalha.)Quando eu conquistar, você pode jogar uma magia do seu lixo com custo de Energia menor que seus pontos sem pagar seu custo de Energia. Depois recicle-a. (Você ainda deve pagar o custo de Poder dela.)",
+      "source": "[Ganking] (I can move from battlefield to battlefield.)When I conquer, you may play a spell from your trash with Energy cost less than your points without paying its Energy cost. Then recycle it. (You must still pay its Power cost.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-112a-298": {
+      "name": "Kai'Sa - Evolutiva (Arte Alternativa)",
+      "text": "[Ganking] (Posso me mover de campo de batalha para campo de batalha.)Quando eu conquistar, você pode jogar uma magia do seu lixo com custo de Energia menor que seus pontos sem pagar seu custo de Energia. Depois recicle-a. (Você ainda deve pagar o custo de Poder dela.)",
+      "source": "[Ganking] (I can move from battlefield to battlefield.)When I conquer, you may play a spell from your trash with Energy cost less than your points without paying its Energy cost. Then recycle it. (You must still pay its Power cost.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-113-298": {
+      "name": "Malzahar - Fanático",
+      "text": "Mate uma unidade ou equipamento aliado, :rb_exhaust:: [Action] — [Add] :rb_rune_rainbow::rb_rune_rainbow:. (Use no seu turno ou em confrontos. Habilidades que adicionam recursos não podem receber reações.)",
+      "source": "Kill a friendly unit or gear, :rb_exhaust:: [Action] — [Add] :rb_rune_rainbow::rb_rune_rainbow:. (Use on your turn or in showdowns. Abilities that add resources can't be reacted to.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-114-298": {
+      "name": "Dia do Progresso",
+      "text": "Compre 4.",
+      "source": "Draw 4.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-115-298": {
+      "name": "Futuro Promissor",
+      "text": "Cada jogador olha as 5 cartas do topo do seu Main Deck, escolhe uma e recicla o restante. Começando pelo próximo jogador, cada jogador joga essas cartas, ignorando os custos de Energia. (Eles ainda devem pagar os custos de Poder.)",
+      "source": "Each player looks at the top 5 cards of their Main Deck, chooses one, then recycles the rest. Starting with the next player, each player plays those cards, ignoring Energy costs. (They must still pay Power costs.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-116-298": {
+      "name": "Observador de Mil Caudas",
+      "text": "[Accelerate] (Você pode pagar :rb_energy_1::rb_rune_mind: como um custo adicional para fazer com que eu entre pronto.)Quando você me jogar, conceda -3 :rb_might: às unidades inimigas neste turno, até um mínimo de 1 :rb_might:.",
+      "source": "[Accelerate] (You may pay :rb_energy_1::rb_rune_mind: as an additional cost to have me enter ready.)When you play me, give enemy units -3 :rb_might: this turn, to a minimum of 1 :rb_might:.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-117-298": {
+      "name": "Viktor - Inovador",
+      "text": "Quando você jogar uma carta no turno de um oponente, jogue uma ficha de unidade Recruta de 1 :rb_might: na sua base.",
+      "source": "When you play a card on an opponent's turn, play a 1 :rb_might: Recruit unit token in your base.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-117a-298": {
+      "name": "Viktor - Inovador (Arte Alternativa)",
+      "text": "Quando você jogar uma carta no turno de um oponente, jogue uma ficha de unidade Recruta de 1 :rb_might: na sua base.",
+      "source": "When you play a card on an opponent's turn, play a 1 :rb_might: Recruit unit token in your base.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-118-298": {
+      "name": "Aparição dos Ecoes",
+      "text": "A primeira vez que uma unidade aliada morre em cada turno, compre 1.",
+      "source": "The first time a friendly unit dies each turn, draw 1.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-119-298": {
+      "name": "Ahri - Inquisitiva",
+      "text": "Quando eu atacar ou defender, conceda -2 :rb_might: a uma unidade inimiga aqui neste turno, até um mínimo de 1 :rb_might:.",
+      "source": "When I attack or defend, give an enemy unit here -2 :rb_might: this turn, to a minimum of 1 :rb_might:.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-119a-298": {
+      "name": "Ahri - Inquisitiva (Arte Alternativa)",
+      "text": "Quando eu atacar ou defender, conceda -2 :rb_might: a uma unidade inimiga aqui neste turno, até um mínimo de 1 :rb_might:.",
+      "source": "When I attack or defend, give an enemy unit here -2 :rb_might: this turn, to a minimum of 1 :rb_might:.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-120-298": {
+      "name": "Selo da Percepção",
+      "text": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_mind:. (Habilidades que adicionam recursos não podem receber reações.)",
+      "source": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_mind:. (Abilities that add resources can't be reacted to.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-121-298": {
+      "name": "Teemo - Estrategista",
+      "text": "[Hidden] (Esconda agora por :rb_rune_rainbow: para reagir mais tarde por :rb_energy_0:.)Quando eu defender ou for jogado de [Hidden], revele as 5 cartas do topo do seu Main Deck. Cause 1 de dano a uma unidade inimiga aqui para cada carta com [Hidden], depois recicle-as.",
+      "source": "[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.)When I defend or I'm played from [Hidden], reveal the top 5 cards of your Main Deck. Deal 1 to an enemy unit here for each card with [Hidden], then recycle them.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-121a-298": {
+      "name": "Teemo - Estrategista (Arte Alternativa)",
+      "text": "[Hidden] (Esconda agora por :rb_rune_rainbow: para reagir mais tarde por :rb_energy_0:.)Quando eu defender ou for jogado de [Hidden], revele as 5 cartas do topo do seu Main Deck. Cause 1 de dano a uma unidade inimiga aqui para cada carta com [Hidden], depois recicle-as.",
+      "source": "[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.)When I defend or I'm played from [Hidden], reveal the top 5 cards of your Main Deck. Deal 1 to an enemy unit here for each card with [Hidden], then recycle them.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-122-298": {
+      "name": "Distorção Temporal",
+      "text": "Jogue um turno após este. Bana isto.",
+      "source": "Take a turn after this one. Banish this.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-123-298": {
+      "name": "Poder Desenfreado",
+      "text": "Esgote todas as unidades aliadas, depois cause 12 a TODAS as unidades em campos de batalha.",
+      "source": "Exhaust all friendly units, then deal 12 to ALL units at battlefields.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-124-298": {
+      "name": "Bar da Arena",
+      "text": ":rb_exhaust:: Aprimore uma unidade aliada esgotada. (Se ela não tiver um aprimoramento, ela recebe um bônus de +1 :rb_might:.)",
+      "source": ":rb_exhaust:: Buff an exhausted friendly unit. (If it doesn't have a buff, it gets a +1 :rb_might: buff.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-125-298": {
+      "name": "Valentão de Águas de Sentina",
+      "text": "Enquanto eu estiver aprimorado, eu tenho [Ganking]. (Posso me mover de campo de batalha para campo de batalha.)",
+      "source": "While I'm buffed, I have [Ganking]. (I can move from battlefield to battlefield.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-127-298": {
+      "name": "Bombardeio de Canhão",
+      "text": "[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Cause 2 de dano a todas as unidades inimigas em combate.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)Deal 2 to all enemy units in combat.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-128-298": {
+      "name": "Desafio",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Escolha uma unidade aliada e uma unidade inimiga. Elas causam dano igual aos seus Mights uma à outra.",
+      "source": "[Action] (Play on your turn or in showdowns.)Choose a friendly unit and an enemy unit. They deal damage equal to their Mights to each other.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-129-298": {
+      "name": "Confrontar",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Unidades que você joga neste turno entram prontas. Compre 1.",
+      "source": "[Action] (Play on your turn or in showdowns.)Units you play this turn enter ready. Draw 1.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-130-298": {
+      "name": "Corsária Atiradora",
+      "text": "Quando eu atacar, cause 1 a uma unidade inimiga aqui.",
+      "source": "When I attack, deal 1 to an enemy unit here.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-131-298": {
+      "name": "Dragão das Dunas",
+      "text": "Quando eu atacar, conceda-me +2 :rb_might: neste turno se houver uma unidade inimiga pronta aqui.",
+      "source": "When I attack, give me +2 :rb_might: this turn if there is a ready enemy unit here.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-132-298": {
+      "name": "Imediato",
+      "text": "Quando você me jogar, deixe outra unidade pronta.",
+      "source": "When you play me, ready another unit.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-133-298": {
+      "name": "Rajada de Lâminas",
+      "text": "[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Cause 1 a todas as unidades em campos de batalha.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)Deal 1 to all units at battlefields.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-134-298": {
+      "name": "Mobilizar",
+      "text": "Canalize 1 runa esgotada. Se não puder, compre 1.",
+      "source": "Channel 1 rune exhausted. If you can't, draw 1.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-135-298": {
+      "name": "Filhote de Pakaa",
+      "text": "[Hidden] (Esconda agora por :rb_rune_rainbow: para reagir mais tarde por :rb_energy_0:.)",
+      "source": "[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-136-298": {
+      "name": "Novato da Arena",
+      "text": "Quando você me jogar, aprimore outra unidade aliada. (Se ela não tiver um aprimoramento, ela recebe um bônus de +1 :rb_might:.)",
+      "source": "When you play me, buff another friendly unit. (If it doesn't have a buff, it gets a +1 :rb_might: buff.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-137-298": {
+      "name": "Urso Garra da Tempestade",
+      "text": "[Tank] (O dano de combate deve ser atribuído a mim primeiro.)Quando você me jogar, canalize 1 runa esgotada.",
+      "source": "[Tank] (I must be assigned combat damage first.)When you play me, channel 1 rune exhausted.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-138-298": {
+      "name": "Catalisador de Eons",
+      "text": "Canalize 2 runas esgotadas. Se você não pôde canalizar 2 runas desta forma, compre 1.",
+      "source": "Channel 2 runes exhausted. If you couldn't channel 2 runes this way, draw 1.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-139-298": {
+      "name": "Cithria de Campo das Nuvens",
+      "text": "Quando você jogar outra unidade, aprimore-me. (Se eu não tiver um aprimoramento, recebo um bônus de +1 :rb_might:.)",
+      "source": "When you play another unit, buff me. (If I don't have a buff, I get a +1 :rb_might: buff.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-140-298": {
+      "name": "Arauto das Escamas",
+      "text": "Os custos de Energia dos seus Dragões são reduzidos em :rb_energy_2:, até um mínimo de :rb_energy_1:.",
+      "source": "Your Dragons' Energy costs are reduced by :rb_energy_2:, to a minimum of :rb_energy_1:.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-141-298": {
+      "name": "Monge Kinkou",
+      "text": "Quando você me jogar, aprimore até duas outras unidades aliadas. (Cada uma que não tiver um aprimoramento recebe um bônus de +1 :rb_might:.)",
+      "source": "When you play me, buff up to two other friendly units. (Each one that doesn't have a buff gets a +1 :rb_might: buff.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-143-298": {
+      "name": "Refúgio dos Piratas",
+      "text": "Quando você deixar uma unidade aliada pronta, conceda a ela +1 :rb_might: neste turno.",
+      "source": "When you ready a friendly unit, give it +1 :rb_might: this turn.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-144-298": {
+      "name": "Espólios de Guerra",
+      "text": "[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Se uma unidade inimiga morreu neste turno, isto custa :rb_energy_2: a menos. Compre 2.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)If an enemy unit has died this turn, this costs :rb_energy_2: less.Draw 2.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-145-298": {
+      "name": "Espírito Indomável",
+      "text": "[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Previna todo o dano de magias e habilidades neste turno.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)Prevent all spell and ability damage this turn.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-146-298": {
+      "name": "Porrada",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Ao jogar isto, você pode gastar um aprimoramento como custo adicional. Se fizer isso, ignore o custo desta magia. Deixe uma unidade pronta.",
+      "source": "[Action] (Play on your turn or in showdowns.)As you play this, you may spend a buff as an additional cost. If you do, ignore this spell's cost.Ready a unit.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-147-298": {
+      "name": "Xamã Garra-Selvagem",
+      "text": "Quando você me jogar, você pode gastar um aprimoramento para aprimorar-me e deixar-me pronto. (Se eu não tiver um aprimoramento, recebo um bônus de +1 :rb_might:.)",
+      "source": "When you play me, you may spend a buff to buff me and ready me. (If I don't have a buff, I get a +1 :rb_might: buff.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-148-298": {
+      "name": "Anivia - Primitiva",
+      "text": "Quando eu atacar, cause 3 a todas as unidades inimigas aqui.",
+      "source": "When I attack, deal 3 to all enemy units here.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-149-298": {
+      "name": "Cipó-Mordedor Carnívoro",
+      "text": "Quando você me jogar, escolha uma unidade inimiga em um campo de batalha. Causamos dano igual aos nossos Mights um ao outro.",
+      "source": "When you play me, choose an enemy unit at a battlefield. We deal damage equal to our Mights to each other.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-150-298": {
+      "name": "Caçador de Krakens",
+      "text": "[Accelerate] (Você pode pagar :rb_energy_1::rb_rune_body: como um custo adicional para fazer com que eu entre pronto.)[Assault] (+1 :rb_might: enquanto eu for um atacante.)Ao me jogar, você pode gastar qualquer quantidade de aprimoramentos como custo adicional. Reduza meu custo em :rb_rune_body: para cada aprimoramento que você gastar.",
+      "source": "[Accelerate] (You may pay :rb_energy_1::rb_rune_body: as an additional cost to have me enter ready.)[Assault] (+1 :rb_might: while I'm an attacker.)As you play me, you may spend any number of buffs as an additional cost. Reduce my cost by :rb_rune_body: for each buff you spend.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-151-298": {
+      "name": "Lee Sin - Centrado",
+      "text": "[Accelerate] (Você pode pagar :rb_energy_1::rb_rune_body: como um custo adicional para fazer com que eu entre pronto.)Outras unidades aliadas aprimoradas no meu campo de batalha têm +2 :rb_might:.",
+      "source": "[Accelerate] (You may pay :rb_energy_1::rb_rune_body: as an additional cost to have me enter ready.)Other buffed friendly units at my battlefield have +2 :rb_might:.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-151a-298": {
+      "name": "Lee Sin - Centrado (Arte Alternativa)",
+      "text": "[Accelerate] (Você pode pagar :rb_energy_1::rb_rune_body: como um custo adicional para fazer com que eu entre pronto.)Outras unidades aliadas aprimoradas no meu campo de batalha têm +2 :rb_might:.",
+      "source": "[Accelerate] (You may pay :rb_energy_1::rb_rune_body: as an additional cost to have me enter ready.)Other buffed friendly units at my battlefield have +2 :rb_might:.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-152-298": {
+      "name": "Queda de Névoa",
+      "text": "Quando você aprimorar uma unidade aliada, você pode pagar :rb_rune_body: e esgotar isto para deixá-la pronta.",
+      "source": "When you buff a friendly unit, you may pay :rb_rune_body: and exhaust this to ready it.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-153-298": {
+      "name": "Operação Ostensiva",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Para cada unidade aliada, você pode gastar o aprimoramento dela para deixá-la pronta. Depois aprimore todas as unidades aliadas. (Cada uma que não tiver um aprimoramento recebe um bônus de +1 :rb_might:.)",
+      "source": "[Action] (Play on your turn or in showdowns.)For each friendly unit, you may spend its buff to ready it. Then buff all friendly units. (Each one that doesn't have a buff gets a +1 :rb_might: buff.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-154-298": {
+      "name": "Força Primitiva",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Conceda +7 :rb_might: a uma unidade neste turno.",
+      "source": "[Action] (Play on your turn or in showdowns.)Give a unit +7 :rb_might: this turn.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-155-298": {
+      "name": "Qiyana - Vitoriosa",
+      "text": "[Deflect] (Os oponentes devem pagar :rb_rune_rainbow: para me escolher com uma magia ou habilidade.)Quando eu conquistar, compre 1 ou canalize 1 runa esgotada.",
+      "source": "[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)When I conquer, draw 1 or channel 1 rune exhausted.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-156-298": {
+      "name": "Sabotagem",
+      "text": "Escolha um oponente. Ele revela a própria mão. Escolha uma carta que não seja unidade dela e recicle essa carta.",
+      "source": "Choose an opponent. They reveal their hand. Choose a non-unit card from it, and recycle that card.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-157-298": {
+      "name": "Udyr - O Selvagem",
+      "text": "Gaste meu aprimoramento: Escolha uma opção que você não tenha escolhido neste turno —Cause 2 a uma unidade em um campo de batalha. Atordoe uma unidade em um campo de batalha. Deixe-me pronto. Conceda-me [Ganking] neste turno.",
+      "source": "Spend my buff: Choose one you've not chosen this turn —Deal 2 to a unit at a battlefield.Stun a unit at a battlefield.Ready me.Give me [Ganking] this turn.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-158-298": {
+      "name": "Volibear - Imponente",
+      "text": "[Shield 3] (+3 :rb_might: enquanto eu for um defensor.)[Tank] (O dano de combate deve ser atribuído a mim primeiro.)Quando um oponente se mover para um campo de batalha diferente do meu, compre 1. (Bases não são campos de batalha.)",
+      "source": "[Shield 3] (+3 :rb_might: while I'm a defender.)[Tank] (I must be assigned combat damage first.)When an opponent moves to a battlefield other than mine, draw 1. (Bases are not battlefield.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-158a-298": {
+      "name": "Volibear - Imponente (Arte Alternativa)",
+      "text": "[Shield 3] (+3 :rb_might: enquanto eu for um defensor.)[Tank] (O dano de combate deve ser atribuído a mim primeiro.)Quando um oponente se mover para um campo de batalha diferente do meu, compre 1. (Bases não são campos de batalha.)",
+      "source": "[Shield 3] (+3 :rb_might: while I'm a defender.)[Tank] (I must be assigned combat damage first.)When an opponent moves to a battlefield other than mine, draw 1. (Bases are not battlefield.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-159-298": {
+      "name": "Warwick - Caçador",
+      "text": "Eu entro pronto. Quando eu atacar, mate todas as unidades inimigas danificadas aqui.",
+      "source": "I enter ready.When I attack, kill all damaged enemy units here.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-160-298": {
+      "name": "Aurora Deslumbrante",
+      "text": "No final do seu turno, revele cartas do topo do seu Main Deck até revelar uma unidade. Jogue-a, ignorando seu custo, e recicle o restante.",
+      "source": "At the end of your turn, reveal cards from the top of your Main Deck until you reveal a unit. Play it, ignoring its cost, and recycle the rest.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-161-298": {
+      "name": "Predador de Flor-morta",
+      "text": "[Deflect] (Os oponentes devem pagar :rb_rune_rainbow: para me escolher com uma magia ou habilidade.)Você pode me jogar em um campo de batalha inimigo ocupado.",
+      "source": "[Deflect] (Opponents must pay :rb_rune_rainbow: to choose me with a spell or ability.)You may play me to an occupied enemy battlefield.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-162-298": {
+      "name": "Miss Fortune - Capitã",
+      "text": "[Accelerate] (Você pode pagar :rb_energy_1::rb_rune_body: como um custo adicional para fazer com que eu entre pronto.)[Ganking] (Posso me mover de campo de batalha para campo de batalha.)A primeira vez que eu me mover em cada turno, você pode deixar outra coisa esgotada pronta.",
+      "source": "[Accelerate] (You may pay :rb_energy_1::rb_rune_body: as an additional cost to have me enter ready.)[Ganking] (I can move from battlefield to battlefield.)The first time I move each turn, you may ready something else that's exhausted.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-162a-298": {
+      "name": "Miss Fortune - Capitã (Arte Alternativa)",
+      "text": "[Accelerate] (Você pode pagar :rb_energy_1::rb_rune_body: como um custo adicional para fazer com que eu entre pronto.)[Ganking] (Posso me mover de campo de batalha para campo de batalha.)A primeira vez que eu me mover em cada turno, você pode deixar outra coisa esgotada pronta.",
+      "source": "[Accelerate] (You may pay :rb_energy_1::rb_rune_body: as an additional cost to have me enter ready.)[Ganking] (I can move from battlefield to battlefield.)The first time I move each turn, you may ready something else that's exhausted.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-163-298": {
+      "name": "Selo da Força",
+      "text": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_body:. (Habilidades que adicionam recursos não podem receber reações.)",
+      "source": ":rb_exhaust:: [Reaction] — [Add] :rb_rune_body:. (Abilities that add resources can't be reacted to.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-164-298": {
+      "name": "Sett - Brigão",
+      "text": "Quando eu for jogado e quando eu conquistar, aprimore-me. (Se eu não tiver um aprimoramento, recebo um bônus de +1 :rb_might:.) Gaste meu aprimoramento: Conceda-me +4 :rb_might: neste turno.",
+      "source": "When I'm played and when I conquer, buff me. (If I don't have a buff, I get a +1 :rb_might: buff.)Spend my buff: Give me +4 :rb_might: this turn.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-164a-298": {
+      "name": "Sett - Brigão (Arte Alternativa)",
+      "text": "Quando eu for jogado e quando eu conquistar, aprimore-me. (Se eu não tiver um aprimoramento, recebo um bônus de +1 :rb_might:.) Gaste meu aprimoramento: Conceda-me +4 :rb_might: neste turno.",
+      "source": "When I'm played and when I conquer, buff me. (If I don't have a buff, I get a +1 :rb_might: buff.)Spend my buff: Give me +4 :rb_might: this turn.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-165-298": {
+      "name": "Atendente do Cemitério",
+      "text": "Quando você me jogar, retorne uma unidade do seu lixo para a sua mão.",
+      "source": "When you play me, return a unit from your trash to your hand.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-167-298": {
+      "name": "Monge Brasa",
+      "text": "Quando você jogar uma carta de [Hidden], conceda-me +2 :rb_might: neste turno.",
+      "source": "When you play a card from [Hidden], give me +2 :rb_might: this turn.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-168-298": {
+      "name": "Lutar ou Correr",
+      "text": "[Hidden] (Esconda agora por :rb_rune_rainbow: para reagir mais tarde por :rb_energy_0:.)[Action] (Jogue no seu turno ou em confrontos.)Mova uma unidade de um campo de batalha para a sua base.",
+      "source": "[Hidden] (Hide now for :rb_rune_rainbow: to react with later for :rb_energy_0:.)[Action] (Play on your turn or in showdowns.)Move a unit from a battlefield to its base.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-169-298": {
+      "name": "Rajada de Vento",
+      "text": "[Reaction] (Jogue a qualquer momento, mesmo antes de magias e habilidades serem resolvidas.)Retorne uma unidade em um campo de batalha com 3 :rb_might: ou menos para a mão de seu dono.",
+      "source": "[Reaction] (Play any time, even before spells and abilities resolve.)Return a unit at a battlefield with 3 :rb_might: or less to its owner's hand.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-170-298": {
+      "name": "Retorno Mórbido",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.)Retorne uma unidade do seu lixo para a sua mão.",
+      "source": "[Action] (Play on your turn or in showdowns.)Return a unit from your trash to your hand.",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    },
+    "ogn-171-298": {
+      "name": "Poro Místico",
+      "text": "[Vision] (Quando você me jogar, olhe a carta do topo do seu Main Deck. Você pode reciclá-la.)",
+      "source": "[Vision] (When you play me, look at the top card of your Main Deck. You may recycle it.)",
+      "updatedAt": "2026-09-25T20:06:47.311Z",
+      "provider": "external-worklist"
+    }
+  }
+}
