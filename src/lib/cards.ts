@@ -18,6 +18,7 @@ export const DOMAIN_NAMES: Record<string, string> = {
   Chaos: 'Caos',
   Order: 'Ordem',
   Colorless: 'Incolor',
+  Rainbow: 'qualquer dominio',
 };
 
 export const TRANSLATION_STORAGE = 'rift-guia.translations.v2';
@@ -49,7 +50,12 @@ export function formatCardText(text?: string | null): string {
       return `[1 poder de ${DOMAIN_NAMES[key] || domain}]`;
     })
     .replace(/:rb_might:/g, '[forca]')
-    .replace(/\)(?=[A-Z])/g, ')\n');
+    .replace(/:rb_exhaust:/g, '[exaurir]')
+    .replace(/:rb_([a-z0-9_]+):/g, (_, token: string) => `[${token.replace(/_/g, ' ')}]`)
+    .replace(/\)(?=[A-Z\[])/g, ')\n')
+    .replace(/\. ?(?=\[?[A-Z])/g, '.\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
 }
 
 export function snapshotDate(value?: string): string {

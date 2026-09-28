@@ -34,7 +34,7 @@ export function CardDialog({ card, translation, isCustom, onClose, onSave, onRem
           <div className="rules">
             <section>
               <h3>Portugues</h3>
-              <p>{translation?.text || 'Esta carta ainda nao tem traducao.'}</p>
+              <p>{translation ? formatCardText(translation.text) : 'Esta carta ainda nao tem traducao.'}</p>
             </section>
             <section>
               <h3>Original</h3>

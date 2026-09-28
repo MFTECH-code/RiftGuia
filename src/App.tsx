@@ -3,7 +3,6 @@ import { AppHeader } from './components/AppHeader';
 import { CardDialog } from './components/CardDialog';
 import { useCardUrl } from './hooks/useCardUrl';
 import { useCatalog } from './hooks/useCatalog';
-import type { View } from './appTypes';
 import { buildGuides } from './lib/guides';
 import { mergedTranslation, readStoredTranslations, writeStoredTranslations } from './lib/cards';
 import type { RiftboundCard, TranslationEntry, TranslationMap } from './types';
@@ -12,10 +11,9 @@ import { LearnPage } from './pages/LearnPage';
 import { LibraryPage } from './pages/LibraryPage';
 
 export function App() {
-  const [view, setView] = React.useState<View>('library');
   const [customTranslations, setCustomTranslations] = React.useState<TranslationMap>(() => readStoredTranslations());
   const { cards, initialTranslations, status, setStatus } = useCatalog();
-  const { selectedCardId, openCardUrl, closeCardUrl } = useCardUrl();
+  const { view, selectedCardId, navigateView, openCardUrl, closeCardUrl } = useCardUrl();
 
   const translate = React.useCallback(
     (card: RiftboundCard): TranslationEntry | undefined => mergedTranslation(card, initialTranslations, customTranslations),
@@ -43,7 +41,7 @@ export function App() {
 
   return (
     <main>
-      <AppHeader status={status} view={view} onViewChange={setView} />
+      <AppHeader status={status} view={view} onViewChange={navigateView} />
 
       {view === 'library' && (
         <LibraryPage
