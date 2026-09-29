@@ -54,15 +54,24 @@ function inferred(card: RiftboundCard): DeckSection {
 }
 
 function aliases(card: RiftboundCard): string[] {
-  const result = [card.riftbound_id];
-  const set = card.set?.set_id;
-  const number = card.collector_number;
-  if (set && number != null) {
-    result.push(`${set}-${String(number).padStart(3, '0')}`, `${set} ${String(number).padStart(3, '0')}`);
-  }
-  const match = String(card.riftbound_id).match(/^([a-z]+)-(\d+)-(\d+)$/i);
-  if (match) {
-    result.push(`${match[1]}-${match[2]}`, `${match[1]} ${match[2]}`, `${match[1]} ${match[2]}/${match[3]}`);
+  const result: string[] = [];
+  const printings = card.printings?.length ? card.printings : [{
+    riftbound_id: card.riftbound_id,
+    set_id: card.set?.set_id,
+    collector_number: card.collector_number,
+  }];
+
+  for (const printing of printings) {
+    result.push(printing.riftbound_id);
+    const set = printing.set_id;
+    const number = printing.collector_number;
+    if (set && number != null) {
+      result.push(`${set}-${String(number).padStart(3, '0')}`, `${set} ${String(number).padStart(3, '0')}`);
+    }
+    const match = String(printing.riftbound_id).match(/^([a-z]+)-(\d+)-(\d+)$/i);
+    if (match) {
+      result.push(`${match[1]}-${match[2]}`, `${match[1]} ${match[2]}`, `${match[1]} ${match[2]}/${match[3]}`);
+    }
   }
   return result.map(normalize);
 }

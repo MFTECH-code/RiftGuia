@@ -5,7 +5,7 @@ const root=resolve(import.meta.dirname,'..');
 const cardsPath=resolve(root,'public/data/cards.json');
 const outputPath=resolve(root,'public/data/translation-worklist.pt-BR.json');
 const snapshot=JSON.parse(await (await import('node:fs/promises')).readFile(cardsPath,'utf8'));
-if(snapshot?.schemaVersion!==1||!Array.isArray(snapshot.cards))throw new Error('Snapshot de cartas inválido. Execute node scripts/sync-riftcodex.mjs primeiro.');
+if(snapshot?.schemaVersion!==1||!Array.isArray(snapshot.cards))throw new Error('Snapshot de cartas inválido em public/data/cards.json.');
 
 const cards=snapshot.cards.map(card=>({
   id:card.riftbound_id,

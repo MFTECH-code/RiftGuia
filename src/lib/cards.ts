@@ -33,6 +33,13 @@ export function normalize(value: unknown): string {
     .trim();
 }
 
+export function normalizeSearch(value: unknown): string {
+  return normalize(value)
+    .replace(/[^a-z0-9*]+/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 export function safeImageUrl(card: RiftboundCard): string {
   try {
     const url = new URL(card.media?.image_url ?? '');
@@ -71,7 +78,7 @@ export function validateTranslations(value: unknown): TranslationMap {
 
   const result: TranslationMap = {};
   for (const [key, raw] of Object.entries(value)) {
-    if (!/^[a-z0-9-]+$/i.test(key) || !raw || typeof raw !== 'object') {
+    if (!/^[a-z0-9*-]+$/i.test(key) || !raw || typeof raw !== 'object') {
       throw new Error('Entrada de traducao invalida.');
     }
 
@@ -115,16 +122,22 @@ export function mergedTranslation(
   initial: TranslationMap,
   custom: TranslationMap,
 ): TranslationEntry | undefined {
-  return custom[card.riftbound_id] || initial[card.riftbound_id];
+  const translation = custom[card.riftbound_id] || initial[card.riftbound_id];
+  return translation?.source === (card.text?.plain || '') ? translation : undefined;
+}
+
+export function cardHasId(card: RiftboundCard, cardId: string): boolean {
+  return card.riftbound_id === cardId || Boolean(card.printings?.some((printing) => printing.riftbound_id === cardId));
 }
 
 export function cardSearchText(
   card: RiftboundCard,
   translation?: TranslationEntry,
 ): string {
-  return normalize([
+  return normalizeSearch([
     card.name,
     card.riftbound_id,
+    ...(card.printings?.map((printing) => printing.riftbound_id) || []),
     card.text?.plain,
     translation?.name,
     translation?.text,

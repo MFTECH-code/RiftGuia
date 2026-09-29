@@ -94,6 +94,18 @@ main {
   max-width: 64rem;
 }
 
+.catalog-status {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.catalog-status button {
+  min-height: 2rem;
+  padding: 0.35rem 0.65rem;
+}
+
 .eyebrow {
   color: #f1b75f;
   font-size: 0.75rem;

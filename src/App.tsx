@@ -4,7 +4,7 @@ import { CardDialog } from './components/CardDialog';
 import { useCardUrl } from './hooks/useCardUrl';
 import { useCatalog } from './hooks/useCatalog';
 import { buildGuides } from './lib/guides';
-import { mergedTranslation, readStoredTranslations, writeStoredTranslations } from './lib/cards';
+import { cardHasId, mergedTranslation, readStoredTranslations, writeStoredTranslations } from './lib/cards';
 import type { RiftboundCard, TranslationEntry, TranslationMap } from './types';
 import { DeckPage } from './pages/DeckPage';
 import { LearnPage } from './pages/LearnPage';
@@ -12,7 +12,7 @@ import { LibraryPage } from './pages/LibraryPage';
 
 export function App() {
   const [customTranslations, setCustomTranslations] = React.useState<TranslationMap>(() => readStoredTranslations());
-  const { cards, initialTranslations, status, setStatus } = useCatalog();
+  const { cards, initialTranslations, status, setStatus, isRefreshing, refreshCatalog } = useCatalog();
   const { view, selectedCardId, navigateView, openCardUrl, closeCardUrl } = useCardUrl();
 
   const translate = React.useCallback(
@@ -22,7 +22,7 @@ export function App() {
 
   const guides = React.useMemo(() => buildGuides(cards, translate), [cards, translate]);
   const selectedCard = React.useMemo(
-    () => cards.find((card) => card.riftbound_id === selectedCardId) || null,
+    () => cards.find((card) => selectedCardId && cardHasId(card, selectedCardId)) || null,
     [cards, selectedCardId],
   );
 
@@ -41,7 +41,13 @@ export function App() {
 
   return (
     <main>
-      <AppHeader status={status} view={view} onViewChange={navigateView} />
+      <AppHeader
+        status={status}
+        view={view}
+        isRefreshing={isRefreshing}
+        onRefresh={() => void refreshCatalog()}
+        onViewChange={navigateView}
+      />
 
       {view === 'library' && (
         <LibraryPage

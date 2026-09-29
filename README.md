@@ -1,6 +1,6 @@
 # Rift Guia React
 
-Recriação em React + TypeScript do Rift Guia, usando um catálogo local em JSON.
+Recriação em React + TypeScript do Rift Guia.
 
 ## Rodar localmente
 
@@ -9,7 +9,9 @@ npm install
 npm run dev
 ```
 
-O app carrega `public/data/cards.json` e `public/data/translations.pt-BR.json`. Ao abrir a página, ele não consulta a API do Riftcodex; as imagens continuam vindo das URLs originais das cartas.
+O React abre imediatamente o último catálogo salvo no IndexedDB do navegador. Na primeira visita, `public/data/cards.json` funciona como catálogo inicial e fallback offline. Quando o cache tem mais de 24 horas, o próprio app consulta as páginas da API do Riftcodex em segundo plano e atualiza o cache. O botão **Atualizar cartas** força uma nova sincronização.
+
+As traduções vêm de `public/data/translations.pt-BR.json`. Imagens continuam sendo carregadas das URLs originais das cartas.
 
 ## Publicar
 
@@ -19,10 +21,9 @@ npm run build
 
 Publique a pasta `dist` gerada pelo Vite em qualquer hospedagem estática.
 
-## Atualizar dados
+## Atualizar traduções
 
 ```bash
-npm run sync:cards
 npm run translations:worklist
 ```
 

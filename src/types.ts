@@ -12,6 +12,7 @@ export interface RiftboundCard {
   id: string;
   name: string;
   riftbound_id: string;
+  printings?: CardPrinting[];
   collector_number?: number | null;
   attributes?: {
     energy?: number | null;
@@ -46,6 +47,13 @@ export interface RiftboundCard {
     signature?: boolean;
     updated_on?: string;
   };
+}
+
+export interface CardPrinting {
+  id: string;
+  riftbound_id: string;
+  set_id?: string;
+  collector_number?: number | null;
 }
 
 export interface CardSnapshot {

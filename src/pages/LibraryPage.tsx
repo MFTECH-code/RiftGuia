@@ -3,7 +3,7 @@ import { Download, FileUp, Search, X } from 'lucide-react';
 import type { Filters, TranslateCard } from '../appTypes';
 import { emptyFilters } from '../appTypes';
 import type { RiftboundCard, TranslationMap } from '../types';
-import { cardSearchText, DOMAIN_NAMES, TYPE_NAMES, validateTranslations } from '../lib/cards';
+import { cardSearchText, DOMAIN_NAMES, normalizeSearch, TYPE_NAMES, validateTranslations } from '../lib/cards';
 import { download } from '../lib/download';
 import { CardTile } from '../components/CardTile';
 import { Pagination } from '../components/Pagination';
@@ -29,11 +29,16 @@ export function LibraryPage({ cards, customTranslations, translate, onOpenCard, 
 
   const filtered = React.useMemo(() => {
     const query = filters.query.trim();
-    const normalizedQuery = query ? cardSearchText({ id: '', name: query, riftbound_id: query } as RiftboundCard) : '';
+    const normalizedQuery = normalizeSearch(query);
+    const queryTerms = normalizedQuery ? normalizedQuery.split(' ') : [];
     return cards.filter((card) => {
       const translation = translate(card);
+      const searchText = cardSearchText(card, translation);
+      const matchesQuery = !normalizedQuery || (
+        queryTerms.length > 1 ? searchText.includes(normalizedQuery) : searchText.includes(queryTerms[0])
+      );
       return (
-        (!normalizedQuery || cardSearchText(card, translation).includes(normalizedQuery)) &&
+        matchesQuery &&
         (!filters.type || card.classification?.type === filters.type) &&
         (!filters.domain || card.classification?.domain?.includes(filters.domain)) &&
         (!filters.set || card.set?.set_id === filters.set) &&
@@ -102,7 +107,7 @@ export function LibraryPage({ cards, customTranslations, translate, onOpenCard, 
       </div>
 
       <div className="card-grid">
-        {visibleCards.map((card) => <CardTile key={card.riftbound_id} card={card} translation={translate(card)} onOpen={onOpenCard} />)}
+        {visibleCards.map((card) => <CardTile key={`${card.riftbound_id}-${card.id}`} card={card} translation={translate(card)} onOpen={onOpenCard} />)}
       </div>
 
       <Pagination page={currentPage} totalPages={totalPages} onPageChange={setPage} />

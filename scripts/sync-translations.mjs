@@ -18,7 +18,7 @@ if(!Number.isInteger(batchSize)||batchSize<1||batchSize>20)throw new Error('TRAN
 if(!Number.isInteger(concurrency)||concurrency<1||concurrency>4)throw new Error('TRANSLATION_CONCURRENCY deve estar entre 1 e 4.');
 
 const snapshot=JSON.parse(await readFile(cardsPath,'utf8'));
-if(snapshot?.schemaVersion!==1||!Array.isArray(snapshot.cards))throw new Error('Snapshot de cartas inválido. Execute primeiro node scripts/sync-riftcodex.mjs.');
+if(snapshot?.schemaVersion!==1||!Array.isArray(snapshot.cards))throw new Error('Snapshot de cartas inválido em public/data/cards.json.');
 let previous={};
 try{const saved=JSON.parse(await readFile(outputPath,'utf8'));if(saved?.schemaVersion===1&&saved.translations&&typeof saved.translations==='object')previous=saved.translations;}catch{}
 
