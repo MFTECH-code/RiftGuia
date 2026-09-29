@@ -34,6 +34,7 @@ export interface RiftboundCard {
     set_id?: string;
     label?: string;
   };
+  orientation?: 'portrait' | 'landscape' | string;
   media?: {
     image_url?: string | null;
     artist?: string | null;

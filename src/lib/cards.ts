@@ -49,6 +49,10 @@ export function safeImageUrl(card: RiftboundCard): string {
   }
 }
 
+export function isLandscapeCard(card: RiftboundCard): boolean {
+  return card.orientation === 'landscape' || card.classification?.type === 'Battlefield';
+}
+
 export function formatCardText(text?: string | null): string {
   return String(text || '')
     .replace(/:rb_energy_(\d+):/g, '[$1 energia]')

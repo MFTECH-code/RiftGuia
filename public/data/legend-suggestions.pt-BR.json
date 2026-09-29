@@ -1,0 +1,2363 @@
+{
+  "schemaVersion": 1,
+  "language": "pt-BR",
+  "generatedAt": "2026-09-29T16:11:43.169Z",
+  "purpose": "Base inicial de sugestoes por lenda para o futuro construtor de decks com IA.",
+  "notes": [
+    "As dicas agrupam impressoes cosmeticas da mesma lenda em aliases.",
+    "Use como ponto de partida editorial; os textos podem ser refinados conforme o meta mudar.",
+    "As sugestoes combinam pesquisa externa com leitura do texto das lendas no catalogo local."
+  ],
+  "sources": [
+    {
+      "label": "Official Riftbound Deckbuilding Primer",
+      "url": "https://playriftbound.com/en-us/news/rules-and-releases/deckbuilding-primer/",
+      "usedFor": "Estrutura de deck e fluxo lenda -> campeao -> main deck -> runas -> battlefields."
+    },
+    {
+      "label": "RiftCompare - Deck Archetypes Guide",
+      "url": "https://riftcompare.com/guides/riftbound-deck-archetypes-guide",
+      "usedFor": "Pilares de arquetipos: Aggro, Tempo e Midrange."
+    },
+    {
+      "label": "RiftCompare - Best Riftbound Vendetta Decks",
+      "url": "https://riftcompare.com/guides/best-riftbound-vendetta-decks",
+      "usedFor": "Modelo de sinergia Setup -> Engine -> Payoff -> Recur e exemplos de Flow/Burn/Empower."
+    },
+    {
+      "label": "RiftAtlas - Meta decks by legend",
+      "url": "https://rift-atlas.com/decks",
+      "usedFor": "Battlefields recorrentes em listas publicas por lenda."
+    },
+    {
+      "label": "LineDepth - Akali Retreat Tempo",
+      "url": "https://www.linedepth.com/decks/akali-tempo/guide",
+      "usedFor": "Leitura de Akali como deck de tempo baseado em retreat e reposicionamento."
+    },
+    {
+      "label": "RiftboundGuide - Azir Champion Deck Guide",
+      "url": "https://riftboundguide.com/2026/07/09/riftbound-azir-champion-deck-guide/",
+      "usedFor": "Azir como engine de Sand Soldiers + Equipment."
+    },
+    {
+      "label": "RiftboundGuide - Nasus Champion Deck Guide",
+      "url": "https://riftboundguide.com/2026/07/23/riftbound-nasus-champion-deck-guide/",
+      "usedFor": "Nasus como plano lento/ramp de custo alto."
+    },
+    {
+      "label": "RiftboundGuide - Zed Champion Deck Guide",
+      "url": "https://riftboundguide.com/2026/07/24/riftbound-zed-champion-deck-guide/",
+      "usedFor": "Zed como plano de Burn, Banish, Flow e filtro de mao."
+    },
+    {
+      "label": "ThaiRift - Vendetta Metagame Tier List",
+      "url": "https://thairift.com/en/learn/tier-list",
+      "usedFor": "Leitura comparativa do meta por lenda e pontos fortes/fraquezas recorrentes."
+    }
+  ],
+  "legends": [
+    {
+      "id": "ahri-nine-tailed-fox",
+      "name": "Ahri - Nine-Tailed Fox",
+      "translatedName": "Ahri - Raposa de Nove Caudas",
+      "domains": [
+        "Calm",
+        "Mind"
+      ],
+      "representativeCardId": "ogn-255-298",
+      "aliases": [
+        "ogn-255-298",
+        "ogn-303-298",
+        "ogn-303*-298",
+        "opp-255-298"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Grove of the God-Willow",
+          "reason": "Recompensa segurar campo, exatamente o plano defensivo de Ahri.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Ravenbloom Conservatory",
+          "reason": "Valor ao defender com spells, comum em listas Mind/Calm de controle.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Startipped Peak",
+          "reason": "Ajuda a manter recursos para respostas depois de segurar campo.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        }
+      ],
+      "archetype": "Tempo defensivo / controle de campo",
+      "gamePlan": "Segure campos conquistados e puna ataques adversarios reduzindo a forca das unidades inimigas. Ahri gosta de vencer por bons bloqueios, trades favoraveis e controle de combate.",
+      "mulligan": "Procure unidades eficientes para defender cedo, efeitos de stun/movimento e cartas que protejam campos ja conquistados.",
+      "synergyPackages": [
+        "Debuffs de Might para tornar ataques ruins para o oponente.",
+        "Stun, recall ou movimento para negar combates importantes.",
+        "Unidades resistentes que aproveitam o -1 de Might para sobreviver."
+      ],
+      "deckbuildingTips": [
+        "Nao construa como aggro puro; Ahri precisa de tempo para transformar defesa em vantagem.",
+        "Priorize cartas que funcionam bem quando voce ja controla um battlefield.",
+        "Inclua compra ou filtros para nao ficar sem resposta no meio do jogo."
+      ],
+      "weakness": "Pode ter dificuldade se ficar atras cedo e nao tiver campos para defender.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "akali-rogue-assassin",
+      "name": "Akali - Rogue Assassin",
+      "translatedName": "Akali - Assassina Ladina",
+      "domains": [
+        "Fury",
+        "Calm"
+      ],
+      "representativeCardId": "ven-139-166",
+      "aliases": [
+        "ven-139-166",
+        "ven-189-166"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Ripper's Bay",
+          "reason": "Premia retorno de unidades para a mao, combinando com Retreat e reposicionamento.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Back-Alley Bar",
+          "reason": "Transforma movimento em bonus de Might para viradas de tempo.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Star Spring",
+          "reason": "Permite reposicionar outra unidade para a base quando uma unidade entra aqui.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Tempo / Retreat",
+      "gamePlan": "Force o oponente a se comprometer em um showdown, retire sua unidade para base e, quando Akali estiver Empowered, prepare a unidade para reutilizar ataques, defesas ou habilidades.",
+      "mulligan": "Procure unidades com bons efeitos ao entrar, cartas de movimento/retreat e formas seguras de Empower.",
+      "synergyPackages": [
+        "Retreat de unidade em showdown para negar dano e reposicionar.",
+        "Ready em unidade importante depois de Empower.",
+        "Truques baratos que fazem o oponente errar o calculo de combate."
+      ],
+      "deckbuildingTips": [
+        "Use unidades que continuam boas se voltarem para base.",
+        "Inclua pressao barata para obrigar o oponente a agir primeiro.",
+        "Nao dependa de uma unica unidade; Akali vence por tempo e sequenciamento."
+      ],
+      "weakness": "Se gastar movimento sem ganhar campo, o deck fica sem pressao.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "ambessa-matriarch-of-war",
+      "name": "Ambessa - Matriarch of War",
+      "translatedName": "Ambessa - Matriarca da Guerra",
+      "domains": [
+        "Body",
+        "Order"
+      ],
+      "representativeCardId": "ven-153-166",
+      "aliases": [
+        "ven-153-166",
+        "ven-196-166"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Risen Altar",
+          "reason": "Reduz custos de Empower e acelera a condicao principal da lenda.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Valley of Idols",
+          "reason": "Buff permanente ajuda a criar unidades que valem preparar de novo.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Trifarian War Camp",
+          "reason": "Aumenta Might e melhora turnos com ataques repetidos.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Empower midrange",
+      "gamePlan": "Empower outras cartas para ligar Ambessa automaticamente, depois use Disempower para preparar unidades e ganhar combates extras.",
+      "mulligan": "Procure cartas com Empower, unidades que atacam bem duas vezes e buffs permanentes.",
+      "synergyPackages": [
+        "Empower em qualquer outra peca para ligar Ambessa sem gastar carta extra.",
+        "Ready em unidade grande para atacar, defender ou trocar de campo.",
+        "Buffs que tornam uma unidade preparada novamente muito dificil de combater."
+      ],
+      "deckbuildingTips": [
+        "Mantenha uma massa boa de cartas com Empower.",
+        "Use unidades de Might alto ou efeitos ao atacar.",
+        "Inclua interacao barata para proteger a unidade que sera preparada."
+      ],
+      "weakness": "Fica inconsistente se o deck tiver poucas cartas que Empower.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "annie-dark-child",
+      "name": "Annie - Dark Child",
+      "translatedName": "Annie - Criança Sombria",
+      "domains": [
+        "Fury",
+        "Chaos"
+      ],
+      "representativeCardId": "opp-017-024",
+      "aliases": [
+        "ogs-017-024",
+        "opp-017-024"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Targon's Peak",
+          "reason": "Deixa runas prontas depois de conquistar, reforcando turnos de spells.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "The Academy",
+          "reason": "Recompensa segurar campo com Repeat em spells.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Ravenbloom Conservatory",
+          "reason": "Ajuda decks de spells a transformar defesa em compra.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Spell tempo / pressao de runas",
+      "gamePlan": "Use a preparacao de runas no fim do turno para jogar spells e habilidades com mais liberdade. Annie quer gastar recursos agressivamente sem ficar sem poder no turno seguinte.",
+      "mulligan": "Procure spells baratos, unidades que recompensam spells e cartas que usam runas de Fury/Chaos com frequencia.",
+      "synergyPackages": [
+        "Pronto em 2 runas para transformar turno agressivo em continuidade.",
+        "Spells que causam dano ou buffam unidades antes do combate.",
+        "Unidades que ficam melhores quando voce joga spells."
+      ],
+      "deckbuildingTips": [
+        "Baixe a curva para aproveitar recursos extras cedo.",
+        "Inclua dano direto ou remocoes para abrir caminho.",
+        "Nao encha o deck so de cartas caras; Annie quer sequenciar varias acoes."
+      ],
+      "weakness": "Pode perder valor se comprar muitas cartas sem uso de runa ou sem spells relevantes.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "azir-emperor-of-the-sands",
+      "name": "Azir - Emperor of the Sands",
+      "translatedName": "Azir - Imperador das Areias",
+      "domains": [
+        "Calm",
+        "Order"
+      ],
+      "representativeCardId": "sfd-197-221",
+      "aliases": [
+        "opp-197-221",
+        "sfd-197-221",
+        "sfd-247-221"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Ornn's Forge",
+          "reason": "Reduz equipamentos nao-ficha e aparece em listas competitivas de Azir.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Trifarian War Camp",
+          "reason": "Faz fichas e unidades equipadas atacarem melhor.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Vilemaw's Lair",
+          "reason": "Prende unidades no campo e favorece investimento em equipamento.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        }
+      ],
+      "archetype": "Midrange de equipamentos / tokens",
+      "gamePlan": "Jogue equipamentos para criar Sand Soldiers e transformar presenca de mesa em valor. O plano e ocupar campos com fichas que carregam equipamentos melhor do que unidades comuns.",
+      "mulligan": "Procure equipamentos baratos, formas de proteger fichas equipadas e interacoes Calm/Order.",
+      "synergyPackages": [
+        "Equipamento jogado ativa a lenda e gera Sand Soldier.",
+        "Weaponmaster reduz o custo de equipar e melhora a troca de recursos.",
+        "Fichas pequenas viram ameacas reais quando carregam equipamento."
+      ],
+      "deckbuildingTips": [
+        "Use muitos equipamentos baratos para ativar Azir todo turno.",
+        "Inclua protecao para nao perder todo o investimento em uma unidade.",
+        "Tenha formas de reconstruir mesa depois de remocao."
+      ],
+      "weakness": "Pode sofrer contra decks que removem equipamentos ou limpam varias unidades pequenas.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "darius-hand-of-noxus",
+      "name": "Darius - Hand of Noxus",
+      "translatedName": "Darius - Mão de Noxus",
+      "domains": [
+        "Fury",
+        "Order"
+      ],
+      "representativeCardId": "ogn-253-298",
+      "aliases": [
+        "ogn-253-298",
+        "ogn-302-298",
+        "ogn-302*-298",
+        "opp-253-298"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Trifarian War Camp",
+          "reason": "Aumenta Might e melhora o plano Legion de combate.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "The Arena's Greatest",
+          "reason": "Acelera a corrida de pontos para decks agressivos.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Reckoner's Arena",
+          "reason": "Reativa efeitos de conquista de unidades em campo de combate.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Legion tempo / recursos reativos",
+      "gamePlan": "Jogue cartas no turno para ligar Legion e use a energia extra de Darius em momentos de combate. O plano e pressionar com unidades eficientes e vencer showdowns com recursos inesperados.",
+      "mulligan": "Procure unidades Legion, truques de combate e cartas baratas para ativar a condicao todo turno.",
+      "synergyPackages": [
+        "Legion transforma cartas jogadas em energia flexivel.",
+        "Truques de combate ficam melhores quando o oponente nao conta com energia extra.",
+        "Fury/Order combina pressao e board sólido."
+      ],
+      "deckbuildingTips": [
+        "Mantenha custo baixo o bastante para ativar Legion cedo.",
+        "Use cartas que continuam boas quando compradas tarde.",
+        "Nao dependa so da habilidade; Darius precisa de mesa."
+      ],
+      "weakness": "Fica pior em turnos nos quais voce nao consegue jogar carta antes do combate.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "diana-scorn-of-the-moon",
+      "name": "Diana - Scorn of the Moon",
+      "translatedName": "Diana - Desdém da Lua",
+      "domains": [
+        "Mind",
+        "Chaos"
+      ],
+      "representativeCardId": "unl-197-219",
+      "aliases": [
+        "unl-197-219",
+        "unl-234-219",
+        "unl-234*-219"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Abandoned Hall",
+          "reason": "Aparece repetidamente em listas de Diana como campo flexivel de spells.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Ravenbloom Conservatory",
+          "reason": "Premia defesa revelando spells, comum no shell Mind/Chaos.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Targon's Peak",
+          "reason": "Recupera runas apos conquista e sustenta turnos reativos.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        }
+      ],
+      "archetype": "Showdown tempo",
+      "gamePlan": "Guarde energia para showdowns e vença combates que pareciam empatados. Diana quer unidades que entram em lutas importantes e usam recursos extras no momento certo.",
+      "mulligan": "Procure truques de combate, spells de showdown e unidades que escalam com recursos durante a luta.",
+      "synergyPackages": [
+        "Energia durante showdown muda matematica de combate.",
+        "Mind/Chaos permite truques, dano e interacao flexivel.",
+        "Cartas reativas punem ataques mal calculados."
+      ],
+      "deckbuildingTips": [
+        "Inclua interacoes que podem ser usadas no combate.",
+        "Use unidades que forcem oponente a disputar campos.",
+        "Tenha plano para pontuar; vencer combate sem conquistar nao basta."
+      ],
+      "weakness": "Pode parecer passiva se nao tiver unidades pressionando campos.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "draven-glorious-executioner",
+      "name": "Draven - Glorious Executioner",
+      "translatedName": "Draven - Executor Glorioso",
+      "domains": [
+        "Fury",
+        "Chaos"
+      ],
+      "representativeCardId": "sfd-185-221",
+      "aliases": [
+        "opp-185-221",
+        "sfd-185-221",
+        "sfd-242-221"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Minefield",
+          "reason": "Alimenta descarte/lixo e aparece em lista Draven meta.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Targon's Peak",
+          "reason": "Mantem recursos apos conquistar em turnos agressivos.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Zaun Warrens",
+          "reason": "Descarta e compra, melhorando maos agressivas.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        }
+      ],
+      "archetype": "Aggro de combate",
+      "gamePlan": "Monte combates favoraveis e compre cartas quando suas unidades vencem. Draven quer atacar com vantagem de Might, remover bloqueadores e transformar cada vitoria em gas.",
+      "mulligan": "Procure unidades agressivas, buffs baratos e remocoes que garantam vitorias de combate.",
+      "synergyPackages": [
+        "Buffs antes do combate para vencer e comprar.",
+        "Remocao pequena que deixa so suas unidades no campo.",
+        "Assault e dano ajudam a transformar vantagem em pontuacao."
+      ],
+      "deckbuildingTips": [
+        "Priorize cartas que melhoram combate imediatamente.",
+        "Nao jogue unidades pequenas sem suporte; elas precisam vencer, nao so participar.",
+        "Inclua formas de comprar ou filtrar para manter pressao."
+      ],
+      "weakness": "Se o oponente evita combates ou remove suas unidades antes deles, Draven perde valor.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "ezreal-prodigal-explorer",
+      "name": "Ezreal - Prodigal Explorer",
+      "translatedName": "Ezreal - Explorador Pródigo",
+      "domains": [
+        "Mind",
+        "Chaos"
+      ],
+      "representativeCardId": "sfd-199-221",
+      "aliases": [
+        "opp-199-221",
+        "sfd-199-221",
+        "sfd-248-221"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Ravenbloom Conservatory",
+          "reason": "Valor ao defender com spells e manter respostas na mao.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Void Gate",
+          "reason": "Aumenta dano de spells/habilidades que afetam unidades no campo.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "The Candlelit Sanctum",
+          "reason": "Filtra topo em conquistas e ajuda a achar interacoes.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Spell control / alvo duplo",
+      "gamePlan": "Escolha unidades ou equipamentos inimigos duas vezes no turno para habilitar compra com Ezreal. O plano e responder ao oponente enquanto compra cartas e mantem a mao cheia.",
+      "mulligan": "Procure spells e habilidades que miram inimigos, remocoes pequenas e efeitos que podem escolher mais de um alvo.",
+      "synergyPackages": [
+        "Dois alvos no mesmo turno ativam compra.",
+        "Mind/Chaos oferece remocao, dano e truques.",
+        "Equipamentos inimigos tambem contam como alvo."
+      ],
+      "deckbuildingTips": [
+        "Inclua interacoes baratas para completar a condicao.",
+        "Use unidades que tambem tenham habilidades de alvo.",
+        "Nao encha o deck so de respostas caras."
+      ],
+      "weakness": "Pode ficar lento se o oponente jogar poucas pecas alvo ou se voce nao encontrar interacao.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "fiora-grand-duelist",
+      "name": "Fiora - Grand Duelist",
+      "translatedName": "Fiora - Grande Duelista",
+      "domains": [
+        "Body",
+        "Order"
+      ],
+      "representativeCardId": "sfd-205-221",
+      "aliases": [
+        "opp-205-221",
+        "sfd-205-221",
+        "sfd-251-221"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Sunken Temple",
+          "reason": "Compra ao conquistar com unidades Mighty.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Valley of Idols",
+          "reason": "Buff permanente ajuda unidades a chegarem a 5+ Might.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Trifarian War Camp",
+          "reason": "Might extra simplifica conquistas com unidades grandes.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Mighty midrange",
+      "gamePlan": "Transforme unidades em Mighty para canalizar runas e acelerar jogadas. Fiora quer unidades com 5+ Might, buffs permanentes e combates onde uma unidade grande domina.",
+      "mulligan": "Procure unidades perto de 5 Might, buffs eficientes e cartas que recompensam Might alto.",
+      "synergyPackages": [
+        "Mighty ativa canal de runa.",
+        "Buffs tornam unidades medias em ameacas grandes.",
+        "Body/Order sustenta mesa forte e combate limpo."
+      ],
+      "deckbuildingTips": [
+        "Escolha buffs que fiquem na unidade, nao apenas temporarios.",
+        "Use algumas unidades naturalmente grandes.",
+        "Inclua protecao para nao perder a unidade investida."
+      ],
+      "weakness": "Pode sofrer contra remocao eficiente em alvo unico.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "garen-might-of-demacia",
+      "name": "Garen - Might of Demacia",
+      "translatedName": "Garen - Força de Demacia",
+      "domains": [
+        "Body",
+        "Order"
+      ],
+      "representativeCardId": "opp-023-024",
+      "aliases": [
+        "ogs-023-024",
+        "opp-023-024"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Altar to Unity",
+          "reason": "Gera Recruit e reforca plano de mesa larga.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "The Grand Plaza",
+          "reason": "Conecta diretamente com ter muitas unidades no mesmo campo.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Seat of Power",
+          "reason": "Compra por outros campos controlados, bom para decks go-wide.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Go-wide conquista",
+      "gamePlan": "Conquiste campos com 4 ou mais unidades para comprar 2. Garen quer muitas unidades, buffs de grupo e formas de concentrar mesa no campo certo.",
+      "mulligan": "Procure unidades baratas, efeitos de preparar/mover e cartas que aumentem Might coletivo.",
+      "synergyPackages": [
+        "Quatro unidades no mesmo battlefield transformam conquista em compra.",
+        "Buffs de time tornam ataques em massa mais seguros.",
+        "Order ajuda a organizar mesa e defender."
+      ],
+      "deckbuildingTips": [
+        "Tenha muitas unidades de custo baixo e medio.",
+        "Nao espalhe demais a mesa quando precisa comprar.",
+        "Use campos que recompensem presenca numerosa."
+      ],
+      "weakness": "Pode perder para efeitos que punem mesa larga ou removem varias unidades.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "irelia-blade-dancer",
+      "name": "Irelia - Blade Dancer",
+      "translatedName": "Irelia - Dançarina de Lâminas",
+      "domains": [
+        "Calm",
+        "Chaos"
+      ],
+      "representativeCardId": "sfd-195-221",
+      "aliases": [
+        "opp-195-221",
+        "sfd-195-221",
+        "sfd-246-221"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Aspirant's Climb",
+          "reason": "Usado em lista meta e alonga jogo para engines de tempo.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "The Dreaming Tree",
+          "reason": "Compra quando spells escolhem unidades amigas.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Ravenbloom Conservatory",
+          "reason": "Ajuda a encontrar spells enquanto defende.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        }
+      ],
+      "archetype": "Tempo de ready / alvo aliado",
+      "gamePlan": "Escolha suas proprias unidades para prepara-las com Irelia, ganhando ataques, defesas e habilidades extras. Conquistar prepara a lenda para repetir o ciclo.",
+      "mulligan": "Procure cartas que escolhem unidades aliadas, unidades com habilidade de exaurir e efeitos de conquista.",
+      "synergyPackages": [
+        "Escolher unidade aliada pode virar ready.",
+        "Conquistar reseta Irelia e permite novo ready.",
+        "Unidades com efeitos de exhaust aproveitam usos extras."
+      ],
+      "deckbuildingTips": [
+        "Inclua muitos efeitos que escolhem friendly units.",
+        "Use unidades que ficam excelentes quando prontas de novo.",
+        "Sequencie conquistas para reusar Irelia no mesmo turno."
+      ],
+      "weakness": "Exige bom sequenciamento; se nao houver alvos aliados, a lenda nao gera valor.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "ivern-green-father",
+      "name": "Ivern - Green Father",
+      "translatedName": "Ivern - Pai Verde",
+      "domains": [
+        "Calm",
+        "Order"
+      ],
+      "representativeCardId": "unl-195-219",
+      "aliases": [
+        "unl-195-219",
+        "unl-233-219",
+        "unl-233*-219"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Grove of the God-Willow",
+          "reason": "Recompensa hold, plano natural de controle de campos.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Altar to Unity",
+          "reason": "Cria unidade para aproveitar buffs de campo.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Fortified Position",
+          "reason": "Facilita segurar campo com unidades defensivas.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Battlefield control / tribo",
+      "gamePlan": "Transforme campos conquistados ou segurados em Brush para fortalecer tipos específicos e alterar a matematica do campo. Ivern prefere decks que vencem por controle de local.",
+      "mulligan": "Procure unidades beneficiadas por Brush, formas de hold/conquer e cartas que protegem battlefield.",
+      "synergyPackages": [
+        "Brush muda o campo depois de conquer/hold.",
+        "Buff de campo transforma unidades pequenas em ameacas melhores.",
+        "Calm/Order favorece controle e defesa."
+      ],
+      "deckbuildingTips": [
+        "Escolha battlefields que voce consiga segurar.",
+        "Inclua unidades que se beneficiem diretamente do Brush.",
+        "Nao dependa so do bonus; ainda precisa de plano de pontuacao."
+      ],
+      "weakness": "Pode ser lento se nao conseguir conquer ou hold cedo.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "jax-grandmaster-at-arms",
+      "name": "Jax - Grandmaster At Arms",
+      "translatedName": "Jax - Grande Mestre das Armas",
+      "domains": [
+        "Calm",
+        "Body"
+      ],
+      "representativeCardId": "sfd-193-221",
+      "aliases": [
+        "opp-193-221",
+        "sfd-193-221",
+        "sfd-245-221"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Forge of the Fluft",
+          "reason": "Permite anexar equipamentos usando a lenda.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Veiled Temple",
+          "reason": "Deixa equipamento pronto ao conquistar.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Piltovan Forge",
+          "reason": "Reduz primeira habilidade ativada de equipamento ao controlar.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Equipamento midrange",
+      "gamePlan": "Reposicione equipamentos para sempre deixar a melhor unidade ameaçadora. Jax permite reaproveitar gear e mudar quem carrega a pressao conforme o combate.",
+      "mulligan": "Procure equipamentos fortes, unidades evasivas/resistentes e formas de proteger o portador.",
+      "synergyPackages": [
+        "Mover equipamento evita perder valor quando a unidade certa muda.",
+        "Equipamentos desanexados voltam a influenciar a mesa.",
+        "Calm/Body combina protecao e unidades robustas."
+      ],
+      "deckbuildingTips": [
+        "Use equipamentos que valem a acao de mover.",
+        "Tenha unidades suficientes para sempre ter bom portador.",
+        "Inclua resposta contra remocao de gear."
+      ],
+      "weakness": "Pode ficar travado se comprar equipamentos sem unidades ou unidades sem equipamentos.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "jayce-defender-of-tomorrow",
+      "name": "Jayce - Defender of Tomorrow",
+      "translatedName": "Jayce - Defensor do Amanhã",
+      "domains": [
+        "Mind",
+        "Body"
+      ],
+      "representativeCardId": "ven-149-166",
+      "aliases": [
+        "ven-149-166",
+        "ven-194-166"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Piltovan Forge",
+          "reason": "Melhora habilidades ativadas de equipamentos, o motor de Jayce.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Veiled Temple",
+          "reason": "Prepara equipamentos em conquistas.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Ornn's Forge",
+          "reason": "Reduz o primeiro equipamento nao-ficha do turno.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Gear engine / Empower",
+      "gamePlan": "Prepare gear uma ou duas vezes por turno para gerar recursos extras. Jayce quer equipamentos com habilidades de exaurir e cartas que Empower com segurança.",
+      "mulligan": "Procure gear com habilidades ativas, formas de Empower e unidades que protejam o motor.",
+      "synergyPackages": [
+        "Ready de gear permite repetir habilidades.",
+        "Empowered dobra o teto da lenda.",
+        "Mind/Body favorece peças de engine e sobrevivencia."
+      ],
+      "deckbuildingTips": [
+        "Priorize gears que fazem algo relevante ao exaurir.",
+        "Inclua defesa para nao perder tempo montando engine.",
+        "Nao use gear demais sem payoff claro."
+      ],
+      "weakness": "A montagem inicial pode ser lenta contra pressao.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "jhin-virtuoso",
+      "name": "Jhin - Virtuoso",
+      "translatedName": "Jhin - Virtuoso",
+      "domains": [
+        "Fury",
+        "Mind"
+      ],
+      "representativeCardId": "unl-181-219",
+      "aliases": [
+        "unl-181-219",
+        "unl-226-219",
+        "unl-226*-219"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "The Academy",
+          "reason": "Dobra spells em decks que querem jogar magias relevantes.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Forgotten Library",
+          "reason": "Premia spells de custo 4+ com Predict.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Targon's Peak",
+          "reason": "Ajuda a recuperar runas apos conquistar com spells caros.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Spells caros / engine de quatro",
+      "gamePlan": "Jogue spells de custo 4+ para acumular quatro banidos com Jhin, depois converta isso em runas canalizadas e compra. O plano e controlar ate o quarto spell resolver.",
+      "mulligan": "Procure spells de custo 4+, controle barato para sobreviver e formas de comprar.",
+      "synergyPackages": [
+        "Spells caros alimentam o contador de Jhin.",
+        "O quarto spell converte em burst de recursos.",
+        "Fury/Mind mistura dano e compra."
+      ],
+      "deckbuildingTips": [
+        "Nao exagere em custo alto; precisa chegar vivo ao engine.",
+        "Use spells que ja seriam boas sem Jhin.",
+        "Tenha unidades suficientes para disputar campos."
+      ],
+      "weakness": "Pode comprar maos pesadas e perder para decks muito rapidos.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "jinx-loose-cannon",
+      "name": "Jinx - Loose Cannon",
+      "translatedName": "Jinx - Canhão Solto",
+      "domains": [
+        "Fury",
+        "Chaos"
+      ],
+      "representativeCardId": "ogn-251-298",
+      "aliases": [
+        "ogn-251-298",
+        "ogn-301-298",
+        "ogn-301*-298",
+        "opp-251-298"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Zaun Warrens",
+          "reason": "Descarta e compra, apoiando maos vazias e descarte.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Minefield",
+          "reason": "Coloca cartas no lixo e aumenta combustivel de estrategias agressivas.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "The Arena's Greatest",
+          "reason": "Acelera a corrida de pontos para aggro.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        }
+      ],
+      "archetype": "Discard aggro",
+      "gamePlan": "Esvazie a mao com cartas baratas e descarte para comprar no inicio do turno. Jinx quer transformar agressao e mao baixa em combustivel constante.",
+      "mulligan": "Procure unidades baratas, custos de descarte, dano direto e cartas que podem ser jogadas sem depender de muito setup.",
+      "synergyPackages": [
+        "Mao com uma ou menos cartas ativa compra.",
+        "Descarte deixa a mao baixa sem perder ritmo.",
+        "Fury/Chaos favorece dano, pressao e trucos agressivos."
+      ],
+      "deckbuildingTips": [
+        "Baixe bastante a curva.",
+        "Use descarte que tambem gere mesa ou dano.",
+        "Tenha cuidado para nao ficar sem acao se Jinx nao comprar."
+      ],
+      "weakness": "Se a mao esvazia mas nao pressiona, o deck fica no topdeck cedo demais.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "kai-sa-daughter-of-the-void",
+      "name": "Kai'Sa - Daughter of the Void",
+      "translatedName": "Kai'Sa - Filha do Vazio",
+      "domains": [
+        "Fury",
+        "Mind"
+      ],
+      "representativeCardId": "ogn-247-298",
+      "aliases": [
+        "ogn-247-298",
+        "ogn-299-298",
+        "ogn-299*-298",
+        "opp-247-298"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Amateur Recital",
+          "reason": "Usado em listas Kai’Sa e ajuda reposicionamento defensivo.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Startipped Peak",
+          "reason": "Canaliza runa exaurida ao controlar e sustenta spells.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Void Gate",
+          "reason": "Amplifica efeitos que causam dano a unidades.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        }
+      ],
+      "archetype": "Spell tempo",
+      "gamePlan": "Use a runa rainbow de Kai’Sa para spells e mantenha flexibilidade nos turnos de combate. O plano e jogar spells-chave com menos restricao de dominio.",
+      "mulligan": "Procure spells impactantes, unidades que recompensam spells e cartas que protegem campeao/unidades centrais.",
+      "synergyPackages": [
+        "Rainbow para spells suaviza custos.",
+        "Fury/Mind combina dano e compra.",
+        "Spells certos permitem virar showdowns."
+      ],
+      "deckbuildingTips": [
+        "Escolha spells realmente impactantes para justificar a lenda.",
+        "Inclua unidades que pressionem enquanto voce segura interacao.",
+        "Nao coloque spells demais sem mesa."
+      ],
+      "weakness": "Pode ficar reativa demais se nao tiver unidades para disputar campos.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "kennen-heart-of-the-tempest",
+      "name": "Kennen - Heart of the Tempest",
+      "translatedName": "Kennen - Coração da Tempestade",
+      "domains": [
+        "Order",
+        "Chaos"
+      ],
+      "representativeCardId": "ven-155-166",
+      "aliases": [
+        "ven-155-166",
+        "ven-197-166"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Bandle Tree",
+          "reason": "Usado em lista meta e favorece cartas escondidas/linhas alternativas.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "The Candlelit Sanctum",
+          "reason": "Filtra topo apos conquistas para achar pecas de combo.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Zaun Warrens",
+          "reason": "Descarta/compra para encontrar ativadores e payoffs.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        }
+      ],
+      "archetype": "Play-from-not-hand / Assault tempo",
+      "gamePlan": "Jogue cartas de fora da mao para Empower Kennen, depois transforme isso em Assault para finalizar combates. Kennen gosta de Flow, banish/play e efeitos que criam jogadas alternativas.",
+      "mulligan": "Procure cartas jogadas do descarte, banidas ou por efeitos, alem de unidades que usam Assault bem.",
+      "synergyPackages": [
+        "Cartas fora da mao ligam Empower.",
+        "Disempower converte em Assault 2.",
+        "Order/Chaos favorece truques e linhas explosivas."
+      ],
+      "deckbuildingTips": [
+        "Inclua fontes confiaveis de jogar carta fora da mao.",
+        "Use unidades que atacam bem com Assault.",
+        "Nao dependa de Kennen sem payoff de dano."
+      ],
+      "weakness": "Pode ser inconsistente se nao encontrar cartas que ativem a lenda.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "kha-zix-voidreaver",
+      "name": "Kha'Zix - Voidreaver",
+      "translatedName": "Kha'Zix - Devorador do Vazio",
+      "domains": [
+        "Body",
+        "Chaos"
+      ],
+      "representativeCardId": "unl-201-219",
+      "aliases": [
+        "unl-201-219",
+        "unl-236-219",
+        "unl-236*-219"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Gardens of Becoming",
+          "reason": "XP adicional combina com plano de crescimento por combate.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Trapping Grounds",
+          "reason": "Recompensa dano excedente e combate favoravel.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Reckoner's Arena",
+          "reason": "Reativa efeitos de conquista de unidades que vencem duelos.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "XP combat / pickoff",
+      "gamePlan": "Ganhe combates para acumular XP e transformar isso em buffs ou recuos de unidades. Kha’Zix quer lutas escolhidas, abates e unidades que vencem duelos.",
+      "mulligan": "Procure buffs, remocoes pequenas e unidades que sobrevivem a combate.",
+      "synergyPackages": [
+        "Vencer combate gera XP.",
+        "XP vira buff ou movimento para base.",
+        "Body/Chaos ajuda em combate e truques."
+      ],
+      "deckbuildingTips": [
+        "Monte para ganhar combates pontuais, nao para brigar em todos os campos.",
+        "Use buffs que protegem unidades-chave.",
+        "Inclua formas de forcar lutas favoraveis."
+      ],
+      "weakness": "Se nao ganhar combates cedo, a engine de XP demora a ligar.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "leblanc-deceiver",
+      "name": "LeBlanc - Deceiver",
+      "translatedName": "LeBlanc - Enganadora",
+      "domains": [
+        "Mind",
+        "Order"
+      ],
+      "representativeCardId": "unl-199-219",
+      "aliases": [
+        "unl-199-219",
+        "unl-235-219",
+        "unl-235*-219"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Dusk Rose Lab",
+          "reason": "Sacrifica unidade para comprar e aparece em listas LeBlanc.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Forbidding Waste",
+          "reason": "Altera lutas de unidades sozinhas e cria bons alvos de copia.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Windswept Hillock",
+          "reason": "Ganking melhora posicionamento de copias temporarias.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        }
+      ],
+      "archetype": "Clone tempo / valor",
+      "gamePlan": "Ao conquistar ou segurar, descarte para criar Reflection copiando uma unidade do campo. LeBlanc vence duplicando a melhor peça no momento certo.",
+      "mulligan": "Procure unidades com bons textos copiaveis, efeitos de descarte aproveitaveis e formas de conquer/hold.",
+      "synergyPackages": [
+        "Reflection copia unidade relevante no battlefield.",
+        "Temporary exige usar o valor imediatamente.",
+        "Discard pode alimentar outras sinergias."
+      ],
+      "deckbuildingTips": [
+        "Inclua bons alvos para copiar dos dois lados da mesa.",
+        "Use cartas que gostam de descarte.",
+        "Planeje campos onde uma copia temporaria decide combate ou pontuacao."
+      ],
+      "weakness": "Pode perder valor se os campos tiverem poucas unidades boas para copiar.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "lee-sin-blind-monk",
+      "name": "Lee Sin - Blind Monk",
+      "translatedName": "Lee Sin - Monge Cego",
+      "domains": [
+        "Calm",
+        "Body"
+      ],
+      "representativeCardId": "ogn-257-298",
+      "aliases": [
+        "ogn-257-298",
+        "ogn-304-298",
+        "ogn-304*-298",
+        "opp-257-298"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Monastery of Hirana",
+          "reason": "Converte buffs/Empower em compra ao conquistar.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Navori Fighting Pit",
+          "reason": "Buffa unidade ao controlar e fortalece mesa.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "The Dreaming Tree",
+          "reason": "Premia spells que escolhem unidades amigas.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Buff midrange",
+      "gamePlan": "Use a habilidade para colocar buff em unidades e transformar mesa comum em ameacas crescentes. Lee Sin quer combates repetidos onde seus buffs acumulam vantagem.",
+      "mulligan": "Procure unidades eficientes, cartas que recompensam buff/Mighty e protecao.",
+      "synergyPackages": [
+        "Buff constante melhora trades.",
+        "Unidades defendendo ou atacando ficam fora do alcance de remocoes pequenas.",
+        "Calm/Body sustenta combate prolongado."
+      ],
+      "deckbuildingTips": [
+        "Use unidades que sobrevivem para carregar buffs.",
+        "Nao concentre tudo em uma peca sem protecao.",
+        "Inclua algumas cartas de movimento para aplicar o buff onde importa."
+      ],
+      "weakness": "Pode ser lento se o oponente remover a unidade buffada antes de ela gerar valor.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "leona-radiant-dawn",
+      "name": "Leona - Radiant Dawn",
+      "translatedName": "Leona - Aurora Radiante",
+      "domains": [
+        "Calm",
+        "Order"
+      ],
+      "representativeCardId": "ogn-261-298",
+      "aliases": [
+        "ogn-261-298",
+        "ogn-306-298",
+        "ogn-306*-298",
+        "opp-261-298"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Fortified Position",
+          "reason": "Ajuda o plano defensivo de stun e combate.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Kinkou Temple",
+          "reason": "Fortalece unidades com Tank.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Sunken Temple",
+          "reason": "Compra quando unidades Mighty conquistam.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Stun midrange",
+      "gamePlan": "Stun inimigos para ativar buffs em suas unidades. Leona transforma controle de combate em crescimento de mesa.",
+      "mulligan": "Procure cartas de stun, unidades que atacam bem buffadas e ferramentas de defesa.",
+      "synergyPackages": [
+        "Stun ativa buff friendly.",
+        "Buffs tornam showdowns futuros melhores.",
+        "Calm/Order oferece defesa e controle de campo."
+      ],
+      "deckbuildingTips": [
+        "Use stun que tambem atrapalha pontuacao inimiga.",
+        "Tenha unidades para receber os buffs.",
+        "Nao jogue stuns sem aproveitar o buff gerado."
+      ],
+      "weakness": "Sem cartas de stun suficientes, Leona vira apenas uma lenda lenta.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "lillia-bashful-bloom",
+      "name": "Lillia - Bashful Bloom",
+      "translatedName": "Lillia - Flor Envergonhada",
+      "domains": [
+        "Calm",
+        "Mind"
+      ],
+      "representativeCardId": "unl-189-219",
+      "aliases": [
+        "unl-189-219",
+        "unl-230-219",
+        "unl-230*-219"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Altar of Blood",
+          "reason": "Aparece em lista Lillia e protege unidades em combate.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Black Flame Altar",
+          "reason": "Valoriza unidades Temporary com Shield.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Dusk Rose Lab",
+          "reason": "Transforma unidades em compra, comum em shells de valor.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        }
+      ],
+      "archetype": "Temporary token combo",
+      "gamePlan": "Reduza o custo da habilidade com unidades Temporary e produza Sprites prontos para pressionar ou defender. Lillia quer criar turnos largos com fichas temporarias.",
+      "mulligan": "Procure geradores de Temporary, cartas que aproveitam unidades entrando e buffs de grupo.",
+      "synergyPackages": [
+        "Temporary reduz custo da habilidade.",
+        "Sprites prontos criam presenca imediata.",
+        "Calm/Mind ajuda a comprar e controlar ritmo."
+      ],
+      "deckbuildingTips": [
+        "Tenha formas de usar as fichas antes que sumam.",
+        "Inclua payoff para mesa larga.",
+        "Nao dependa de fichas temporarias para segurar campo no longo prazo."
+      ],
+      "weakness": "Pode perder valor se as fichas expirarem sem conquistar ou trocar bem.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "lucian-purifier",
+      "name": "Lucian - Purifier",
+      "translatedName": "Lucian - Purificador",
+      "domains": [
+        "Fury",
+        "Body"
+      ],
+      "representativeCardId": "sfd-183-221",
+      "aliases": [
+        "opp-183-221",
+        "sfd-183-221",
+        "sfd-241-221"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Trifarian War Camp",
+          "reason": "Aumenta pressao e troca de combate.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "The Arena's Greatest",
+          "reason": "Acelera decks que querem pontuar cedo.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Trapping Grounds",
+          "reason": "Recompensa excesso de dano e ataques fortes.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Equipment assault",
+      "gamePlan": "Transforme cada equipamento em pressao ofensiva com Assault. Lucian quer unidades equipadas atacando com Might extra e mantendo o oponente na defesa.",
+      "mulligan": "Procure equipamentos baratos, unidades evasivas/agressivas e protecao contra remocao.",
+      "synergyPackages": [
+        "Todo equipamento concede Assault.",
+        "Unidades pequenas equipadas passam a ameaçar conquista.",
+        "Fury/Body favorece ataques fortes."
+      ],
+      "deckbuildingTips": [
+        "Use equipamentos de baixo custo para curvar bem.",
+        "Tenha unidades suficientes para carregar gear.",
+        "Inclua formas de recuperar valor se a unidade equipada morrer."
+      ],
+      "weakness": "Pode ficar vulneravel se comprar gear sem unidade ou perder o portador.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "lux-lady-of-luminosity",
+      "name": "Lux - Lady of Luminosity",
+      "translatedName": "Lux - Dama da Luminosidade",
+      "domains": [
+        "Mind",
+        "Order"
+      ],
+      "representativeCardId": "opp-021-024",
+      "aliases": [
+        "ogs-021-024",
+        "opp-021-024"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Forgotten Library",
+          "reason": "Premia spells de custo alto com Predict.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Ravenbloom Conservatory",
+          "reason": "Compra/recicla ao defender revelando spells.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "The Academy",
+          "reason": "Repeat para spells enquanto controla o campo.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Big spells value",
+      "gamePlan": "Jogue spells de custo 5+ para comprar e manter recursos. Lux quer controlar a partida ate spells grandes decidirem campos ou comprarem mais cartas.",
+      "mulligan": "Procure spells caros que afetam mesa, reducao/geracao de recursos e defesa inicial.",
+      "synergyPackages": [
+        "Spells 5+ substituem a si mesmos com compra.",
+        "Mind/Order favorece controle e valor.",
+        "Cartas caras precisam impactar campo imediatamente."
+      ],
+      "deckbuildingTips": [
+        "Tenha early game defensivo.",
+        "Use spells caros que ja sejam bons sem Lux.",
+        "Inclua compra menor para encontrar os payoffs."
+      ],
+      "weakness": "Pode morrer antes dos spells grandes se o deck nao tiver interacao cedo.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "master-yi-wuju-bladesman",
+      "name": "Master Yi - Wuju Bladesman",
+      "translatedName": "Master Yi - Espadachim Wuju",
+      "domains": [
+        "Calm",
+        "Body"
+      ],
+      "representativeCardId": "opp-019-024",
+      "aliases": [
+        "ogs-019-024",
+        "opp-019-024"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Monastery of Hirana",
+          "reason": "Transforma buffs em compra ao conquistar.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Navori Fighting Pit",
+          "reason": "Buffa unidade no controle do campo.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Trifarian War Camp",
+          "reason": "Might extra ajuda duelos e defesas isoladas.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Solo defender buff",
+      "gamePlan": "Defenda com uma unidade de cada vez para ganhar +2 Might e fazer trades eficientes. Esse Yi favorece unidades resistentes e combate limpo.",
+      "mulligan": "Procure unidades defensivas, buffs e cartas que protegem uma unidade isolada.",
+      "synergyPackages": [
+        "Defender sozinho recebe Might extra.",
+        "Buffs tornam uma unidade quase imbatível no campo.",
+        "Calm/Body permite combate eficiente."
+      ],
+      "deckbuildingTips": [
+        "Nao espalhe defesa sem necessidade.",
+        "Escolha unidades que sobrevivem depois do combate.",
+        "Tenha respostas para evasao ou remocao direta."
+      ],
+      "weakness": "Pode sofrer contra decks que atacam varios campos ao mesmo tempo.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "master-yi-wuju-master",
+      "name": "Master Yi - Wuju Master",
+      "translatedName": "Master Yi - Mestre Wuju",
+      "domains": [
+        "Calm",
+        "Body"
+      ],
+      "representativeCardId": "unl-191-219",
+      "aliases": [
+        "unl-191-219",
+        "unl-231-219",
+        "unl-231*-219"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Navori Fighting Pit",
+          "reason": "Buffs constantes para o plano de unidade grande.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Valley of Idols",
+          "reason": "Buff permanente em unidades jogadas no campo.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Sunken Temple",
+          "reason": "Compra com unidades Mighty.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "XP scaling midrange",
+      "gamePlan": "Acumule XP para liberar bonus de Might e unidades entrando prontas. O plano e sobreviver ate os niveis e depois dominar combates com mesa superior.",
+      "mulligan": "Procure formas de ganhar XP, unidades de custo medio e cartas que aproveitam ready.",
+      "synergyPackages": [
+        "Level 6 melhora toda a mesa.",
+        "Level 11 acelera unidades entrando prontas.",
+        "Calm/Body sustenta jogo longo."
+      ],
+      "deckbuildingTips": [
+        "Inclua early game suficiente para nao ficar atras.",
+        "Use cartas que ganham XP naturalmente.",
+        "Quando chegar ao Level 11, priorize unidades que impactam imediatamente."
+      ],
+      "weakness": "Pode ser lento se o deck nao ganhar XP em ritmo constante.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "mel-soul-s-reflection",
+      "name": "Mel - Soul's Reflection",
+      "translatedName": "Mel - Reflexão da Alma",
+      "domains": [
+        "Mind",
+        "Chaos"
+      ],
+      "representativeCardId": "ven-151-166",
+      "aliases": [
+        "ven-151-166",
+        "ven-195-166"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Heisho, Shell of the World",
+          "reason": "Ajuda spells/habilidades que escolhem alvos no campo.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Ravenbloom Conservatory",
+          "reason": "Valor defensivo para decks cheios de spells.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Void Gate",
+          "reason": "Aumenta dano de efeitos que escolhem unidades.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Empower control",
+      "gamePlan": "Empower outras cartas para ligar Mel e use Disempower para reduzir Might inimigo em combate. Mel joga para manipular lutas e punir ataques.",
+      "mulligan": "Procure cartas com Empower, debuffs, truques de combate e unidades que vencem por margem pequena.",
+      "synergyPackages": [
+        "Empower em outra carta liga Mel.",
+        "-2 Might decide showdowns.",
+        "Mind/Chaos combina debuff e truques."
+      ],
+      "deckbuildingTips": [
+        "Tenha uma massa boa de Empower.",
+        "Use a habilidade no combate onde muda a pontuacao.",
+        "Inclua cartas que compram para manter recursos."
+      ],
+      "weakness": "Sem Empower frequente, a habilidade fica presa.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "miss-fortune-bounty-hunter",
+      "name": "Miss Fortune - Bounty Hunter",
+      "translatedName": "Miss Fortune - Caçadora de Recompensas",
+      "domains": [
+        "Body",
+        "Chaos"
+      ],
+      "representativeCardId": "ogn-267-298",
+      "aliases": [
+        "ogn-267-298",
+        "ogn-309-298",
+        "ogn-309*-298",
+        "opp-267-298"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Trifarian War Camp",
+          "reason": "Might extra ajuda ataques largos.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Zaun Warrens",
+          "reason": "Filtra mao em decks agressivos.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Minefield",
+          "reason": "Alimenta lixo e pressao em conquistas.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Ganking tempo",
+      "gamePlan": "Dê Ganking a unidades para mudar de battlefield e atacar onde o oponente esta fraco. Miss Fortune vence por mobilidade e ataques inesperados.",
+      "mulligan": "Procure unidades com bons ataques, buffs temporarios e cartas que punem posicionamento ruim.",
+      "synergyPackages": [
+        "Ganking permite mover entre campos.",
+        "Ataques surpresa quebram defesas planejadas.",
+        "Body/Chaos favorece combate e truques."
+      ],
+      "deckbuildingTips": [
+        "Use unidades que ameaçam varios campos.",
+        "Nao gaste Ganking sem objetivo de pontuar.",
+        "Inclua buffs para transformar mobilidade em conquista."
+      ],
+      "weakness": "Pode perder eficiencia contra oponentes que espalham defesa bem.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "nasus-curator-of-the-sands",
+      "name": "Nasus - Curator of the Sands",
+      "translatedName": "Nasus - Curador das Areias",
+      "domains": [
+        "Calm",
+        "Mind"
+      ],
+      "representativeCardId": "ven-145-166",
+      "aliases": [
+        "ven-145-166",
+        "ven-192-166"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Shadow Temple",
+          "reason": "Burn 3 ao manter, excelente para Flow e descarte.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Minefield",
+          "reason": "Coloca cartas no lixo ao conquistar.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "The Papertree",
+          "reason": "Ajuda a canalizar runas para jogo mais longo.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Late game ramp / big energy",
+      "gamePlan": "Jogue cartas ou habilidades de custo 7+ para preparar runas e encadear turnos grandes. Nasus quer paciencia, defesa e payoffs caros.",
+      "mulligan": "Procure defesa inicial, cartas de custo alto realmente fortes e formas de chegar ao late game.",
+      "synergyPackages": [
+        "Custos 7+ preparam runas.",
+        "Ready de runas permite continuar jogando no mesmo turno.",
+        "Calm/Mind ajuda a comprar e controlar."
+      ],
+      "deckbuildingTips": [
+        "Use uma curva incomum, mas nao ignore early game.",
+        "Escolha payoffs caros que vencem campo, nao apenas compram valor.",
+        "Inclua controle para ganhar tempo."
+      ],
+      "weakness": "Pode ser atropelado por pressao se o early game for leve demais.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "ornn-fire-below-the-mountain",
+      "name": "Ornn - Fire Below the Mountain",
+      "translatedName": "Ornn - Fogo Abaixo da Montanha",
+      "domains": [
+        "Calm",
+        "Mind"
+      ],
+      "representativeCardId": "sfd-189-221",
+      "aliases": [
+        "opp-189-221",
+        "sfd-189-221",
+        "sfd-244-221"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Ornn's Forge",
+          "reason": "Reduz equipamentos e combina diretamente com Ornn.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Piltovan Forge",
+          "reason": "Barateia habilidades de equipamento.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Treasure Hoard",
+          "reason": "Cria Gold para acelerar jogadas.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Gear ramp",
+      "gamePlan": "Use a runa rainbow de Ornn para jogar equipamentos ou ativar habilidades de gear. O plano e transformar equipamentos em vantagem repetida.",
+      "mulligan": "Procure equipamentos com habilidades relevantes, unidades boas portadoras e cartas de protecao.",
+      "synergyPackages": [
+        "Runa para gear suaviza custos.",
+        "Equipamentos ativos ficam mais faceis de usar.",
+        "Calm/Mind favorece controle e compra."
+      ],
+      "deckbuildingTips": [
+        "Tenha quantidade alta de gear, mas nao esqueça unidades.",
+        "Priorize equipamentos que impactam combate ou recursos.",
+        "Inclua resposta para remocao de gear."
+      ],
+      "weakness": "Pode comprar pecas erradas: equipamento sem unidade ou unidade sem equipamento.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "poppy-keeper-of-the-hammer",
+      "name": "Poppy - Keeper of the Hammer",
+      "translatedName": "Poppy - Guardiã do Martelo",
+      "domains": [
+        "Body",
+        "Order"
+      ],
+      "representativeCardId": "unl-203-219",
+      "aliases": [
+        "unl-203-219",
+        "unl-237-219",
+        "unl-237*-219"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Fortified Position",
+          "reason": "Melhora defesa e seguranca de unidades.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Kinkou Temple",
+          "reason": "Recompensa Tank, comum em plano defensivo.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Altar of Blood",
+          "reason": "Permite preservar unidade chave em combate.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Hold XP value",
+      "gamePlan": "Segure campos para ganhar XP e depois compre cartas com a habilidade. Poppy quer defesa, resistencia e controle de battlefield.",
+      "mulligan": "Procure unidades resistentes, Tank/Shield, buffs defensivos e cartas que ajudam a hold.",
+      "synergyPackages": [
+        "Hold gera XP.",
+        "3 XP viram compra.",
+        "Body/Order protege mesa e cria valor longo."
+      ],
+      "deckbuildingTips": [
+        "Escolha battlefields que voce consegue defender.",
+        "Use unidades que sobrevivem a combates.",
+        "Nao jogue so defesa; precisa pontuar tambem."
+      ],
+      "weakness": "Pode ficar atras se o oponente contornar seus campos defendidos.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "pyke-bloodharbor-ripper",
+      "name": "Pyke - Bloodharbor Ripper",
+      "translatedName": "Pyke - Lacerador de Bloodharbor",
+      "domains": [
+        "Fury",
+        "Chaos"
+      ],
+      "representativeCardId": "unl-185-219",
+      "aliases": [
+        "unl-185-219",
+        "unl-228-219",
+        "unl-228*-219"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Ripper's Bay",
+          "reason": "Interage com retorno para mao e linhas de tempo.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Minefield",
+          "reason": "Alimenta lixo para planos de Chaos/Fury.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Zaun Warrens",
+          "reason": "Filtra mao e sustenta agressao.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Bounce / Gold tempo",
+      "gamePlan": "Retorne uma unidade amiga de battlefield para a mao e crie Gold. Pyke transforma recuo em recurso e reutiliza efeitos de entrada ou evita perdas ruins.",
+      "mulligan": "Procure unidades com efeitos ao entrar, cartas que gostam de Gold e ameacas baratas.",
+      "synergyPackages": [
+        "Bounce salva unidade ou reutiliza efeito.",
+        "Gold acelera turnos futuros.",
+        "Fury/Chaos favorece linhas agressivas e truques."
+      ],
+      "deckbuildingTips": [
+        "Use unidades que valem ser jogadas de novo.",
+        "Planeje quando voltar para mao nao custa campo demais.",
+        "Inclua payoff para Gold."
+      ],
+      "weakness": "Pode perder tempo se devolver unidade sem ganhar valor real.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "rek-sai-void-burrower",
+      "name": "Rek'sai - Void Burrower",
+      "translatedName": "Rek'sai - Escavador do Vazio",
+      "domains": [
+        "Fury",
+        "Order"
+      ],
+      "representativeCardId": "sfd-187-221",
+      "aliases": [
+        "opp-187-221",
+        "sfd-187-221",
+        "sfd-243-221"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Trapping Grounds",
+          "reason": "Recompensa dano excedente, plano natural de Rek’Sai.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "The Arena's Greatest",
+          "reason": "Acelera pressao de campo.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Trifarian War Camp",
+          "reason": "Might extra para conquistar com margem.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Conquer value",
+      "gamePlan": "Conquiste campos para revelar cartas do topo e jogar uma delas. Rek’Sai quer pressao constante que transforma conquista em cartas extras.",
+      "mulligan": "Procure unidades agressivas, buffs de combate e cartas que melhoram conquistas.",
+      "synergyPackages": [
+        "Conquer vira selecao de topo.",
+        "Jogar carta revelada aumenta tempo.",
+        "Fury/Order mistura pressao e mesa."
+      ],
+      "deckbuildingTips": [
+        "Monte para conquistar cedo e com frequencia.",
+        "Use cartas baratas para aproveitar o topo revelado.",
+        "Nao dependa de high roll; o deck precisa funcionar sem a lenda."
+      ],
+      "weakness": "Se nao conquistar, nao gera vantagem.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "renata-glasc-chem-baroness",
+      "name": "Renata Glasc - Chem-Baroness",
+      "translatedName": "Renata Glasc - Baronesa Química",
+      "domains": [
+        "Mind",
+        "Order"
+      ],
+      "representativeCardId": "sfd-201-221",
+      "aliases": [
+        "opp-201-221",
+        "sfd-201-221",
+        "sfd-249-221"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Dusk Rose Lab",
+          "reason": "Converte unidades em compra e apoia estrategias de valor.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Piltovan Forge",
+          "reason": "Apoia equipamentos e pecas de engine.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Zaun Warrens",
+          "reason": "Descarta/compra para achar motores.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Gold hold / comeback",
+      "gamePlan": "Segure campos para criar Gold e, perto do fim da partida, fazer Gold gerar energia adicional. Renata joga para estabilizar e virar com recursos.",
+      "mulligan": "Procure cartas de hold, defesa, uso de Gold e payoffs caros moderados.",
+      "synergyPackages": [
+        "Hold cria Gold.",
+        "Gold melhora perto da pontuacao final.",
+        "Mind/Order favorece controle e economia."
+      ],
+      "deckbuildingTips": [
+        "Use Gold como ponte para turnos maiores.",
+        "Inclua early game defensivo.",
+        "Escolha cartas caras que aproveitam energia extra imediatamente."
+      ],
+      "weakness": "Pode demorar demais se nao conseguir hold ou se o oponente pontuar rapido.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "renekton-butcher-of-the-sands",
+      "name": "Renekton - Butcher of the Sands",
+      "translatedName": "Renekton - Açougueiro das Areias",
+      "domains": [
+        "Fury",
+        "Body"
+      ],
+      "representativeCardId": "ven-141-166",
+      "aliases": [
+        "ven-141-166",
+        "ven-190-166"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Trifarian War Camp",
+          "reason": "Might extra para agressao de Body/Fury.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Sunken Temple",
+          "reason": "Compra com unidades Mighty.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "The Arena's Greatest",
+          "reason": "Acelera a corrida de pontos.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Unit ramp / abilities",
+      "gamePlan": "Use energia extra para jogar unidades ou ativar habilidades de unidades. Renekton quer mesa forte e habilidades que convertam energia em combate.",
+      "mulligan": "Procure unidades com habilidades ativadas, custos de energia e bom Might.",
+      "synergyPackages": [
+        "Energia so para unidades ou habilidades de unidades.",
+        "Fury/Body favorece unidades grandes e combate.",
+        "Habilidades ativadas transformam a lenda em engine."
+      ],
+      "deckbuildingTips": [
+        "Priorize unidades com bons sinks de energia.",
+        "Nao encha o deck de spells que nao usam a energia da lenda.",
+        "Inclua cartas baratas para chegar vivo aos turnos grandes."
+      ],
+      "weakness": "Pode desperdiçar habilidade se o deck tiver poucas habilidades de unidade.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "rengar-pridestalker",
+      "name": "Rengar - Pridestalker",
+      "translatedName": "Rengar - Caçador do Orgulho",
+      "domains": [
+        "Fury",
+        "Body"
+      ],
+      "representativeCardId": "unl-183-219",
+      "aliases": [
+        "unl-183-219",
+        "unl-227-219",
+        "unl-227*-219"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Trapping Grounds",
+          "reason": "Recompensa overkill e duelos.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Navori Fighting Pit",
+          "reason": "Buffa unidade para cacar combates.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Reckoner's Arena",
+          "reason": "Aproveita conquistas e unidades agressivas.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Unit chain aggro",
+      "gamePlan": "Cada unidade jogada dá +1 Might a uma unidade, criando combates favoráveis em sequencia. Rengar quer muitas unidades e turnos com multiplas jogadas.",
+      "mulligan": "Procure unidades baratas, buffs e cartas que compram ou criam corpos extras.",
+      "synergyPackages": [
+        "Jogar unidade vira buff temporario.",
+        "Varios corpos pequenos aumentam varias lutas.",
+        "Fury/Body favorece combate direto."
+      ],
+      "deckbuildingTips": [
+        "Baixe a curva para jogar mais de uma unidade por turno.",
+        "Use buffs para garantir conquistas, nao so dano.",
+        "Inclua compra para manter fluxo de unidades."
+      ],
+      "weakness": "Pode perder gas se a mao acabar ou se comprar cartas caras demais.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "rumble-mechanized-menace",
+      "name": "Rumble - Mechanized Menace",
+      "translatedName": "Rumble - Ameaça Mecanizada",
+      "domains": [
+        "Fury",
+        "Mind"
+      ],
+      "representativeCardId": "sfd-181-221",
+      "aliases": [
+        "opp-181-221",
+        "sfd-181-221",
+        "sfd-240-221"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Piltovan Forge",
+          "reason": "Apoia equipamentos e habilidades ativadas.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Minefield",
+          "reason": "Alimenta lixo e linhas de recurso.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "The Arena's Greatest",
+          "reason": "Pressiona pontuacao enquanto monta engine.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Mech defensive midrange",
+      "gamePlan": "Dê Shield aos Mechs e transforme unidades mecanicas em defensores eficientes. Rumble gosta de segurar campos e vencer por mesa resistente.",
+      "mulligan": "Procure Mechs, buffs defensivos e formas de punir ataques inimigos.",
+      "synergyPackages": [
+        "Mechs ganham Shield.",
+        "Shield aumenta resistencia em defesa.",
+        "Fury/Mind combina dano e controle."
+      ],
+      "deckbuildingTips": [
+        "Use uma base real de Mechs.",
+        "Nao jogue Rumble sem tribal suficiente.",
+        "Inclua cartas para converter defesa em conquista depois."
+      ],
+      "weakness": "Fica fraco se o suporte de Mech for baixo.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "sett-the-boss",
+      "name": "Sett - The Boss",
+      "translatedName": "Sett - O Chefe",
+      "domains": [
+        "Body",
+        "Order"
+      ],
+      "representativeCardId": "ogn-269-298",
+      "aliases": [
+        "ogn-269-298",
+        "ogn-310-298",
+        "ogn-310*-298",
+        "opp-269-298"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Monastery of Hirana",
+          "reason": "Aparece em lista Sett e transforma buffs em compra.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "The Arena's Greatest",
+          "reason": "Usado em lista Sett para acelerar o jogo.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Windswept Hillock",
+          "reason": "Ganking ajuda reposicionar unidades fortes.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        }
+      ],
+      "archetype": "Buff recursion midrange",
+      "gamePlan": "Proteja unidades buffadas que morreriam, gastando o buff para recua-las exauridas. Sett quer buffs consistentes e unidades que valem salvar.",
+      "mulligan": "Procure buffs permanentes, unidades de alto impacto e cartas de conquista.",
+      "synergyPackages": [
+        "Buff vira seguro contra morte.",
+        "Conquistar prepara Sett para repetir.",
+        "Body/Order ajuda em combate limpo."
+      ],
+      "deckbuildingTips": [
+        "Use buffs que voce aceita gastar para salvar unidade.",
+        "Escolha unidades que geram valor ao sobreviver.",
+        "Nao dependa de Sett para salvar tudo; escolha prioridades."
+      ],
+      "weakness": "Pode ficar sem valor contra efeitos que nao matam ou que removem de outra forma.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "shen-eye-of-twilight",
+      "name": "Shen - Eye of Twilight",
+      "translatedName": "Shen - Olho do Crepúsculo",
+      "domains": [
+        "Calm",
+        "Order"
+      ],
+      "representativeCardId": "ven-147-166",
+      "aliases": [
+        "ven-147-166",
+        "ven-193-166"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Fortified Position",
+          "reason": "Fortalece defesa, ponto central de Shen.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Kinkou Temple",
+          "reason": "Recompensa Tank e combinacoes defensivas.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Star Spring",
+          "reason": "Reposiciona unidades para base e protege pecas.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Tank protection",
+      "gamePlan": "Dê Tank a uma unidade amiga para controlar como dano de combate e distribuido. Shen quer proteger unidades-chave e manipular trocas.",
+      "mulligan": "Procure unidades resistentes, buffs defensivos e payoffs para defender/hold.",
+      "synergyPackages": [
+        "Tank força dano primeiro naquela unidade.",
+        "Protege unidades frágeis em campo.",
+        "Calm/Order favorece defesa e controle."
+      ],
+      "deckbuildingTips": [
+        "Use Tank na unidade que aguenta o dano.",
+        "Inclua cura/protecao ou buffs para o tanque.",
+        "Tenha plano para pontuar, nao apenas bloquear."
+      ],
+      "weakness": "Pode ser passivo demais contra decks que evitam combate direto.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "sivir-battle-mistress",
+      "name": "Sivir - Battle Mistress",
+      "translatedName": "Sivir - Mestra de Batalha",
+      "domains": [
+        "Body",
+        "Chaos"
+      ],
+      "representativeCardId": "sfd-203-221",
+      "aliases": [
+        "opp-203-221",
+        "sfd-203-221",
+        "sfd-250-221"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "The Grand Plaza",
+          "reason": "Premia mesa muito larga.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Seat of Power",
+          "reason": "Compra por controlar outros campos.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Trifarian War Camp",
+          "reason": "Buff global de Might para ataques largos.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Rune recycle / Gold ready",
+      "gamePlan": "Recicle runas para criar Gold e prepare Sivir quando unidades inimigas morrem. O plano e misturar economia com remocao e combate.",
+      "mulligan": "Procure cartas que reciclam runas, remocoes e formas de usar Gold.",
+      "synergyPackages": [
+        "Recycle rune cria Gold.",
+        "Matar inimigos prepara Sivir.",
+        "Body/Chaos combina combate e remocao."
+      ],
+      "deckbuildingTips": [
+        "Inclua formas confiaveis de reciclar runas.",
+        "Use remocao para preparar a lenda em turnos-chave.",
+        "Tenha payoffs que usam Gold sem perder tempo."
+      ],
+      "weakness": "Pode ficar inconsistente se nao reciclar runas ou matar unidades.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "teemo-swift-scout",
+      "name": "Teemo - Swift Scout",
+      "translatedName": "Teemo - Batedor Veloz",
+      "domains": [
+        "Mind",
+        "Chaos"
+      ],
+      "representativeCardId": "ogn-263-298",
+      "aliases": [
+        "ogn-263-298",
+        "ogn-307-298",
+        "ogn-307*-298",
+        "opp-263-298",
+        "pr-263a-298"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Bandle Tree",
+          "reason": "Mais espaco para Hidden e jogo de armadilhas.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "The Candlelit Sanctum",
+          "reason": "Filtra topo e ajuda encontrar pecas.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Zaun Warrens",
+          "reason": "Descarta/compra para manter pressao e achar tricks.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Hidden tempo",
+      "gamePlan": "Pague energia para esconder cartas com Hidden e recupere Teemo da champion zone ou mesa. Teemo joga com informacao oculta e ameaças difíceis de prever.",
+      "mulligan": "Procure cartas Hidden, efeitos surpresa e formas de reaproveitar Teemo.",
+      "synergyPackages": [
+        "Hidden mais barato amplia linhas de surpresa.",
+        "Recuperar Teemo permite reutilizar ou proteger a peça.",
+        "Mind/Chaos favorece truques e controle."
+      ],
+      "deckbuildingTips": [
+        "Use bastante Hidden para justificar a lenda.",
+        "Nao revele sua linha cedo demais.",
+        "Inclua cartas que punem o oponente por jogar em volta errado."
+      ],
+      "weakness": "Pode perder consistencia se comprar poucas cartas Hidden.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "vex-gloomist",
+      "name": "Vex - Gloomist",
+      "translatedName": "Vex - Sombrista",
+      "domains": [
+        "Calm",
+        "Chaos"
+      ],
+      "representativeCardId": "unl-193-219",
+      "aliases": [
+        "unl-193-219",
+        "unl-232-219",
+        "unl-232*-219"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Fortified Position",
+          "reason": "Recorrente em listas Vex e melhora defesa.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Star Spring",
+          "reason": "Aparece em listas de hold/controle de Vex.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Startipped Peak",
+          "reason": "Canaliza runa exaurida ao controlar, ajudando jogo longo.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        }
+      ],
+      "archetype": "Hold draw control",
+      "gamePlan": "Segure campos para comprar cartas. Vex quer jogo paciente, defesa eficiente e vantagem de mao ao transformar hold em recurso.",
+      "mulligan": "Procure unidades defensivas, efeitos de stun/debuff e cartas que seguram battlefield.",
+      "synergyPackages": [
+        "Hold ativa compra.",
+        "Comprar mais respostas reforça plano de controle.",
+        "Calm/Chaos combina atraso e truques."
+      ],
+      "deckbuildingTips": [
+        "Escolha battlefields que voce consegue segurar.",
+        "Inclua formas de pontuar depois de estabilizar.",
+        "Use compra para encontrar respostas, nao apenas acumular mao."
+      ],
+      "weakness": "Pode atrasar demais se nao conseguir converter compra em pontuacao.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "vi-piltover-enforcer",
+      "name": "Vi - Piltover Enforcer",
+      "translatedName": "Vi - Executor de Piltover",
+      "domains": [
+        "Fury",
+        "Order"
+      ],
+      "representativeCardId": "unl-187-219",
+      "aliases": [
+        "unl-187-219",
+        "unl-229-219",
+        "unl-229*-219"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Trapping Grounds",
+          "reason": "Recompensa 3+ dano excedente, exatamente o plano de Vi.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Trifarian War Camp",
+          "reason": "Might extra ajuda passar dano excedente.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Sunken Temple",
+          "reason": "Compra com unidades Mighty em conquistas.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Excess damage tempo",
+      "gamePlan": "Conquiste causando 3+ dano excedente para preparar uma unidade. Vi quer unidades grandes, buffs e combates em que voce vence por margem alta.",
+      "mulligan": "Procure buffs de Might, Assault e unidades que atacam muito acima da defesa.",
+      "synergyPackages": [
+        "Excesso de dano prepara unidade.",
+        "Ready permite novo uso/defesa/pressao.",
+        "Fury/Order combina ataque e mesa sólida."
+      ],
+      "deckbuildingTips": [
+        "Use buffs para passar do limite de 3 excesso.",
+        "Escolha alvos onde o overkill vira valor.",
+        "Nao dependa so de unidades pequenas."
+      ],
+      "weakness": "Pode ser bloqueada por defesas grandes que impedem dano excedente.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "viktor-herald-of-the-arcane",
+      "name": "Viktor - Herald of the Arcane",
+      "translatedName": "Viktor - Arauto do Arcano",
+      "domains": [
+        "Mind",
+        "Order"
+      ],
+      "representativeCardId": "ogn-265-298",
+      "aliases": [
+        "ogn-265-298",
+        "ogn-308-298",
+        "ogn-308*-298",
+        "opp-265-298"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Forbidding Waste",
+          "reason": "Aparece em lista Viktor e mexe com combates isolados.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Veiled Temple",
+          "reason": "Prepara equipamento em conquista e apoia tokens/equipamentos.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        },
+        {
+          "name": "Void Gate",
+          "reason": "Aumenta dano de spells/habilidades no campo.",
+          "source": "RiftAtlas meta decklists pesquisadas"
+        }
+      ],
+      "archetype": "Token go-wide",
+      "gamePlan": "Crie Recruit tokens para ocupar campos e aumentar presenca de mesa. Viktor quer muitos corpos pequenos, buffs de grupo e cartas que recompensam unidades entrando.",
+      "mulligan": "Procure payoffs de unidade, buffs globais e formas de transformar Recruit em conquista.",
+      "synergyPackages": [
+        "Habilidade cria corpo todo turno.",
+        "Mesa larga pressiona varios campos.",
+        "Mind/Order favorece valor e organizacao."
+      ],
+      "deckbuildingTips": [
+        "Use buffs de grupo ou equipamentos para tornar tokens relevantes.",
+        "Nao conte que 1 Might vence sozinho.",
+        "Inclua compra para aproveitar turnos longos."
+      ],
+      "weakness": "Pode sofrer contra efeitos que limpam ou ignoram unidades pequenas.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "volibear-relentless-storm",
+      "name": "Volibear - Relentless Storm",
+      "translatedName": "Volibear - Tempestade Implacável",
+      "domains": [
+        "Fury",
+        "Body"
+      ],
+      "representativeCardId": "ogn-249-298",
+      "aliases": [
+        "ogn-249-298",
+        "ogn-300-298",
+        "ogn-300*-298",
+        "opp-249-298"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Sunken Temple",
+          "reason": "Compra com unidades Mighty.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Startipped Peak",
+          "reason": "Canaliza runa exaurida para acelerar cartas grandes.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Targon's Peak",
+          "reason": "Deixa runas prontas depois de conquistar.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Mighty ramp",
+      "gamePlan": "Jogue unidades Mighty para canalizar runas e acelerar. Volibear quer unidades de 5+ Might, buffs e cartas caras que aproveitam ramp.",
+      "mulligan": "Procure unidades Mighty, buffs que chegam a 5 Might e payoffs de custo medio/alto.",
+      "synergyPackages": [
+        "Unidade Mighty canaliza runa.",
+        "Ramp permite turnos maiores.",
+        "Fury/Body favorece unidades grandes."
+      ],
+      "deckbuildingTips": [
+        "Tenha unidades naturalmente Mighty e formas de tornar outras Mighty.",
+        "Nao deixe a curva pesada demais.",
+        "Inclua early game para nao perder antes do ramp."
+      ],
+      "weakness": "Pode comprar cartas grandes sem tempo para joga-las se nao estabilizar.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "yasuo-unforgiven",
+      "name": "Yasuo - Unforgiven",
+      "translatedName": "Yasuo - Sem Perdão",
+      "domains": [
+        "Calm",
+        "Chaos"
+      ],
+      "representativeCardId": "ogn-259-298",
+      "aliases": [
+        "ogn-259-298",
+        "ogn-305-298",
+        "ogn-305*-298",
+        "opp-259-298"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Amateur Recital",
+          "reason": "Move unidade para base ao segurar.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Back-Alley Bar",
+          "reason": "Premia movimento com Might.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Windswept Hillock",
+          "reason": "Ganking facilita reposicionamento entre campos.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Movement tempo",
+      "gamePlan": "Mova unidades amigas para ou da base, criando ataques inesperados, salvando peças ou reposicionando defesa. Yasuo vence por mobilidade.",
+      "mulligan": "Procure unidades com bons ataques, efeitos ao mover e truques que punem posicionamento.",
+      "synergyPackages": [
+        "Mover de/para base muda lutas.",
+        "Mobilidade permite pontuar onde o oponente nao preparou defesa.",
+        "Calm/Chaos favorece truques e reposicionamento."
+      ],
+      "deckbuildingTips": [
+        "Use unidades que ameaçam multiplos campos.",
+        "Nao gaste movimento sem objetivo claro.",
+        "Inclua cartas que recompensam entrar/sair de battlefield."
+      ],
+      "weakness": "Pode gastar energia sem gerar vantagem se o movimento nao muda pontuacao.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    },
+    {
+      "id": "zed-master-of-shadows",
+      "name": "Zed - Master of Shadows",
+      "translatedName": "Zed - Mestre das Sombras",
+      "domains": [
+        "Fury",
+        "Chaos"
+      ],
+      "representativeCardId": "ven-143-166",
+      "aliases": [
+        "ven-143-166",
+        "ven-191-166"
+      ],
+      "recommendedBattlefields": [
+        {
+          "name": "Shadow Temple",
+          "reason": "Burn 3 alimenta o plano de banish/lixo.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "Zaun Warrens",
+          "reason": "Descarta e compra para achar ameacas.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        },
+        {
+          "name": "The Candlelit Sanctum",
+          "reason": "Filtra topo em conquistas para manter pressao.",
+          "source": "Heuristica por plano de jogo + texto do battlefield"
+        }
+      ],
+      "archetype": "Banish / rummage aggro",
+      "gamePlan": "Banish cartas suas para Empower Zed e use Disempower para descartar e comprar. Zed transforma banish e filtro de mao em consistencia agressiva.",
+      "mulligan": "Procure cartas que banem como custo/efeito, descarte util e ameacas baratas.",
+      "synergyPackages": [
+        "Banish liga Empower.",
+        "Discard+draw filtra mao.",
+        "Fury/Chaos favorece pressao e sacrificios de recurso."
+      ],
+      "deckbuildingTips": [
+        "Inclua banish suficiente para ligar a lenda.",
+        "Use o filtro para achar ameaças, nao so para ciclar sem plano.",
+        "Baixe a curva para aproveitar a consistencia."
+      ],
+      "weakness": "Pode ficar sem recursos se banir e descartar sem converter em campo.",
+      "source": "Catalogo local + heuristicas baseadas no texto da lenda"
+    }
+  ]
+}

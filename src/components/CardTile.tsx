@@ -1,5 +1,5 @@
 import type { RiftboundCard, TranslationEntry } from '../types';
-import { safeImageUrl, TYPE_NAMES } from '../lib/cards';
+import { isLandscapeCard, safeImageUrl, TYPE_NAMES } from '../lib/cards';
 
 interface CardTileProps {
   card: RiftboundCard;
@@ -9,9 +9,10 @@ interface CardTileProps {
 
 export function CardTile({ card, translation, onOpen }: CardTileProps) {
   const image = safeImageUrl(card);
+  const landscape = isLandscapeCard(card);
 
   return (
-    <button className="card-tile" onClick={() => onOpen(card)}>
+    <button className={`card-tile ${landscape ? 'landscape-card' : ''}`.trim()} onClick={() => onOpen(card)}>
       {image ? <img src={image} alt={card.name} loading="lazy" /> : <div className="missing-art">Imagem indisponivel</div>}
       <span>{translation ? 'PT-BR' : 'Pendente'}</span>
       <h3>{translation?.name || card.name}</h3>
