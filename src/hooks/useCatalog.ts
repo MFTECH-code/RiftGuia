@@ -16,11 +16,9 @@ export function useCatalog() {
   const [isRefreshing, setIsRefreshing] = React.useState(false);
   const mounted = React.useRef(false);
   const refreshController = React.useRef<AbortController | null>(null);
-  const translationCount = React.useRef(0);
 
-  const describeCatalog = React.useCallback((count: number, fetchedAt: string, source: string) => {
-    const translations = translationCount.current.toLocaleString('pt-BR');
-    return `${count.toLocaleString('pt-BR')} cartas ${source}, atualizado em ${snapshotDate(fetchedAt)}. ${translations} traducoes pt-BR.`;
+  const describeCatalog = React.useCallback((fetchedAt: string, source: string) => {
+    return `Catalogo ${source}, atualizado em ${snapshotDate(fetchedAt)}.`;
   }, []);
 
   const refreshCatalog = React.useCallback(async () => {
@@ -40,7 +38,7 @@ export function useCatalog() {
       }
       if (!mounted.current) return;
       setCards(snapshot.cards);
-      setStatus(describeCatalog(snapshot.cards.length, snapshot.fetchedAt, 'no cache do navegador'));
+      setStatus(describeCatalog(snapshot.fetchedAt, 'no cache do navegador'));
     } catch (error) {
       if (!mounted.current || controller.signal.aborted) return;
       const detail = error instanceof Error ? error.message : 'erro desconhecido';
@@ -66,7 +64,6 @@ export function useCatalog() {
       } catch {
         translations = {};
       }
-      translationCount.current = Object.keys(translations).length;
       if (mounted.current) setInitialTranslations(translations);
 
       try {
@@ -74,7 +71,7 @@ export function useCatalog() {
         const snapshot = cached || await fetchBundledCatalog(controller.signal);
         if (!mounted.current) return;
         setCards(snapshot.cards);
-        setStatus(describeCatalog(snapshot.cards.length, snapshot.fetchedAt, cached ? 'no cache do navegador' : 'no catalogo inicial'));
+        setStatus(describeCatalog(snapshot.fetchedAt, cached ? 'no cache do navegador' : 'no catalogo inicial'));
 
         if (!cached || !isCatalogFresh(cached)) {
           window.setTimeout(() => {

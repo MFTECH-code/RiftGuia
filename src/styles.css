@@ -101,6 +101,27 @@ main {
   gap: 0.75rem;
 }
 
+.catalog-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0.2rem 0 0.8rem;
+}
+
+.catalog-metrics span {
+  align-items: center;
+  background: rgba(241, 183, 95, 0.11);
+  border: 1px solid rgba(241, 183, 95, 0.35);
+  border-radius: 999px;
+  color: #ffe1a6;
+  display: inline-flex;
+  font-size: 0.9rem;
+  font-weight: 700;
+  gap: 0.35rem;
+  min-height: 2rem;
+  padding: 0.35rem 0.7rem;
+}
+
 .catalog-status button {
   min-height: 2rem;
   padding: 0.35rem 0.65rem;

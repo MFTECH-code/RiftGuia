@@ -20,6 +20,11 @@ export function App() {
     [initialTranslations, customTranslations],
   );
 
+  const translatedCount = React.useMemo(
+    () => cards.filter((card) => Boolean(translate(card))).length,
+    [cards, translate],
+  );
+
   const guides = React.useMemo(() => buildGuides(cards, translate), [cards, translate]);
   const selectedCard = React.useMemo(
     () => cards.find((card) => selectedCardId && cardHasId(card, selectedCardId)) || null,
@@ -44,6 +49,8 @@ export function App() {
       <AppHeader
         status={status}
         view={view}
+        cardCount={cards.length}
+        translatedCount={translatedCount}
         isRefreshing={isRefreshing}
         onRefresh={() => void refreshCatalog()}
         onViewChange={navigateView}

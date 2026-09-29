@@ -122,8 +122,21 @@ export function mergedTranslation(
   initial: TranslationMap,
   custom: TranslationMap,
 ): TranslationEntry | undefined {
-  const translation = custom[card.riftbound_id] || initial[card.riftbound_id];
-  return translation?.source === (card.text?.plain || '') ? translation : undefined;
+  const ids = [card.riftbound_id, ...(card.printings?.map((printing) => printing.riftbound_id) || [])];
+  const uniqueIds = [...new Set(ids)];
+  const source = card.text?.plain || '';
+
+  for (const id of uniqueIds) {
+    const translation = custom[id];
+    if (translation?.source === source) return translation;
+  }
+
+  for (const id of uniqueIds) {
+    const translation = initial[id];
+    if (translation?.source === source) return translation;
+  }
+
+  return undefined;
 }
 
 export function cardHasId(card: RiftboundCard, cardId: string): boolean {
