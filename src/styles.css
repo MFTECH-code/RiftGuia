@@ -3505,3 +3505,299 @@ main {
     white-space: normal;
   }
 }
+
+/* Official rune image icons */
+.game-symbol.rune.official-style {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.36));
+}
+
+.game-symbol.rune.official-style svg {
+  height: 1.78em;
+  overflow: visible;
+  width: 1.78em;
+}
+
+.game-symbol.rune.official-style image {
+  display: block;
+}
+
+/* Cleaner, sharper UI pass */
+:root {
+  --radius-lg: 16px;
+  --radius-md: 10px;
+  --radius-sm: 6px;
+}
+
+.primary-nav {
+  background: rgba(6, 16, 21, 0.92);
+  border: 1px solid rgba(125, 169, 174, 0.28);
+  border-radius: 12px;
+  box-shadow: 0 0.7rem 1.8rem rgba(0, 0, 0, 0.3);
+  gap: 0.15rem;
+  max-width: min(92vw, 38rem);
+  padding: 0.22rem;
+}
+
+.primary-nav::before {
+  display: none;
+}
+
+.primary-nav button {
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  color: #b9ced1;
+  min-height: 2.25rem;
+  min-width: 8.5rem;
+  padding: 0.55rem 0.8rem;
+  text-shadow: none;
+}
+
+.primary-nav button:hover {
+  background: rgba(255, 255, 255, 0.055);
+  border-color: transparent;
+  color: #effaf8;
+  transform: none;
+}
+
+.primary-nav button.active {
+  animation: none;
+  background: rgba(241, 183, 95, 0.16);
+  border: 0;
+  box-shadow: inset 0 -2px 0 #f1b75f;
+  color: #ffe4a9;
+}
+
+.primary-nav button.active svg {
+  filter: none;
+}
+
+.topbar,
+.page-hero,
+.panel,
+.toolbar,
+.term-card,
+.builder-step-block,
+.builder-suggestions,
+.deck-stats-panel,
+.builder-import-box,
+.builder-preview,
+.card-tile,
+.builder-card-list article,
+.deck-steps article,
+.strategy-example,
+.deck-preview button,
+.stat-card,
+.keyword-badge,
+.problem-list,
+.empty-state {
+  border-radius: 12px;
+}
+
+.site-logo-country::after,
+.catalog-metrics span,
+.hero-stats span,
+.selected-pill,
+.builder-archetype,
+.rune-suggestion-list span,
+.translation-badge,
+.filter-chips button,
+.spark-badge,
+.snapshot-badge,
+.file-button,
+.secondary-action,
+button,
+input,
+select,
+textarea {
+  border-radius: 8px;
+}
+
+.hero-tagline {
+  border-radius: 8px;
+}
+
+.card-tile img,
+.card-image,
+.builder-card-thumb,
+.deck-preview-thumb,
+.builder-card-hover-preview,
+.builder-card-hover-preview > img,
+.builder-card-hover-preview > .missing-art {
+  border-radius: 8px;
+}
+
+@media (max-width: 720px) {
+  .primary-nav {
+    border-radius: 12px;
+  }
+}
+
+/* Minimal page navigation bar */
+main {
+  padding-top: clamp(1rem, 2vw, 2rem);
+}
+
+.primary-nav {
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(125, 169, 174, 0.24);
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  gap: 1.35rem;
+  justify-content: flex-start;
+  left: auto;
+  margin: 0 0 1rem;
+  max-width: none;
+  padding: 0 0 0.65rem;
+  position: relative;
+  right: auto;
+  top: auto;
+  transform: none;
+  width: 100%;
+  z-index: 10;
+}
+
+.primary-nav button {
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  color: var(--muted);
+  min-height: auto;
+  min-width: 0;
+  padding: 0.2rem 0 0.45rem;
+  position: relative;
+}
+
+.primary-nav button::after {
+  background: var(--accent);
+  bottom: 0;
+  content: '';
+  height: 2px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  transform: scaleX(0.4);
+  transform-origin: left center;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.primary-nav button:hover {
+  background: transparent;
+  color: var(--text);
+  transform: none;
+}
+
+.primary-nav button.active {
+  background: transparent;
+  box-shadow: none;
+  color: #ffe4a9;
+}
+
+.primary-nav button.active::after,
+.primary-nav button:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+@media (max-width: 720px) {
+  .primary-nav {
+    border-radius: 0;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    width: 100%;
+  }
+
+  .primary-nav button {
+    min-width: 0;
+  }
+}
+
+/* Deck builder game plan integration */
+.builder-game-plan {
+  background:
+    linear-gradient(135deg, rgba(241, 183, 95, 0.12), rgba(58, 178, 255, 0.06)),
+    rgba(5, 15, 20, 0.32) !important;
+  border-color: rgba(241, 183, 95, 0.22) !important;
+}
+
+.builder-game-plan-heading {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+
+.builder-game-plan-heading h4 {
+  margin: 0;
+}
+
+.compact-action {
+  align-items: center;
+  border: 1px solid rgba(241, 183, 95, 0.28);
+  display: inline-flex;
+  flex: 0 0 auto;
+  font-size: 0.78rem;
+  gap: 0.35rem;
+  min-height: 0;
+  padding: 0.42rem 0.55rem;
+}
+
+.game-plan-timeline {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.game-plan-stage {
+  display: grid;
+  gap: 0.65rem;
+  grid-template-columns: auto 1fr;
+}
+
+.game-plan-stage > span {
+  align-items: center;
+  background: rgba(241, 183, 95, 0.16);
+  border: 1px solid rgba(241, 183, 95, 0.35);
+  color: #ffe4a9;
+  display: inline-flex;
+  font-size: 0.78rem;
+  font-weight: 900;
+  height: 1.55rem;
+  justify-content: center;
+  line-height: 1;
+  width: 1.55rem;
+}
+
+.game-plan-stage strong {
+  color: #f9fbf6;
+  display: block;
+  margin-bottom: 0.28rem;
+}
+
+.builder-suggestions .game-plan-stage ul {
+  gap: 0.3rem;
+  padding-left: 1rem;
+}
+
+.builder-suggestions .game-plan-stage li {
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 720px) {
+  .builder-game-plan-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .compact-action {
+    width: 100%;
+  }
+}

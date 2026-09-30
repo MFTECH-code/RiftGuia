@@ -3,7 +3,7 @@ import { normalize } from './cards';
 
 export const SECTION_LABELS: Record<DeckSection, string> = {
   legend: 'Lenda',
-  champion: 'Campeao escolhido',
+  champion: 'Campeão escolhido',
   main: 'Deck principal',
   runes: 'Runas',
   battlefields: 'Campos de batalha',
@@ -18,8 +18,8 @@ const HEADINGS: Record<string, DeckSection> = {
   champion: 'champion',
   'chosen champion': 'champion',
   'champion unit': 'champion',
-  campeao: 'champion',
-  'campeao escolhido': 'champion',
+  campeão: 'champion',
+  'campeão escolhido': 'champion',
   'main deck': 'main',
   mainboard: 'main',
   main: 'main',
@@ -106,7 +106,7 @@ export function parseDeck(
   let blocked = false;
 
   if (typeof text !== 'string' || text.length > 100000) {
-    return { rows, errors: [{ line: 0, text: '', message: 'A lista deve ter ate 100 mil caracteres.' }], notices };
+    return { rows, errors: [{ line: 0, text: '', message: 'A lista deve ter até 100 mil caracteres.' }], notices };
   }
 
   const names = new Map<string, RiftboundCard[]>();
@@ -134,13 +134,13 @@ export function parseDeck(
     }
 
     if (/^(?:[#~*]{2,}|\[)/.test(line) || /:$/.test(line)) {
-      errors.push({ line: index + 1, text: line, message: 'Cabecalho desconhecido. Use Legend, Champion, Main Deck, Runes, Battlefields ou Sideboard.' });
+      errors.push({ line: index + 1, text: line, message: 'Cabeçalho desconhecido. Use Legend, Champion, Main Deck, Runes, Battlefields ou Sideboard.' });
       blocked = true;
       return;
     }
 
     if (blocked) {
-      errors.push({ line: index + 1, text: line, message: 'Corrija o cabecalho anterior antes de importar esta carta.' });
+      errors.push({ line: index + 1, text: line, message: 'Corrija o cabeçalho anterior antes de importar esta carta.' });
       return;
     }
 
@@ -174,13 +174,13 @@ export function parseDeck(
 
     candidates = [...new Map(candidates.map((card) => [card.riftbound_id, card])).values()];
     if (!candidates.length) {
-      errors.push({ line: index + 1, text: line, message: catalog.length ? 'Carta nao encontrada. Confira nome, traducao ou codigo.' : 'O catalogo ainda nao carregou.' });
+      errors.push({ line: index + 1, text: line, message: catalog.length ? 'Carta não encontrada. Confira nome, tradução ou código.' : 'O catálogo ainda não carregou.' });
       return;
     }
 
     const distinct = new Set(candidates.map((card) => nameKey(card.name)));
     if (distinct.size > 1) {
-      errors.push({ line: index + 1, text: line, message: `Nome ambiguo. Use o codigo completo: ${candidates.map((card) => card.riftbound_id).join(', ')}` });
+      errors.push({ line: index + 1, text: line, message: `Nome ambíguo. Use o código completo: ${candidates.map((card) => card.riftbound_id).join(', ')}` });
       return;
     }
 
@@ -188,12 +188,12 @@ export function parseDeck(
     const natural = inferred(card);
     const bucket: DeckSection = section === 'sideboard' ? 'sideboard' : natural !== 'main' ? natural : section || natural;
     if ((bucket === 'legend' && natural !== 'legend') || (bucket === 'runes' && natural !== 'runes') || (bucket === 'battlefields' && natural !== 'battlefields')) {
-      errors.push({ line: index + 1, text: line, message: `O tipo da carta nao corresponde a secao ${SECTION_LABELS[bucket]}.` });
+      errors.push({ line: index + 1, text: line, message: `O tipo da carta não corresponde a seção ${SECTION_LABELS[bucket]}.` });
       return;
     }
 
     if (candidates.length > 1) {
-      notices.push(`Linha ${index + 1}: ${candidates.length} impressoes de ${card.name}; usando ${card.riftbound_id}.`);
+      notices.push(`Linha ${index + 1}: ${candidates.length} impressões de ${card.name}; usando ${card.riftbound_id}.`);
     }
 
     const existing = rows.find((row) => row.section === bucket && row.card.riftbound_id === card.riftbound_id);

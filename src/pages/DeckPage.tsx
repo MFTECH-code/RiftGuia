@@ -42,17 +42,17 @@ export function DeckPage({ cards, guides, translate, onOpenCard }: DeckPageProps
           <article>
             <BookOpen size={20} />
             <h3>1. Escolha a lenda</h3>
-            <p>A lenda define os dominios do deck e a habilidade que fica ativa durante a partida. Ela e o ponto de partida do plano de jogo.</p>
+            <p>A lenda define os domínios do deck e a habilidade que fica ativa durante a partida. Ela é o ponto de partida do plano de jogo.</p>
           </article>
           <article>
             <Flag size={20} />
-            <h3>2. Escolha o campeao</h3>
-            <p>O Chosen Champion e a unidade que voce sempre tera acesso. Monte o deck para aproveitar essa garantia.</p>
+            <h3>2. Escolha o campeão</h3>
+            <p>O Chosen Champion é a unidade que você sempre terá acesso. Monte o deck para aproveitar essa garantia.</p>
           </article>
           <article>
             <Layers3 size={20} />
             <h3>3. Preencha o Main Deck</h3>
-            <p>Use cartas dos dominios da lenda. Em construido, mire em 40 cartas e evite passar disso para comprar suas melhores cartas com mais frequencia.</p>
+            <p>Use cartas dos domínios da lenda. Em construído, mire em 40 cartas e evite passar disso para comprar suas melhores cartas com mais frequência.</p>
           </article>
           <article>
             <Sparkles size={20} />
@@ -66,61 +66,61 @@ export function DeckPage({ cards, guides, translate, onOpenCard }: DeckPageProps
             <h3>Receita inicial para testar</h3>
             <ul>
               <li><CheckCircle2 size={16} /> 1 Chosen Champion e cartas que realmente aproveitam sua habilidade.</li>
-              <li><CheckCircle2 size={16} /> Ate 3 copias das cartas centrais, incluindo assinaturas do campeao quando fizer sentido.</li>
+              <li><CheckCircle2 size={16} /> Até 3 cópias das cartas centrais, incluindo assinaturas do campeão quando fizer sentido.</li>
               <li><CheckCircle2 size={16} /> 9 ou mais unidades pequenas para disputar campos cedo.</li>
-              <li><CheckCircle2 size={16} /> 6 ou mais cartas interativas: remocao, truques de combate, protecao ou buffs.</li>
+              <li><CheckCircle2 size={16} /> 6 ou mais cartas interativas: remoção, truques de combate, proteção ou buffs.</li>
               <li><CheckCircle2 size={16} /> Um plano claro para vencer: pressionar cedo, controlar campos, criar uma unidade enorme ou finalizar em um turno forte.</li>
             </ul>
           </div>
           <div className="deck-ai-preview">
             <h3>Preparando o assistente de IA</h3>
-            <p>Na proxima feature, ao selecionar uma lenda, o site podera sugerir pacotes de cartas, combos e ajustes usando esta mesma estrutura: lenda, campeao, sinergias, curva, runas e campos.</p>
+            <p>Na próxima feature, ao selecionar uma lenda, o site poderá sugerir pacotes de cartas, combos e ajustes usando esta mesma estrutura: lenda, campeão, sinergias, curva, runas e campos.</p>
           </div>
         </div>
 
         <div className="deck-strategies">
-          <h3>Escolha uma estrategia antes de escolher todas as cartas</h3>
-          <p className="meta-note">No meta competitivo, a maioria dos decks parte de tres pilares: pressao, tempo e midrange. Combo, valor, spells ou equipamentos costumam ser sabores desses planos, nao categorias totalmente separadas.</p>
+          <h3>Escolha uma estratégia antes de escolher todas as cartas</h3>
+          <p className="meta-note">No meta competitivo, a maioria dos decks parte de três pilares: pressão, tempo e midrange. Combo, valor, spells ou equipamentos costumam ser sabores desses planos, não categorias totalmente separadas.</p>
           <div>
             <article>
               <Swords size={20} />
-              <h4>Pressao / Aggro</h4>
+              <h4>Pressão / Aggro</h4>
               <p>Quer ocupar campos cedo, colocar muitas unidades na mesa e pontuar antes que cartas caras importem. Procure custos baixos, unidades prontas, buffs baratos, dano e cartas que convertem conquista em vantagem.</p>
               <div className="strategy-example">
                 <strong>Exemplo: Jinx descarte aggro</strong>
-                <p>Esvazie a mao com unidades baratas e custos de descarte para ativar a compra da lenda. A sinergia e transformar a propria falta de cartas em combustivel para continuar atacando.</p>
+                <p>Esvazie a mão com unidades baratas e custos de descarte para ativar a compra da lenda. A sinergia é transformar a própria falta de cartas em combustível para continuar atacando.</p>
               </div>
               <span>Cuidado: precisa fechar ou criar vantagem antes que o oponente estabilize.</span>
             </article>
             <article>
               <Zap size={20} />
-              <h4>Tempo / interacao</h4>
-              <p>Quer ficar sempre um passo a frente: baixa uma ameaca eficiente e usa truques, movimento, stun, bounce ou remocao barata para vencer combates e desperdiçar o turno adversario.</p>
+              <h4>Tempo / interação</h4>
+              <p>Quer ficar sempre um passo à frente: baixa uma ameaça eficiente e usa truques, movimento, stun, bounce ou remoção barata para vencer combates e desperdiçar o turno adversário.</p>
               <div className="strategy-example">
                 <strong>Exemplo: Akali Retreat Tempo</strong>
-                <p>Force o oponente a se comprometer com um campo, depois use movimento e retorno para mudar a luta. A sinergia e transformar cada reposicionamento em carta, forca, dano ou melhor distribuicao de unidades.</p>
+                <p>Force o oponente a se comprometer com um campo, depois use movimento e retorno para mudar a luta. A sinergia é transformar cada reposicionamento em carta, força, dano ou melhor distribuição de unidades.</p>
               </div>
-              <span>Cuidado: se voce gastar respostas sem ganhar campo, pode ficar sem pressao.</span>
+              <span>Cuidado: se você gastar respostas sem ganhar campo, pode ficar sem pressão.</span>
             </article>
             <article>
               <Gauge size={20} />
               <h4>Midrange / valor</h4>
-              <p>Joga bem em varios turnos: troca recursos, usa unidades mais eficientes e vence quando suas cartas medias e caras geram mais impacto que as respostas do oponente.</p>
+              <p>Joga bem em vários turnos: troca recursos, usa unidades mais eficientes e vence quando suas cartas médias e caras geram mais impacto que as respostas do oponente.</p>
               <div className="strategy-example">
                 <strong>Exemplo: Azir soldados e equipamentos</strong>
-                <p>Gere Soldados de Areia repetidamente, equipe-os e transforme presenca de mesa em vantagem. A sinergia e criar muitas pecas pequenas que ficam relevantes com equipamentos e efeitos de valor.</p>
+                <p>Gere Soldados de Areia repetidamente, equipe-os e transforme presença de mesa em vantagem. A sinergia é criar muitas peças pequenas que ficam relevantes com equipamentos e efeitos de valor.</p>
               </div>
-              <span>Cuidado: precisa equilibrar curva baixa, interacao e cartas fortes para nao comprar so topo de curva.</span>
+              <span>Cuidado: precisa equilibrar curva baixa, interação e cartas fortes para não comprar só topo de curva.</span>
             </article>
             <article>
               <Shield size={20} />
               <h4>Lento / topo de curva</h4>
-              <p>Aceita jogar mais devagar para chegar em cartas de alto impacto. Funciona melhor como Midrange de valor: defesa cedo, compra, remocao e finalizadores que dominam campos no fim do jogo.</p>
+              <p>Aceita jogar mais devagar para chegar em cartas de alto impacto. Funciona melhor como Midrange de valor: defesa cedo, compra, remoção e finalizadores que dominam campos no fim do jogo.</p>
               <div className="strategy-example">
                 <strong>Exemplo: Nasus Flow Value</strong>
-                <p>Use Burn para encher o descarte e Flow para jogar cartas dali de novo. A sinergia real e repetivel: preparar o descarte, recuperar recursos e vencer porque suas melhores cartas valem duas vezes.</p>
+                <p>Use Burn para encher o descarte e Flow para jogar cartas dali de novo. A sinergia real é repetível: preparar o descarte, recuperar recursos e vencer porque suas melhores cartas valem duas vezes.</p>
               </div>
-              <span>Cuidado: precisa sobreviver aos primeiros turnos e nao pode ter cartas caras demais.</span>
+              <span>Cuidado: precisa sobreviver aos primeiros turnos e não pode ter cartas caras demais.</span>
             </article>
           </div>
         </div>
@@ -149,7 +149,7 @@ export function DeckPage({ cards, guides, translate, onOpenCard }: DeckPageProps
       </div>
 
       <div className="panel">
-        <h2>Previa do deck</h2>
+        <h2>Prévia do deck</h2>
         <p className="help">{parsedDeck.rows.reduce((sum, row) => sum + row.quantity, 0)} cartas resolvidas em {parsedDeck.rows.length} entradas.</p>
         <DeckPreview rows={parsedDeck.rows} translate={translate} onOpen={onOpenCard} />
       </div>
@@ -166,7 +166,7 @@ export function DeckPage({ cards, guides, translate, onOpenCard }: DeckPageProps
           </button>
         </div>
         {selectedGuide && <p className="guide-preview">{selectedGuide.text}</p>}
-        <textarea value={deckPlan} onChange={(event) => setDeckPlan(event.target.value)} rows={10} placeholder="Objetivo do deck, mao inicial, primeiros turnos, combinacoes e ajustes apos jogar..." />
+        <textarea value={deckPlan} onChange={(event) => setDeckPlan(event.target.value)} rows={10} placeholder="Objetivo do deck, mão inicial, primeiros turnos, combinações e ajustes após jogar..." />
       </div>
     </section>
   );

@@ -84,7 +84,7 @@ function normalizeCards(cards: RiftboundCard[]): RiftboundCard[] {
 }
 
 export function validateCardSnapshot(value: unknown): CardSnapshot {
-  if (!value || typeof value !== 'object') throw new Error('Catalogo invalido.');
+  if (!value || typeof value !== 'object') throw new Error('Catálogo inválido.');
   const snapshot = value as Partial<CardSnapshot>;
   if (
     snapshot.schemaVersion !== 1 ||
@@ -94,14 +94,14 @@ export function validateCardSnapshot(value: unknown): CardSnapshot {
     !snapshot.cards.every(isCard) ||
     snapshot.cards.length !== snapshot.total
   ) {
-    throw new Error('Catalogo invalido.');
+    throw new Error('Catálogo inválido.');
   }
   const cards = normalizeCards(snapshot.cards);
   return { ...snapshot, total: cards.length, cards } as CardSnapshot;
 }
 
 function validatePage(value: unknown, page: number): RiftCodexPage {
-  if (!value || typeof value !== 'object') throw new Error(`Pagina ${page} invalida.`);
+  if (!value || typeof value !== 'object') throw new Error(`Página ${page} invalida.`);
   const result = value as Partial<RiftCodexPage>;
   if (
     !Array.isArray(result.items) ||
@@ -111,7 +111,7 @@ function validatePage(value: unknown, page: number): RiftCodexPage {
     Number(result.pages) < 1 ||
     Number(result.pages) > 200
   ) {
-    throw new Error(`Pagina ${page} invalida.`);
+    throw new Error(`Página ${page} invalida.`);
   }
   return result as RiftCodexPage;
 }
@@ -122,7 +122,7 @@ async function fetchPage(page: number, signal?: AbortSignal): Promise<RiftCodexP
   const timeoutSignal = AbortSignal.timeout(30_000);
   const requestSignal = signal ? AbortSignal.any([signal, timeoutSignal]) : timeoutSignal;
   const response = await fetch(url, { headers: { Accept: 'application/json' }, signal: requestSignal });
-  if (!response.ok) throw new Error(`Riftcodex respondeu ${response.status} na pagina ${page}.`);
+  if (!response.ok) throw new Error(`Riftcodex respondeu ${response.status} na página ${page}.`);
   return validatePage(await response.json(), page);
 }
 
@@ -175,7 +175,7 @@ export async function fetchRiftCodexCatalog(
 
 export async function fetchBundledCatalog(signal?: AbortSignal): Promise<CardSnapshot> {
   const response = await fetch(SNAPSHOT_URL, { cache: 'force-cache', signal });
-  if (!response.ok) throw new Error(`Catalogo local respondeu ${response.status}.`);
+  if (!response.ok) throw new Error(`Catálogo local respondeu ${response.status}.`);
   return validateCardSnapshot(await response.json());
 }
 
@@ -186,7 +186,7 @@ function openCatalogDatabase(): Promise<IDBDatabase> {
       if (!request.result.objectStoreNames.contains(CACHE_STORE)) request.result.createObjectStore(CACHE_STORE);
     };
     request.onsuccess = () => resolve(request.result);
-    request.onerror = () => reject(request.error || new Error('Nao foi possivel abrir o cache.'));
+    request.onerror = () => reject(request.error || new Error('Não foi possível abrir o cache.'));
   });
 }
 

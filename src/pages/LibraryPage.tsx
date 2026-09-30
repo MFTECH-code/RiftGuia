@@ -65,11 +65,11 @@ export function LibraryPage({ cards, customTranslations, translate, onOpenCard, 
     if (!file) return;
     try {
       const data = JSON.parse(await file.text()) as { format?: string; version?: number; translations?: unknown };
-      if (data.format !== 'rift-guia' || data.version !== 1) throw new Error('formato invalido');
+      if (data.format !== 'rift-guia' || data.version !== 1) throw new Error('formato inválido');
       onImportTranslations(validateTranslations(data.translations));
-      onStatusChange('Traducoes importadas. Suas edicoes locais existentes foram preservadas.');
+      onStatusChange('Traduções importadas. Suas edições locais existentes foram preservadas.');
     } catch {
-      onStatusChange('Nao foi possivel importar. Use um arquivo exportado pelo Rift Guia.');
+      onStatusChange('Não foi possível importar. Use um arquivo exportado pelo Rift Guia.');
     }
   }
 
@@ -97,11 +97,11 @@ export function LibraryPage({ cards, customTranslations, translate, onOpenCard, 
           <option value="">Tipo</option>
           {types.map((type) => <option key={type} value={type}>{TYPE_NAMES[type] || type}</option>)}
         </select>
-        <select value={filters.domain} onChange={(event) => updateFilters({ domain: event.target.value })} aria-label="Dominio">
+        <select value={filters.domain} onChange={(event) => updateFilters({ domain: event.target.value })} aria-label="Domínio">
           <option value="">Domínio</option>
           {domains.map((domain) => <option key={domain} value={domain}>{DOMAIN_NAMES[domain] || domain}</option>)}
         </select>
-        <select value={filters.set} onChange={(event) => updateFilters({ set: event.target.value })} aria-label="Colecao">
+        <select value={filters.set} onChange={(event) => updateFilters({ set: event.target.value })} aria-label="Coleção">
           <option value="">Coleção</option>
           {sets.map((set) => <option key={set} value={set}>{set}</option>)}
         </select>
@@ -133,7 +133,7 @@ export function LibraryPage({ cards, customTranslations, translate, onOpenCard, 
             <FileUp size={16} /> Importar traduções
             <input type="file" accept="application/json,.json" onChange={(event) => void importTranslations(event.target.files?.[0])} />
           </label>
-          <button className="secondary-action" onClick={() => download('rift-guia-traducoes.json', JSON.stringify({ format: 'rift-guia', version: 1, translations: customTranslations }, null, 2), 'application/json')}>
+          <button className="secondary-action" onClick={() => download('rift-guia-traduções.json', JSON.stringify({ format: 'rift-guia', version: 1, translations: customTranslations }, null, 2), 'application/json')}>
             <Download size={16} /> Exportar minhas traduções
           </button>
         </div>

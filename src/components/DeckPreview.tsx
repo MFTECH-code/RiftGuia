@@ -34,7 +34,7 @@ export function DeckPreview({ rows, translate, onOpen }: DeckPreviewProps) {
                   )}
                   <span className="deck-preview-copy">
                     <strong>{row.quantity}x {translation?.name || row.card.name}</strong>
-                    <CardRulesText text={translation?.text} fallback="Traducao pendente" compact />
+                    <CardRulesText text={translation?.text} fallback="Tradução pendente" compact />
                   </span>
                 </button>
               );

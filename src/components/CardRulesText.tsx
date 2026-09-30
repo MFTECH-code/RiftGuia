@@ -44,7 +44,7 @@ const keywordDescriptions: Record<string, string> = {
   shield: 'Aumenta o Might da unidade enquanto ela estiver defendendo. Shield 2, por exemplo, dá +2 Might na defesa.',
   tank: 'O dano de combate deve ser atribuído a esta unidade primeiro.',
   temporary: 'Esse objeto é abatido no início da Beginning Phase do controlador, antes da pontuação, salvo se outro efeito mudar isso.',
-  temporario: 'Esse objeto é abatido no início da Beginning Phase do controlador, antes da pontuação, salvo se outro efeito mudar isso.',
+  temporário: 'Esse objeto é abatido no início da Beginning Phase do controlador, antes da pontuação, salvo se outro efeito mudar isso.',
   flow: 'Permite jogar a carta do descarte pelo custo de Flow. Depois ela normalmente é banida.',
   burn: 'Coloque a quantidade indicada de cartas do topo do Main Deck no descarte. Não é dano.',
   copy: 'Cria uma cópia conforme o efeito descreve. Leia a carta para saber o que é copiado e por quanto tempo.',
@@ -74,7 +74,7 @@ const keywordDescriptions: Record<string, string> = {
   vision: 'Quando jogar a carta, olhe o topo do seu Main Deck e siga a instrução de Vision.',
 };
 
-export function CardRulesText({ text, fallback = 'Esta carta nao possui texto.', compact = false }: CardRulesTextProps) {
+export function CardRulesText({ text, fallback = 'Esta carta não possui texto.', compact = false }: CardRulesTextProps) {
   const parts = parseRulesText(text || fallback);
 
   return (
@@ -221,7 +221,7 @@ function TokenIcon({ token }: { token: string }) {
 
   if (/^:rb_might:$/i.test(token)) {
     return (
-      <span className="game-symbol might official-style" title="forca" aria-label="forca">
+      <span className="game-symbol might official-style" title="força" aria-label="força">
         <RiftboundIcon name="might" aria-hidden="true" />
       </span>
     );

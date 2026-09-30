@@ -19,12 +19,12 @@ function buildLegendGuides(cards: RiftboundCard[], translate: TranslateCard): Gu
     .map((card) => {
       const translation = translate(card);
       const name = translation?.name || card.name;
-      const domains = (card.classification?.domain || []).map((domain) => DOMAIN_NAMES[domain] || domain).join(' e ') || 'os dominios indicados pela carta';
+      const domains = (card.classification?.domain || []).map((domain) => DOMAIN_NAMES[domain] || domain).join(' e ') || 'os domínios indicados pela carta';
       return {
         id: `legend:${card.riftbound_id}`,
         name: `Lenda - ${name}`,
         kind: 'legend',
-        text: `Roteiro inicial para ${name}: construa dentro dos dominios ${domains}. Leia a habilidade impressa e escolha cartas que ajudam a cumprir sua condicao, pagar seu custo ou aproveitar o efeito. Defina um Campeao Escolhido que contribua para essa mesma ideia. Depois das primeiras partidas, anote quais cartas ficaram sem funcao e ajuste o plano.`,
+        text: `Roteiro inicial para ${name}: construa dentro dos domínios ${domains}. Leia a habilidade impressa e escolha cartas que ajudam a cumprir sua condição, pagar seu custo ou aproveitar o efeito. Defina um Campeão Escolhido que contribua para essa mesma ideia. Depois das primeiras partidas, anote quais cartas ficaram sem função e ajuste o plano.`,
       };
     });
 }

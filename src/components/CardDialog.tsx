@@ -35,11 +35,11 @@ export function CardDialog({ card, translation, isCustom, onClose, onSave, onRem
           <div className="rules">
             <section>
               <h3>Portugues</h3>
-              <CardRulesText text={translation?.text} fallback="Esta carta ainda nao tem traducao." />
+              <CardRulesText text={translation?.text} fallback="Esta carta ainda não tem tradução." />
             </section>
             <section>
               <h3>Original</h3>
-              <CardRulesText text={card.text?.plain} fallback="Esta carta nao possui texto de regras." />
+              <CardRulesText text={card.text?.plain} fallback="Esta carta não possui texto de regras." />
             </section>
           </div>
           <form onSubmit={(event) => {
@@ -56,8 +56,8 @@ export function CardDialog({ card, translation, isCustom, onClose, onSave, onRem
               <textarea value={text} onChange={(event) => setText(event.target.value)} rows={6} />
             </label>
             <div className="actions">
-              <button type="submit">Salvar traducao</button>
-              <button type="button" disabled={!isCustom} onClick={onRemove}>Remover minha edicao</button>
+              <button type="submit">Salvar tradução</button>
+              <button type="button" disabled={!isCustom} onClick={onRemove}>Remover minha edição</button>
             </div>
           </form>
         </div>

@@ -30,7 +30,7 @@ export function AppHeader({ status, view, cardCount = 0, translatedCount = 0, is
         </div>
         <h1>Aprenda Riftbound, traduza cartas e monte decks melhores.</h1>
         <p className="hero-copy">Uma central em pt-BR para consultar cartas, estudar regras e construir listas com sugestões enquanto joga.</p>
-        <div className="catalog-metrics" aria-label="Resumo do catalogo">
+        <div className="catalog-metrics" aria-label="Resumo do catálogo">
           <span><BookOpen size={16} /> {cardCount.toLocaleString('pt-BR')} cartas</span>
           <span><Languages size={16} /> {translatedCount.toLocaleString('pt-BR')} traduzidas</span>
           <span><Percent size={16} /> {translationPercent}% em pt-BR</span>

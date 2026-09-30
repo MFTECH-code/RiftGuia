@@ -42,14 +42,14 @@
     },
     "ogs-001-024": {
       "name": "Annie - Flamejante",
-      "text": "Seus feitiços e habilidades causam 1 Dano Bônus. (Cada instância de dano que o feitiço causa é aumentada em 1.)",
+      "text": "Seus feitiços e habilidades causam 1 dano bônus. (Cada instância de dano que o feitiço causa é aumentada em 1.)",
       "source": "Your spells and abilities deal 1 Bonus Damage. (Each instance of damage the spell deals is increased by 1.)",
       "updatedAt": "2026-09-25T18:13:06.532Z",
       "provider": "openai"
     },
     "opp-001-024": {
       "name": "Annie - Flamejante",
-      "text": "Seus feitiços e habilidades causam 1 Dano Bônus. (Cada instância de dano que o feitiço causa é aumentada em 1.)",
+      "text": "Seus feitiços e habilidades causam 1 dano bônus. (Cada instância de dano que o feitiço causa é aumentada em 1.)",
       "source": "Your spells and abilities deal 1 Bonus Damage. (Each instance of damage the spell deals is increased by 1.)",
       "updatedAt": "2026-09-25T18:13:06.532Z",
       "provider": "openai"
@@ -406,7 +406,7 @@
     },
     "ogn-032-298": {
       "name": "Tomo Nascido do Corvo",
-      "text": ":rb_exhaust:: A próxima magia que você jogar neste turno causa 1 Dano Bônus. (Cada instância de dano que a magia causa é aumentada em 1.)",
+      "text": ":rb_exhaust:: A próxima magia que você jogar neste turno causa 1 dano bônus. (Cada instância de dano que a magia causa é aumentada em 1.)",
       "source": ":rb_exhaust:: The next spell you play this turn deals 1 Bonus Damage. (Each instance of damage the spell deals is increased by 1.)",
       "updatedAt": "2026-09-25T20:06:47.311Z",
       "provider": "external-worklist"
@@ -2471,7 +2471,7 @@
     },
     "ven-010-166": {
       "name": "Maldição Consumidora",
-      "text": "[Action] (Jogue no seu turno ou em confrontos.) Cause 2 de dano a uma unidade em um Campo de batalha. Isso causa 1 Dano Bônus para cada carta com este nome no seu Lixo.",
+      "text": "[Action] (Jogue no seu turno ou em confrontos.) Cause 2 de dano a uma unidade em um Campo de batalha. Isso causa 1 dano bônus para cada carta com este nome no seu Lixo.",
       "source": "[Action] (Play on your turn or in showdowns.)Deal 2 to a unit at a battlefield. This deals 1 Bonus Damage for each card with this name in your trash.",
       "updatedAt": "2026-09-28T18:35:33.785Z",
       "provider": "openai"
@@ -2821,7 +2821,7 @@
     },
     "unl-020-219": {
       "name": "Granada Dançante",
-      "text": "Cause 2 de dano a uma Unidade. O controlador dela pode jogar esta Magia novamente por :rb_rune_rainbow:. Se o fizer, isto causa 1 Dano Bônus adicional para cada vez que esta Magia causou dano neste turno.",
+      "text": "Cause 2 de dano a uma Unidade. O controlador dela pode jogar esta Magia novamente por :rb_rune_rainbow:. Se o fizer, isto causa 1 dano bônus adicional para cada vez que esta Magia causou dano neste turno.",
       "source": "Deal 2 to a unit. Its controller may play this spell again for :rb_rune_rainbow:. If they do, this deals 1 additional Bonus Damage for each time this spell has dealt damage this turn.",
       "updatedAt": "2026-09-28T18:42:02.786Z",
       "provider": "openai"
@@ -8946,7 +8946,7 @@
     },
     "ogn-296-298": {
       "name": "Portão do Vazio",
-      "text": "Magias e habilidades que afetam Unidades aqui causam cada uma 1 Dano Bônus. (Cada instância de dano que a magia causa é aumentada em 1.)",
+      "text": "Magias e habilidades que afetam Unidades aqui causam cada uma 1 dano bônus. (Cada instância de dano que a magia causa é aumentada em 1.)",
       "source": "Spells and abilities affecting units here each deal 1 Bonus Damage. (Each instance of damage the spell deals is increased by 1.)",
       "updatedAt": "2026-09-28T19:03:05.416Z",
       "provider": "openai"

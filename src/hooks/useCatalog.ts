@@ -12,13 +12,13 @@ import {
 export function useCatalog() {
   const [cards, setCards] = React.useState<RiftboundCard[]>([]);
   const [initialTranslations, setInitialTranslations] = React.useState<TranslationMap>({});
-  const [status, setStatus] = React.useState('Abrindo catalogo local...');
+  const [status, setStatus] = React.useState('Abrindo catálogo local...');
   const [isRefreshing, setIsRefreshing] = React.useState(false);
   const mounted = React.useRef(false);
   const refreshController = React.useRef<AbortController | null>(null);
 
   const describeCatalog = React.useCallback((fetchedAt: string, source: string) => {
-    return `Catalogo ${source}, atualizado em ${snapshotDate(fetchedAt)}.`;
+    return `Catálogo ${source}, atualizado em ${snapshotDate(fetchedAt)}.`;
   }, []);
 
   const refreshCatalog = React.useCallback(async () => {
@@ -29,12 +29,12 @@ export function useCatalog() {
     setStatus('Consultando o Riftcodex...');
     try {
       const snapshot = await fetchRiftCodexCatalog(controller.signal, (loaded, total) => {
-        if (mounted.current) setStatus(`Atualizando cartas pelo Riftcodex: pagina ${loaded} de ${total}...`);
+        if (mounted.current) setStatus(`Atualizando cartas pelo Riftcodex: página ${loaded} de ${total}...`);
       });
       try {
         await writeCachedCatalog(snapshot);
       } catch {
-        // O catalogo recebido continua utilizavel mesmo se o navegador negar o IndexedDB.
+        // O catálogo recebido continua utilizável mesmo se o navegador negar o IndexedDB.
       }
       if (!mounted.current) return;
       setCards(snapshot.cards);
@@ -42,7 +42,7 @@ export function useCatalog() {
     } catch (error) {
       if (!mounted.current || controller.signal.aborted) return;
       const detail = error instanceof Error ? error.message : 'erro desconhecido';
-      setStatus(`Nao foi possivel atualizar pelo Riftcodex (${detail}). O catalogo atual continua disponivel.`);
+      setStatus(`Não foi possível atualizar pelo Riftcodex (${detail}). O catálogo atual continua disponível.`);
     } finally {
       if (refreshController.current === controller) refreshController.current = null;
       if (mounted.current) setIsRefreshing(false);
@@ -71,7 +71,7 @@ export function useCatalog() {
         const snapshot = cached || await fetchBundledCatalog(controller.signal);
         if (!mounted.current) return;
         setCards(snapshot.cards);
-        setStatus(describeCatalog(snapshot.fetchedAt, cached ? 'no cache do navegador' : 'no catalogo inicial'));
+        setStatus(describeCatalog(snapshot.fetchedAt, cached ? 'no cache do navegador' : 'no catálogo inicial'));
 
         if (!cached || !isCatalogFresh(cached)) {
           window.setTimeout(() => {
@@ -81,7 +81,7 @@ export function useCatalog() {
       } catch (error) {
         if (!mounted.current || controller.signal.aborted) return;
         const detail = error instanceof Error ? error.message : 'erro desconhecido';
-        setStatus(`Nao foi possivel abrir o catalogo inicial (${detail}). Tentando o Riftcodex...`);
+        setStatus(`Não foi possível abrir o catálogo inicial (${detail}). Tentando o Riftcodex...`);
         window.setTimeout(() => {
           if (mounted.current) void refreshCatalog();
         }, 100);

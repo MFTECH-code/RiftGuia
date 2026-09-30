@@ -73,28 +73,22 @@ function ExhaustIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+const runeIconAssets: Record<string, string> = {
+  fury: '/icons/runes/fury.webp',
+  calm: '/icons/runes/calm.webp',
+  mind: '/icons/runes/mind.webp',
+  body: '/icons/runes/body.webp',
+  chaos: '/icons/runes/chaos.webp',
+  order: '/icons/runes/order.webp',
+  rainbow: '/icons/runes/rainbow.webp',
+};
+
 function RuneIcon({ domain, ...props }: SVGProps<SVGSVGElement> & { domain: string }) {
-  const id = `rune-${domain}`;
+  const href = runeIconAssets[domain] || runeIconAssets.rainbow;
+
   return (
     <svg viewBox="0 0 32 32" role="img" {...props}>
-      <defs>
-        <linearGradient id={`${id}-rainbow`} x1="0" x2="1" y1="0" y2="1">
-          <stop offset="0%" stopColor="#ef4f3d" />
-          <stop offset="20%" stopColor="#f0c65b" />
-          <stop offset="40%" stopColor="#7ed77b" />
-          <stop offset="60%" stopColor="#61bdf7" />
-          <stop offset="80%" stopColor="#a783ff" />
-          <stop offset="100%" stopColor="#f076c9" />
-        </linearGradient>
-      </defs>
-      <path
-        fill={domain === 'rainbow' ? `url(#${id}-rainbow)` : 'currentColor'}
-        d="M16 2.6c2.5 5.4 5 7.9 10.4 10.4-5.4 2.5-7.9 5-10.4 16.4C13.5 18 11 15.5 5.6 13 11 10.5 13.5 8 16 2.6Z"
-      />
-      <path
-        fill="rgba(255,255,255,.86)"
-        d="M16 8.6c1.2 2.3 2.5 3.6 4.8 4.8-2.3 1.2-3.6 2.5-4.8 7.8-1.2-5.3-2.5-6.6-4.8-7.8 2.3-1.2 3.6-2.5 4.8-4.8Z"
-      />
+      <image href={href} x="1.5" y="1.5" width="29" height="29" preserveAspectRatio="xMidYMid meet" />
     </svg>
   );
 }

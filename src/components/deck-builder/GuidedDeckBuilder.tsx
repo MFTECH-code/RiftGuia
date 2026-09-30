@@ -160,7 +160,6 @@ export function GuidedDeckBuilder({ cards, translate, onOpenCard }: GuidedDeckBu
       championId: '',
       main: {},
       sideboard: {},
-      guide: suggestion?.gamePlan && state.legendId === card.riftbound_id ? state.guide : state.guide,
     });
     setStep('champion');
     setQuery('');
@@ -216,6 +215,15 @@ export function GuidedDeckBuilder({ cards, translate, onOpenCard }: GuidedDeckBu
       stats,
     };
     download(`${state.name || 'rift-guia-deck'}-guia.json`, JSON.stringify(payload, null, 2), 'application/json');
+  }
+
+  function appendSuggestionToGuide(text: string) {
+    update({
+      ...state,
+      guide: [state.guide.trim(), text.trim()].filter(Boolean).join('\n\n'),
+    });
+    setStep('guide');
+    setQuery('');
   }
 
   const nextStep = builderSteps[Math.min(builderSteps.findIndex((item) => item.id === step) + 1, builderSteps.length - 1)]?.id || step;
@@ -320,7 +328,7 @@ export function GuidedDeckBuilder({ cards, translate, onOpenCard }: GuidedDeckBu
             <h3>Deck em montagem</h3>
             <DeckPreview rows={rows} translate={translate} onOpen={onOpenCard} />
           </div>
-          <SuggestionPanel suggestion={suggestion} />
+          <SuggestionPanel suggestion={suggestion} onAppendToGuide={appendSuggestionToGuide} />
           <DeckStatsPanel stats={stats} />
         </div>
       </div>

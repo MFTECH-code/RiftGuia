@@ -2,7 +2,7 @@ import type { RiftboundCard, TranslationEntry, TranslationMap } from '../types';
 
 export const TYPE_NAMES: Record<string, string> = {
   Unit: 'Unidade',
-  Spell: 'Feitico',
+  Spell: 'Feitiço',
   Gear: 'Equipamento',
   Legend: 'Lenda',
   Battlefield: 'Campo de batalha',
@@ -18,7 +18,7 @@ export const DOMAIN_NAMES: Record<string, string> = {
   Chaos: 'Caos',
   Order: 'Ordem',
   Colorless: 'Incolor',
-  Rainbow: 'qualquer dominio',
+  Rainbow: 'qualquer domínio',
 };
 
 export const TRANSLATION_STORAGE = 'rift-guia.translations.v2';
@@ -60,7 +60,7 @@ export function formatCardText(text?: string | null): string {
       const key = domain[0]?.toUpperCase() + domain.slice(1);
       return `[1 poder de ${DOMAIN_NAMES[key] || domain}]`;
     })
-    .replace(/:rb_might:/g, '[forca]')
+    .replace(/:rb_might:/g, '[força]')
     .replace(/:rb_exhaust:/g, '[exaurir]')
     .replace(/:rb_([a-z0-9_]+):/g, (_, token: string) => `[${token.replace(/_/g, ' ')}]`)
     .replace(/\)(?=[A-Z\[])/g, ')\n')
@@ -77,13 +77,13 @@ export function snapshotDate(value?: string): string {
 
 export function validateTranslations(value: unknown): TranslationMap {
   if (!value || typeof value !== 'object' || Array.isArray(value)) {
-    throw new Error('Arquivo de traducoes invalido.');
+    throw new Error('Arquivo de traduções inválido.');
   }
 
   const result: TranslationMap = {};
   for (const [key, raw] of Object.entries(value)) {
     if (!/^[a-z0-9*-]+$/i.test(key) || !raw || typeof raw !== 'object') {
-      throw new Error('Entrada de traducao invalida.');
+      throw new Error('Entrada de tradução invalida.');
     }
 
     const entry = raw as Partial<TranslationEntry>;
@@ -96,7 +96,7 @@ export function validateTranslations(value: unknown): TranslationMap {
       typeof entry.source !== 'string' ||
       entry.source.length > 20000
     ) {
-      throw new Error('Entrada de traducao invalida.');
+      throw new Error('Entrada de tradução invalida.');
     }
 
     result[key] = {
