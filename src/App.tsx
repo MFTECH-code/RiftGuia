@@ -47,6 +47,7 @@ export function App() {
   return (
     <main>
       <AppHeader
+        key={`header-${view}`}
         status={status}
         view={view}
         cardCount={cards.length}
@@ -56,22 +57,24 @@ export function App() {
         onViewChange={navigateView}
       />
 
-      {view === 'library' && (
-        <LibraryPage
-          cards={cards}
-          customTranslations={customTranslations}
-          translate={translate}
-          onOpenCard={openCard}
-          onImportTranslations={importTranslations}
-          onStatusChange={setStatus}
-        />
-      )}
+      <div className={`page-shell page-shell-${view}`} key={`page-${view}`}>
+        {view === 'library' && (
+          <LibraryPage
+            cards={cards}
+            customTranslations={customTranslations}
+            translate={translate}
+            onOpenCard={openCard}
+            onImportTranslations={importTranslations}
+            onStatusChange={setStatus}
+          />
+        )}
 
-      {view === 'deck' && (
-        <DeckPage cards={cards} guides={guides} translate={translate} onOpenCard={openCard} />
-      )}
+        {view === 'deck' && (
+          <DeckPage cards={cards} guides={guides} translate={translate} onOpenCard={openCard} />
+        )}
 
-      {view === 'learn' && <LearnPage />}
+        {view === 'learn' && <LearnPage />}
+      </div>
 
       {selectedCard && (
         <CardDialog
@@ -90,3 +93,4 @@ export function App() {
     </main>
   );
 }
+

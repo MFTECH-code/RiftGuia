@@ -26,6 +26,7 @@ export function LibraryPage({ cards, customTranslations, translate, onOpenCard, 
   const types = React.useMemo(() => unique(cards.map((card) => card.classification?.type).filter(Boolean) as string[]), [cards]);
   const domains = React.useMemo(() => unique(cards.flatMap((card) => card.classification?.domain || [])), [cards]);
   const sets = React.useMemo(() => unique(cards.map((card) => card.set?.set_id).filter(Boolean) as string[]), [cards]);
+  const translatedTotal = React.useMemo(() => cards.filter((card) => Boolean(translate(card))).length, [cards, translate]);
 
   const filtered = React.useMemo(() => {
     const query = filters.query.trim();
@@ -54,6 +55,11 @@ export function LibraryPage({ cards, customTranslations, translate, onOpenCard, 
   const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
   const currentPage = Math.min(page, totalPages);
   const visibleCards = filtered.slice((currentPage - 1) * pageSize, currentPage * pageSize);
+  const activeFilters = buildActiveFilters(filters);
+
+  function updateFilters(next: Partial<Filters>) {
+    setFilters({ ...filters, ...next });
+  }
 
   async function importTranslations(file: File | undefined) {
     if (!file) return;
@@ -68,40 +74,67 @@ export function LibraryPage({ cards, customTranslations, translate, onOpenCard, 
   }
 
   return (
-    <section className="workspace">
-      <div className="toolbar">
+    <section className="workspace library-page">
+      <div className="page-hero library-hero">
+        <div>
+          <p className="eyebrow">Biblioteca</p>
+          <h2>Encontre cartas por nome, texto, tipo ou domínio.</h2>
+          <p>Use os filtros para reduzir a lista e abra qualquer carta para ver a tradução completa, texto original e detalhes do catálogo.</p>
+        </div>
+        <div className="hero-stats" aria-label="Resumo da biblioteca">
+          <span><strong>{cards.length.toLocaleString('pt-BR')}</strong> cartas</span>
+          <span><strong>{translatedTotal.toLocaleString('pt-BR')}</strong> traduzidas</span>
+          <span><strong>{filtered.length.toLocaleString('pt-BR')}</strong> no resultado</span>
+        </div>
+      </div>
+
+      <div className="toolbar library-toolbar">
         <label className="search">
           <Search size={18} />
-          <input value={filters.query} onChange={(event) => setFilters({ ...filters, query: event.target.value })} placeholder="Buscar por nome, texto, codigo ou tag" />
+          <input value={filters.query} onChange={(event) => updateFilters({ query: event.target.value })} placeholder="Buscar por nome, texto, código ou tag" />
         </label>
-        <select value={filters.type} onChange={(event) => setFilters({ ...filters, type: event.target.value })} aria-label="Tipo">
+        <select value={filters.type} onChange={(event) => updateFilters({ type: event.target.value })} aria-label="Tipo">
           <option value="">Tipo</option>
           {types.map((type) => <option key={type} value={type}>{TYPE_NAMES[type] || type}</option>)}
         </select>
-        <select value={filters.domain} onChange={(event) => setFilters({ ...filters, domain: event.target.value })} aria-label="Dominio">
-          <option value="">Dominio</option>
+        <select value={filters.domain} onChange={(event) => updateFilters({ domain: event.target.value })} aria-label="Dominio">
+          <option value="">Domínio</option>
           {domains.map((domain) => <option key={domain} value={domain}>{DOMAIN_NAMES[domain] || domain}</option>)}
         </select>
-        <select value={filters.set} onChange={(event) => setFilters({ ...filters, set: event.target.value })} aria-label="Colecao">
-          <option value="">Colecao</option>
+        <select value={filters.set} onChange={(event) => updateFilters({ set: event.target.value })} aria-label="Colecao">
+          <option value="">Coleção</option>
           {sets.map((set) => <option key={set} value={set}>{set}</option>)}
         </select>
         <label className="check">
-          <input type="checkbox" checked={filters.translatedOnly} onChange={(event) => setFilters({ ...filters, translatedOnly: event.target.checked })} />
-          Traduzidas
+          <input type="checkbox" checked={filters.translatedOnly} onChange={(event) => updateFilters({ translatedOnly: event.target.checked })} />
+          Só traduzidas
         </label>
-        <button title="Limpar filtros" onClick={() => setFilters(emptyFilters)}><X size={18} /></button>
+        <button className="icon-only" title="Limpar filtros" onClick={() => setFilters(emptyFilters)}><X size={18} /></button>
+      </div>
+
+      <div className="filter-summary">
+        <div className="filter-chips" aria-label="Filtros ativos">
+          {activeFilters.length ? activeFilters.map((filter) => (
+            <button key={filter.key} type="button" onClick={() => updateFilters(filter.clear)}>
+              {filter.label} <X size={14} />
+            </button>
+          )) : <span>Nenhum filtro ativo</span>}
+        </div>
+        <p>{visibleCards.length ? `Mostrando ${visibleCards.length} cartas nesta página.` : 'Nenhuma carta encontrada com os filtros atuais.'}</p>
       </div>
 
       <div className="section-title">
-        <h2>{filtered.length.toLocaleString('pt-BR')} cartas encontradas</h2>
+        <div>
+          <p className="eyebrow">Resultado</p>
+          <h2>{filtered.length.toLocaleString('pt-BR')} cartas encontradas</h2>
+        </div>
         <div className="actions">
-          <label className="file-button">
-            <FileUp size={16} /> Importar traducoes
+          <label className="file-button secondary-action">
+            <FileUp size={16} /> Importar traduções
             <input type="file" accept="application/json,.json" onChange={(event) => void importTranslations(event.target.files?.[0])} />
           </label>
-          <button onClick={() => download('rift-guia-traducoes.json', JSON.stringify({ format: 'rift-guia', version: 1, translations: customTranslations }, null, 2), 'application/json')}>
-            <Download size={16} /> Exportar minhas traducoes
+          <button className="secondary-action" onClick={() => download('rift-guia-traducoes.json', JSON.stringify({ format: 'rift-guia', version: 1, translations: customTranslations }, null, 2), 'application/json')}>
+            <Download size={16} /> Exportar minhas traduções
           </button>
         </div>
       </div>
@@ -110,9 +143,21 @@ export function LibraryPage({ cards, customTranslations, translate, onOpenCard, 
         {visibleCards.map((card) => <CardTile key={`${card.riftbound_id}-${card.id}`} card={card} translation={translate(card)} onOpen={onOpenCard} />)}
       </div>
 
+      {!visibleCards.length && <p className="empty empty-state">Tente limpar os filtros ou buscar por outro nome.</p>}
+
       <Pagination page={currentPage} totalPages={totalPages} onPageChange={setPage} />
     </section>
   );
+}
+
+function buildActiveFilters(filters: Filters): Array<{ key: string; label: string; clear: Partial<Filters> }> {
+  const result: Array<{ key: string; label: string; clear: Partial<Filters> }> = [];
+  if (filters.query.trim()) result.push({ key: 'query', label: `Busca: ${filters.query.trim()}`, clear: { query: '' } });
+  if (filters.type) result.push({ key: 'type', label: `Tipo: ${TYPE_NAMES[filters.type] || filters.type}`, clear: { type: '' } });
+  if (filters.domain) result.push({ key: 'domain', label: `Domínio: ${DOMAIN_NAMES[filters.domain] || filters.domain}`, clear: { domain: '' } });
+  if (filters.set) result.push({ key: 'set', label: `Coleção: ${filters.set}`, clear: { set: '' } });
+  if (filters.translatedOnly) result.push({ key: 'translatedOnly', label: 'Só traduzidas', clear: { translatedOnly: false } });
+  return result;
 }
 
 function unique<T>(values: T[]): T[] {

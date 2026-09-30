@@ -1,5 +1,6 @@
-import { BookOpen, Languages, Percent, RefreshCw } from 'lucide-react';
+import { BookOpen, GraduationCap, Languages, Library, Percent, RefreshCw, ScrollText } from 'lucide-react';
 import type { View } from '../appTypes';
+import { RiftGuiaLogo } from './RiftGuiaLogo';
 
 interface AppHeaderProps {
   status: string;
@@ -15,10 +16,20 @@ export function AppHeader({ status, view, cardCount = 0, translatedCount = 0, is
   const translationPercent = cardCount ? Math.round((translatedCount / cardCount) * 100) : 0;
 
   return (
-    <header className="topbar">
-      <div>
-        <p className="eyebrow">Rift Guia</p>
-        <h1>Cartas, decks e regras em portugues.</h1>
+    <>
+        <nav className="primary-nav" aria-label="Navegação principal">
+          <button className={view === 'library' ? 'active' : ''} onClick={() => onViewChange('library')}><Library size={16} /> Biblioteca</button>
+          <button className={view === 'deck' ? 'active' : ''} onClick={() => onViewChange('deck')}><ScrollText size={16} /> Deck Builder</button>
+          <button className={view === 'learn' ? 'active' : ''} onClick={() => onViewChange('learn')}><GraduationCap size={16} /> Aprenda</button>
+        </nav>
+      <header className={`topbar topbar-${view}`}>
+      <div className="hero-main">
+        <div className="hero-kicker">
+          <RiftGuiaLogo />
+          <p className="hero-tagline">Projeto de fã em português brasileiro</p>
+        </div>
+        <h1>Aprenda Riftbound, traduza cartas e monte decks melhores.</h1>
+        <p className="hero-copy">Uma central em pt-BR para consultar cartas, estudar regras e construir listas com sugestões enquanto joga.</p>
         <div className="catalog-metrics" aria-label="Resumo do catalogo">
           <span><BookOpen size={16} /> {cardCount.toLocaleString('pt-BR')} cartas</span>
           <span><Languages size={16} /> {translatedCount.toLocaleString('pt-BR')} traduzidas</span>
@@ -32,11 +43,7 @@ export function AppHeader({ status, view, cardCount = 0, translatedCount = 0, is
           </button>
         </div>
       </div>
-      <nav aria-label="Navegacao principal">
-        <button className={view === 'library' ? 'active' : ''} onClick={() => onViewChange('library')}>Biblioteca</button>
-        <button className={view === 'deck' ? 'active' : ''} onClick={() => onViewChange('deck')}>Meu deck</button>
-        <button className={view === 'learn' ? 'active' : ''} onClick={() => onViewChange('learn')}>Aprenda</button>
-      </nav>
-    </header>
+      </header>
+    </>
   );
 }

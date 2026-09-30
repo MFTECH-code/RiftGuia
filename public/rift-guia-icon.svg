@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <linearGradient id="gold" x1="18" x2="78" y1="10" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff2b0"/>
+      <stop offset="0.48" stop-color="#f1b75f"/>
+      <stop offset="1" stop-color="#b46f2b"/>
+    </linearGradient>
+    <linearGradient id="br" x1="18" x2="80" y1="76" y2="22" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#159447"/>
+      <stop offset="0.48" stop-color="#f4d35e"/>
+      <stop offset="1" stop-color="#1f6feb"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="44%" r="52%">
+      <stop offset="0" stop-color="#61c6ff" stop-opacity="0.95"/>
+      <stop offset="0.48" stop-color="#1f6feb" stop-opacity="0.54"/>
+      <stop offset="1" stop-color="#061015" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="96" height="96" rx="22" fill="#061015"/>
+  <path d="M48 5 85 25v42L48 91 11 67V25L48 5Z" fill="#02080b" opacity="0.6"/>
+  <path d="M48 8 82 27v39L48 88 14 66V27L48 8Z" fill="url(#gold)"/>
+  <path d="M48 17 73 31v29L48 78 23 60V31L48 17Z" fill="#07151b"/>
+  <circle cx="48" cy="47" r="24" fill="url(#glow)"/>
+  <path d="M62 25c-13 2-25 11-25 24 0 10 8 16 18 15-3 5-9 8-16 8-12 0-21-9-21-21 0-18 18-32 44-26Z" fill="#eaf8ff" opacity="0.9"/>
+  <path d="M35 48c5-8 16-13 28-12-4 6-10 10-18 12 6 2 11 6 14 12-12 1-22-3-24-12Z" fill="#061015" opacity="0.92"/>
+  <path d="M19 63c18-6 35-12 58-9-13 5-24 12-32 24-7-8-15-12-26-15Z" fill="url(#br)"/>
+  <path d="M48 34 51 43 60 46 51 49 48 58 45 49 36 46 45 43 48 34Z" fill="#f4d35e"/>
+</svg>
